@@ -497,6 +497,9 @@
     <members>Account.Website</members>
     <members>Account.YearStarted</members>
     <members>Asset.AccountId</members>
+    <members>Asset.AssetLevel</members>
+    <members>Asset.AssetProvidedById</members>
+    <members>Asset.AssetServicedById</members>
     <members>Asset.ContactId</members>
     <members>Asset.CreatedById</members>
     <members>Asset.CreatedDate</members>
@@ -505,6 +508,7 @@
     <members>Asset.InstallDate</members>
     <members>Asset.IsCompetitorProduct</members>
     <members>Asset.IsDeleted</members>
+    <members>Asset.IsInternal</members>
     <members>Asset.LastModifiedById</members>
     <members>Asset.LastModifiedDate</members>
     <members>Asset.LastReferencedDate</members>
@@ -521,6 +525,21 @@
     <members>Asset.Status</members>
     <members>Asset.SystemModstamp</members>
     <members>Asset.UsageEndDate</members>
+    <members>AssetRelationship.AssetId</members>
+    <members>AssetRelationship.AssetRelationshipNumber</members>
+    <members>AssetRelationship.CreatedById</members>
+    <members>AssetRelationship.CreatedDate</members>
+    <members>AssetRelationship.FromDate</members>
+    <members>AssetRelationship.Id</members>
+    <members>AssetRelationship.IsDeleted</members>
+    <members>AssetRelationship.LastModifiedById</members>
+    <members>AssetRelationship.LastModifiedDate</members>
+    <members>AssetRelationship.LastReferencedDate</members>
+    <members>AssetRelationship.LastViewedDate</members>
+    <members>AssetRelationship.RelatedAssetId</members>
+    <members>AssetRelationship.RelationshipType</members>
+    <members>AssetRelationship.SystemModstamp</members>
+    <members>AssetRelationship.ToDate</members>
     <members>AssetTokenEvent.ActorTokenPayload</members>
     <members>AssetTokenEvent.AssetId</members>
     <members>AssetTokenEvent.AssetName</members>
@@ -750,6 +769,7 @@
     <members>Contact.SystemModstamp</members>
     <members>Contact.Title</members>
     <members>ContentDistribution.ContentDocumentId</members>
+    <members>ContentDistribution.ContentDownloadUrl</members>
     <members>ContentDistribution.ContentVersionId</members>
     <members>ContentDistribution.CreatedById</members>
     <members>ContentDistribution.CreatedDate</members>
@@ -764,6 +784,7 @@
     <members>ContentDistribution.Name</members>
     <members>ContentDistribution.OwnerId</members>
     <members>ContentDistribution.Password</members>
+    <members>ContentDistribution.PdfDownloadUrl</members>
     <members>ContentDistribution.PreferencesAllowOriginalDownload</members>
     <members>ContentDistribution.PreferencesAllowPDFDownload</members>
     <members>ContentDistribution.PreferencesAllowViewInBrowser</members>
@@ -807,6 +828,7 @@
     <members>ContentDocumentLink.SystemModstamp</members>
     <members>ContentDocumentLink.Visibility</members>
     <members>ContentVersion.Checksum</members>
+    <members>ContentVersion.ContentBodyId</members>
     <members>ContentVersion.ContentDocumentId</members>
     <members>ContentVersion.ContentLocation</members>
     <members>ContentVersion.ContentModifiedById</members>
@@ -1017,6 +1039,7 @@
     <members>EmailMessage.HtmlBody</members>
     <members>EmailMessage.Id</members>
     <members>EmailMessage.Incoming</members>
+    <members>EmailMessage.IsClientManaged</members>
     <members>EmailMessage.IsDeleted</members>
     <members>EmailMessage.IsExternallyVisible</members>
     <members>EmailMessage.LastModifiedById</members>
@@ -1346,6 +1369,14 @@
     <members>OrderItem.SystemModstamp</members>
     <members>OrderItem.TotalPrice</members>
     <members>OrderItem.UnitPrice</members>
+    <members>OrgLifecycleNotification.CreatedById</members>
+    <members>OrgLifecycleNotification.CreatedDate</members>
+    <members>OrgLifecycleNotification.LifecycleRequestId</members>
+    <members>OrgLifecycleNotification.LifecycleRequestType</members>
+    <members>OrgLifecycleNotification.OrgId</members>
+    <members>OrgLifecycleNotification.ReplayId</members>
+    <members>OrgLifecycleNotification.Status</members>
+    <members>OrgLifecycleNotification.StatusCode</members>
     <members>Partner.AccountFromId</members>
     <members>Partner.AccountToId</members>
     <members>Partner.CreatedById</members>
@@ -1508,6 +1539,7 @@
     <members>User.GeocodeAccuracy</members>
     <members>User.Id</members>
     <members>User.IsActive</members>
+    <members>User.IsExtIndicatorVisible</members>
     <members>User.IsProfilePhotoActive</members>
     <members>User.JigsawImportLimitOverride</members>
     <members>User.LanguageLocaleKey</members>
@@ -1577,6 +1609,7 @@
     <members>User.UserPreferencesDisableWorkEmail</members>
     <members>User.UserPreferencesEnableAutoSubForFeeds</members>
     <members>User.UserPreferencesEventRemindersCheckboxDefault</members>
+    <members>User.UserPreferencesFavoritesShowTopFavorites</members>
     <members>User.UserPreferencesFavoritesWTShown</members>
     <members>User.UserPreferencesGlobalNavBarWTShown</members>
     <members>User.UserPreferencesGlobalNavGridMenuWTShown</members>
@@ -1593,6 +1626,8 @@
     <members>User.UserPreferencesLightningExperiencePreferred</members>
     <members>User.UserPreferencesPathAssistantCollapsed</members>
     <members>User.UserPreferencesPreviewLightning</members>
+    <members>User.UserPreferencesRecordHomeReservedWTShown</members>
+    <members>User.UserPreferencesRecordHomeSectionCollapseWTShown</members>
     <members>User.UserPreferencesReminderSoundOff</members>
     <members>User.UserPreferencesShowCityToExternalUsers</members>
     <members>User.UserPreferencesShowCityToGuestUsers</members>
@@ -3484,6 +3519,7 @@
     <members>Company</members>
     <members>Contract</members>
     <members>Entitlement</members>
+    <members>FieldService</members>
     <members>FileUploadAndDownloadSecurity</members>
     <members>Forecasting</members>
     <members>Ideas</members>
@@ -3802,5 +3838,5 @@
     <members>copado__Deployment__c.copado__Deployment_scheduled</members>
     <name>WorkflowTask</name>
   </types>
-  <version>39.0</version>
+  <version>40.0</version>
 </Package>
