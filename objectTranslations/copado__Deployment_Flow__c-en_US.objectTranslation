@@ -33,6 +33,11 @@
         <label><!-- Manage Branches --></label>
         <name>copado__Manage_Branches__c</name>
     </fields>
+    <fields>
+        <label><!-- Static Code Analysis Settings --></label>
+        <name>copado__Static_Code_Analysis_Settings__c</name>
+        <relationshipLabel><!-- Deployment Flows --></relationshipLabel>
+    </fields>
     <webLinks>
         <label><!-- Manage_Branches --></label>
         <name>copado__Manage_Branches</name>

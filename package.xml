@@ -11,6 +11,8 @@
     <members>copado__BackupBatch</members>
     <members>copado__BackupNow</members>
     <members>copado__BatchHelper</members>
+    <members>copado__BranchManagementExt</members>
+    <members>copado__BranchManagementExtension</members>
     <members>copado__BuildTaskEmailController</members>
     <members>copado__BuildTaskTriggerHandler</members>
     <members>copado__BuildTaskTriggerHelper</members>
@@ -37,6 +39,7 @@
     <members>copado__DeploymentFlowTriggerHandler</members>
     <members>copado__DeploymentFlowTriggerHelper</members>
     <members>copado__DeploymentStatusExtension</members>
+    <members>copado__DeploymentTaskExtension</members>
     <members>copado__DeploymentTriggerHandler</members>
     <members>copado__DeploymentTriggerHelper</members>
     <members>copado__DeploymentWizardExtension</members>
@@ -47,12 +50,16 @@
     <members>copado__EditGit</members>
     <members>copado__EditOrg</members>
     <members>copado__EditOrgDiffExtension</members>
+    <members>copado__EnvironmentTriggerHandler</members>
+    <members>copado__EnvironmentTriggerHelper</members>
     <members>copado__EnvironmentalVariableTriggerHandler</members>
     <members>copado__EnvironmentalVariableTriggerHelpler</members>
     <members>copado__ExecuteTestRunExtension</members>
     <members>copado__ExternalCIAPIFactory</members>
     <members>copado__ExternalCIJobsExtension</members>
+    <members>copado__FeatureAccessHelper</members>
     <members>copado__FeatureHelper</members>
+    <members>copado__GenerateStaticCodeAnalysisRuleSet</members>
     <members>copado__GitBackupTriggerHandler</members>
     <members>copado__GitBackupTriggerHelper</members>
     <members>copado__GitCommitChangesController</members>
@@ -61,10 +68,12 @@
     <members>copado__GitOrgCommitTriggerHandler</members>
     <members>copado__GitOrgCommitTriggerHelper</members>
     <members>copado__GitRepositoryTriggerHandler</members>
+    <members>copado__GlobalUtilities</members>
     <members>copado__IExternalCIAPI</members>
     <members>copado__ITrigger</members>
     <members>copado__IndexMetadataJob</members>
     <members>copado__JenkinsAPI</members>
+    <members>copado__JobsManager</members>
     <members>copado__JsRemotingController</members>
     <members>copado__KanbanBoard</members>
     <members>copado__LicenseHelper</members>
@@ -95,6 +104,8 @@
     <members>copado__PersonaTriggerHandler</members>
     <members>copado__PersonaTriggerHelper</members>
     <members>copado__PostInstallClass</members>
+    <members>copado__ProjectTriggerHandler</members>
+    <members>copado__ProjectTriggerHelper</members>
     <members>copado__PromoteChangesExtension</members>
     <members>copado__PromotionEditExtension</members>
     <members>copado__PromotionTriggerHandler</members>
@@ -103,6 +114,7 @@
     <members>copado__RunTestGroupsBatch</members>
     <members>copado__ScheduledJobExtension</members>
     <members>copado__Scheduler</members>
+    <members>copado__SeleniumTestCasePerSuite</members>
     <members>copado__SeleniumTestCasePromoteRollback</members>
     <members>copado__SeleniumTestCaseTriggerHandler</members>
     <members>copado__SeleniumTestCaseViewEdit</members>
@@ -120,6 +132,8 @@
     <members>copado__SeleniumTestSuiteTriggerHandler</members>
     <members>copado__Settings</members>
     <members>copado__SnapshotDiffTriggerHandler</members>
+    <members>copado__SprintVirtualWall</members>
+    <members>copado__StaticCodeAnalysisController</members>
     <members>copado__StepEditionController</members>
     <members>copado__StepTriggerHandler</members>
     <members>copado__StepTriggerHelper</members>
@@ -150,19 +164,24 @@
     <members>copado__TestDeploymentExt</members>
     <members>copado__TestDeploymentFlowStepTrigger</members>
     <members>copado__TestDeploymentFlowTrigger</members>
+    <members>copado__TestDeploymentTaskExtension</members>
     <members>copado__TestDeploymentTrigger</members>
     <members>copado__TestDeploymentWizard</members>
     <members>copado__TestEditBackupExtension</members>
     <members>copado__TestEditGit</members>
     <members>copado__TestEditOrg</members>
     <members>copado__TestEncodePasswordTrigger</members>
+    <members>copado__TestEnvironmentTrigger</members>
     <members>copado__TestExecuteTestRunExtension</members>
     <members>copado__TestExternalCI</members>
+    <members>copado__TestFeatureAccessHelper</members>
     <members>copado__TestFeatureHelper</members>
+    <members>copado__TestGenerateStaticCodeAnalysisRuleSet</members>
     <members>copado__TestGitBackupTrigger</members>
     <members>copado__TestGitCommitLookupController</members>
     <members>copado__TestGitOrgCommitTriggerHandler</members>
     <members>copado__TestGitRepositoryTrigger</members>
+    <members>copado__TestGlobalUtilities</members>
     <members>copado__TestIndexMetadataJob</members>
     <members>copado__TestJsRemotingController</members>
     <members>copado__TestLicenseHelper</members>
@@ -176,11 +195,13 @@
     <members>copado__TestMassAddToReleaseExtension</members>
     <members>copado__TestMetadataTypesHelper</members>
     <members>copado__TestMetadataselectorExtension</members>
+    <members>copado__TestNotificationsParser</members>
     <members>copado__TestOrgDiffTrigger</members>
     <members>copado__TestOrgTrigger</members>
     <members>copado__TestPermissionSetExplorerExt</members>
     <members>copado__TestPersonaAssignmentTrigger</members>
     <members>copado__TestPostInstallClass</members>
+    <members>copado__TestProjectTrigger</members>
     <members>copado__TestPromoteChangesExtension</members>
     <members>copado__TestPromotionEditExtension</members>
     <members>copado__TestPromotionTriggerHandler</members>
@@ -199,11 +220,15 @@
     <members>copado__TestSeleniumTestRunTrigger</members>
     <members>copado__TestSettings</members>
     <members>copado__TestSnapshotDifferenceExtension</members>
+    <members>copado__TestSprintVirtualWall</members>
+    <members>copado__TestStaticCodeAnalysisController</members>
+    <members>copado__TestStepEditionController</members>
     <members>copado__TestTestBatch</members>
     <members>copado__TestTestMethodsUtilities</members>
     <members>copado__TestTestRunTriggerHandler</members>
     <members>copado__TestUserStoryApexTestResultsExtension</members>
     <members>copado__TestUserStoryAssignmentSetController</members>
+    <members>copado__TestUserStoryCodeAnalysisRequest</members>
     <members>copado__TestUserStoryCommitIntermediaryExt</members>
     <members>copado__TestUserStoryCommitTrigger</members>
     <members>copado__TestUserStoryExt</members>
@@ -214,9 +239,11 @@
     <members>copado__TestValidateOrg</members>
     <members>copado__TestViewDeploymentExtension</members>
     <members>copado__TestWebhookLookupController</members>
+    <members>copado__Test_BranchManagementExtension</members>
     <members>copado__TriggerFactory</members>
     <members>copado__UserStoryApexTestResultsExtension</members>
     <members>copado__UserStoryAssignmentSetController</members>
+    <members>copado__UserStoryCodeAnalysisRequestController</members>
     <members>copado__UserStoryCommitIntermediaryExt</members>
     <members>copado__UserStoryCommitTriggerHandler</members>
     <members>copado__UserStoryCommitTriggerHelper</members>
@@ -245,16 +272,22 @@
     <name>ApexClass</name>
   </types>
   <types>
+    <members>copado__ApexComponent</members>
     <members>copado__ApexTestResult</members>
     <members>copado__BuildTaskEmail</members>
     <members>copado__CheckFeaturesComponent</members>
+    <members>copado__CustomSettingComponent</members>
+    <members>copado__DataComponent</members>
+    <members>copado__DeleteMetadataComponent</members>
     <members>copado__DeploymentEmail</members>
     <members>copado__DiffOrgGrid</members>
     <members>copado__GAnalytics</members>
     <members>copado__IframeLocker</members>
+    <members>copado__JobsManager</members>
     <members>copado__LightningReadyInputFields</members>
     <members>copado__LightningReadyOutputFields</members>
     <members>copado__LightningReadyRelatedList</members>
+    <members>copado__ManualTaskComponent</members>
     <members>copado__MetaItemGrid</members>
     <members>copado__MultiselectPicklist</members>
     <members>copado__OrgApexTestResultsSummaryEmail</members>
@@ -262,6 +295,7 @@
     <members>copado__ScreenLocker</members>
     <members>copado__ShowWebhook</members>
     <members>copado__StepEdition</members>
+    <members>copado__URLCalloutComponent</members>
     <members>copado__VariableLookup</members>
     <members>copado__ViewOrgMetadataGrid</members>
     <members>copado__WizardUtils</members>
@@ -275,6 +309,8 @@
   </types>
   <types>
     <members>copado__BranchManagement</members>
+    <members>copado__BranchManagementDialog</members>
+    <members>copado__ClassicSessionId</members>
     <members>copado__CloneDeployment</members>
     <members>copado__CloneSeleniumTestCase</members>
     <members>copado__ContinuousIntegration</members>
@@ -286,6 +322,7 @@
     <members>copado__DeploymentJobResults</members>
     <members>copado__DeploymentStatus</members>
     <members>copado__DeploymentWizard</members>
+    <members>copado__EditDeploymentTask</members>
     <members>copado__EditExternalCIJob</members>
     <members>copado__EditExternalCISetting</members>
     <members>copado__EditGit</members>
@@ -293,6 +330,7 @@
     <members>copado__EditOrg</members>
     <members>copado__EditOrgDiff</members>
     <members>copado__ExecuteTestRun</members>
+    <members>copado__GenerateStaticCodeAnalysisRuleSet</members>
     <members>copado__GitCommitChanges</members>
     <members>copado__GitCommitLookup</members>
     <members>copado__KanbanBoardEdit</members>
@@ -331,15 +369,19 @@
     <members>copado__SeleniumTestSuite</members>
     <members>copado__Selenium_Test_Result</members>
     <members>copado__SnapshotDifference</members>
+    <members>copado__SprintVirtualWall</members>
+    <members>copado__StaticCodeAnalysisSummary</members>
     <members>copado__UserStory</members>
     <members>copado__UserStoryApexTestResults</members>
     <members>copado__UserStoryAssignment</members>
+    <members>copado__UserStoryCodeAnalysisRequested</members>
     <members>copado__UserStoryCommitIntermediary</members>
     <members>copado__UserStoryImportSelection</members>
     <members>copado__UserStoryMetadata</members>
     <members>copado__UserStorySelectCommits</members>
     <members>copado__UserStorySelectedMetadata</members>
     <members>copado__ViewDeployment</members>
+    <members>copado__ViewDeploymentTasks</members>
     <members>copado__ViewExternalCIJob</members>
     <members>copado__ViewExternalCISetting</members>
     <members>copado__ViewGitBackup</members>
@@ -368,6 +410,7 @@
     <members>copado__DestinationOrgTrigger</members>
     <members>copado__EncodeGitPassword</members>
     <members>copado__EncodePassword</members>
+    <members>copado__EnvironmentTrigger</members>
     <members>copado__EnvironmentalVariableTrigger</members>
     <members>copado__ExternalCISettingTrigger</members>
     <members>copado__GitBackupTrigger</members>
@@ -376,10 +419,12 @@
     <members>copado__MaintainDeploymentJobs</members>
     <members>copado__MaintainDeploymentJobs2</members>
     <members>copado__NextJob</members>
+    <members>copado__NotificationsParser</members>
     <members>copado__OrgDiffTrigger</members>
     <members>copado__OrgTrigger</members>
     <members>copado__PersonaPermissionTrigger</members>
     <members>copado__PersonaTrigger</members>
+    <members>copado__ProjectTrigger</members>
     <members>copado__PromotionTrigger</members>
     <members>copado__SeleniumTestCaseTrigger</members>
     <members>copado__SeleniumTestGroupOCTrigger</members>
@@ -1781,19 +1826,35 @@
     <members>copado__Continuous_Integration__c.copado__Pre_Deployment_Options__c</members>
     <members>copado__Continuous_Integration__c.copado__Run_All_Tests__c</members>
     <members>copado__Continuous_Integration__c.copado__Status__c</members>
+    <members>copado__Copado_License__c.copado__Enable_CAD__c</members>
     <members>copado__Copado_License__c.copado__Enable_CCM__c</members>
     <members>copado__Copado_License__c.copado__Enable_CST__c</members>
     <members>copado__Copado_License__c.copado__Enable_Copado__c</members>
     <members>copado__Copado_Notification__c.copado__AttachmentId__c</members>
+    <members>copado__Copado_Notification__c.copado__Matching_Key__c</members>
     <members>copado__Copado_Notification__c.copado__Message__c</members>
     <members>copado__Copado_Notification__c.copado__Parent2Id__c</members>
     <members>copado__Copado_Notification__c.copado__ParentId__c</members>
     <members>copado__Copado_Notification__c.copado__Type__c</members>
+    <members>copado__Copado_Notification__c.copado__isFinished__c</members>
+    <members>copado__Copado_Notification__c.copado__isSuccess__c</members>
+    <members>copado__Copado_Notification__c.copado__status__c</members>
+    <members>copado__Copado_Setting__mdt.copado__Enabled__c</members>
     <members>copado__Deployment_Flow_Step__c.copado__Automatically_Merge_and_Deploy__c</members>
     <members>copado__Deployment_Flow_Step__c.copado__Branch__c</members>
+    <members>copado__Deployment_Flow_Step__c.copado__Commits_Ahead__c</members>
+    <members>copado__Deployment_Flow_Step__c.copado__Commits_Behind__c</members>
     <members>copado__Deployment_Flow_Step__c.copado__Deployment_Flow__c</members>
+    <members>copado__Deployment_Flow_Step__c.copado__Destination_Branch__c</members>
     <members>copado__Deployment_Flow_Step__c.copado__Destination_Environment__c</members>
+    <members>copado__Deployment_Flow_Step__c.copado__Last_Merge_Base__c</members>
+    <members>copado__Deployment_Flow_Step__c.copado__Last_Merge_CBM_Sync__c</members>
+    <members>copado__Deployment_Flow_Step__c.copado__Last_Pull_CBM_Sync__c</members>
+    <members>copado__Deployment_Flow_Step__c.copado__Merge_Auto_Resolved_Files__c</members>
+    <members>copado__Deployment_Flow_Step__c.copado__Pull_Auto_Resolved_Files__c</members>
     <members>copado__Deployment_Flow_Step__c.copado__Source_Environment__c</members>
+    <members>copado__Deployment_Flow_Step__c.copado__Sync_Merge_State__c</members>
+    <members>copado__Deployment_Flow_Step__c.copado__Sync_Pull_State__c</members>
     <members>copado__Deployment_Flow_Step__c.copado__Test_Level__c</members>
     <members>copado__Deployment_Flow__c.copado__Active__c</members>
     <members>copado__Deployment_Flow__c.copado__Branch_Management_Coordinates__c</members>
@@ -1803,6 +1864,7 @@
     <members>copado__Deployment_Flow__c.copado__Git_Repository__c</members>
     <members>copado__Deployment_Flow__c.copado__Main_Branch__c</members>
     <members>copado__Deployment_Flow__c.copado__Manage_Branches__c</members>
+    <members>copado__Deployment_Flow__c.copado__Static_Code_Analysis_Settings__c</members>
     <members>copado__Deployment_History__c.copado__Date__c</members>
     <members>copado__Deployment_History__c.copado__Deployment_Id__c</members>
     <members>copado__Deployment_History__c.copado__Deployment__c</members>
@@ -1828,7 +1890,9 @@
     <members>copado__Deployment_Task__c.copado__Perform_in_Source_Org__c</members>
     <members>copado__Deployment_Task__c.copado__Status__c</members>
     <members>copado__Deployment_Task__c.copado__Task_Description__c</members>
+    <members>copado__Deployment_Task__c.copado__Type__c</members>
     <members>copado__Deployment_Task__c.copado__User_Story__c</members>
+    <members>copado__Deployment_Task__c.copado__dataJSON__c</members>
     <members>copado__Deployment__c.copado__Build_Task__c</members>
     <members>copado__Deployment__c.copado__Completed__c</members>
     <members>copado__Deployment__c.copado__Count_Completed__c</members>
@@ -1856,6 +1920,8 @@
     <members>copado__Destination_Org__c.copado__To_Org_Name__c</members>
     <members>copado__Destination_Org__c.copado__To_Org__c</members>
     <members>copado__Environment__c.copado__Current_Code_Coverage__c</members>
+    <members>copado__Environment__c.copado__Current_SCA_Score__c</members>
+    <members>copado__Environment__c.copado__Maximum_SCA_Score__c</members>
     <members>copado__Environment__c.copado__Minimum_Apex_Test_Coverage__c</members>
     <members>copado__Environment__c.copado__Namespace__c</members>
     <members>copado__Environment__c.copado__Org_ID__c</members>
@@ -1970,6 +2036,7 @@
     <members>copado__Project__c.copado__Status__c</members>
     <members>copado__Promoted_User_Story__c.copado__Promotion__c</members>
     <members>copado__Promoted_User_Story__c.copado__User_Story__c</members>
+    <members>copado__Promotion__c.copado__Back_Promotion__c</members>
     <members>copado__Promotion__c.copado__Create_Full_Permission_Sets_Step__c</members>
     <members>copado__Promotion__c.copado__Create_Full_Profiles_Step__c</members>
     <members>copado__Promotion__c.copado__Destination_Environment__c</members>
@@ -2087,6 +2154,7 @@
     <members>copado__Selenium_Test_Suite__c.copado__Apex_code_after_test__c</members>
     <members>copado__Selenium_Test_Suite__c.copado__Apex_code_before_test__c</members>
     <members>copado__Selenium_Test_Suite__c.copado__Test_Script__c</members>
+    <members>copado__Settings__c.copado__CAD_Licenses__c</members>
     <members>copado__Settings__c.copado__CCM_Licenses__c</members>
     <members>copado__Settings__c.copado__CST_Licenses__c</members>
     <members>copado__Settings__c.copado__Copado_Licenses__c</members>
@@ -2112,6 +2180,15 @@
     <members>copado__Sprint__c.copado__Status__c</members>
     <members>copado__Sprint__c.copado__Story_points__c</members>
     <members>copado__Sprint__c.copado__Working_days_in_sprint__c</members>
+    <members>copado__Static_Code_Analysis_Result__c.copado__Details__c</members>
+    <members>copado__Static_Code_Analysis_Result__c.copado__Org_Credential__c</members>
+    <members>copado__Static_Code_Analysis_Result__c.copado__Rules_Violated__c</members>
+    <members>copado__Static_Code_Analysis_Result__c.copado__Score__c</members>
+    <members>copado__Static_Code_Analysis_Result__c.copado__User_Story__c</members>
+    <members>copado__Static_Code_Analysis_Rule__c.copado__Message__c</members>
+    <members>copado__Static_Code_Analysis_Rule__c.copado__Priority__c</members>
+    <members>copado__Static_Code_Analysis_Rule__c.copado__Rule_Name__c</members>
+    <members>copado__Static_Code_Analysis_Rule__c.copado__Static_Code_Analysis_Settings__c</members>
     <members>copado__Step__c.copado__Attachment_Id__c</members>
     <members>copado__Step__c.copado__Branch__c</members>
     <members>copado__Step__c.copado__CheckOnly__c</members>
@@ -2197,11 +2274,17 @@
     <members>copado__User_Story_Selenium_Test__c.copado__External_Id__c</members>
     <members>copado__User_Story_Selenium_Test__c.copado__Selenium_Test_Group__c</members>
     <members>copado__User_Story_Selenium_Test__c.copado__User_Story__c</members>
+    <members>copado__User_Story_Task__c.copado__Comments__c</members>
+    <members>copado__User_Story_Task__c.copado__Hours_Remaining__c</members>
+    <members>copado__User_Story_Task__c.copado__Status__c</members>
+    <members>copado__User_Story_Task__c.copado__Subject__c</members>
+    <members>copado__User_Story_Task__c.copado__User_Story__c</members>
     <members>copado__User_Story__c.copado__Acceptance_Criteria_Status__c</members>
     <members>copado__User_Story__c.copado__Acceptance_Criteria__c</members>
     <members>copado__User_Story__c.copado__Apex_Code_Coverage__c</members>
     <members>copado__User_Story__c.copado__Business_Analyst__c</members>
     <members>copado__User_Story__c.copado__Cancellation_Reason__c</members>
+    <members>copado__User_Story__c.copado__Classes_Without_Coverage__c</members>
     <members>copado__User_Story__c.copado__Close_Date__c</members>
     <members>copado__User_Story__c.copado__Compliance_Criteria__c</members>
     <members>copado__User_Story__c.copado__Compliance__c</members>
@@ -2209,11 +2292,14 @@
     <members>copado__User_Story__c.copado__Developer__c</members>
     <members>copado__User_Story__c.copado__Environment__c</members>
     <members>copado__User_Story__c.copado__Epic__c</members>
+    <members>copado__User_Story__c.copado__Exclude_From_CBM__c</members>
+    <members>copado__User_Story__c.copado__Failing_Methods__c</members>
     <members>copado__User_Story__c.copado__Functional_Specifications__c</members>
     <members>copado__User_Story__c.copado__Has_Apex_Code__c</members>
     <members>copado__User_Story__c.copado__Legal__c</members>
     <members>copado__User_Story__c.copado__Metadata_Types_in_Selection__c</members>
     <members>copado__User_Story__c.copado__Minimum_Apex_Code_Coverage__c</members>
+    <members>copado__User_Story__c.copado__Order__c</members>
     <members>copado__User_Story__c.copado__Org_Credential__c</members>
     <members>copado__User_Story__c.copado__Parent_Epic_Title__c</members>
     <members>copado__User_Story__c.copado__Priority__c</members>
@@ -2226,11 +2312,13 @@
     <members>copado__User_Story__c.copado__Release__c</members>
     <members>copado__User_Story__c.copado__Sprint__c</members>
     <members>copado__User_Story__c.copado__Status__c</members>
+    <members>copado__User_Story__c.copado__Stop_Indexing_Metadata__c</members>
     <members>copado__User_Story__c.copado__Story_Points_Other__c</members>
     <members>copado__User_Story__c.copado__Story_Points_SFDC__c</members>
     <members>copado__User_Story__c.copado__Technical_Specifications__c</members>
     <members>copado__User_Story__c.copado__Test_Script_Owner__c</members>
     <members>copado__User_Story__c.copado__Total_Story_Points__c</members>
+    <members>copado__User_Story__c.copado__Triggers_Without_Coverage__c</members>
     <members>copado__User_Story__c.copado__User_Story_Title__c</members>
     <members>copado__User_Story__c.copado__Validate_Only__c</members>
     <members>copado__User_Story__c.copado__View_in_Git__c</members>
@@ -2247,6 +2335,7 @@
     <members>copado__ADD_AUTHENTICATION</members>
     <members>copado__ADD_DESTINATION_ORG</members>
     <members>copado__ADD_ENVIRONMENT_STEPS</members>
+    <members>copado__ADD_HEADER</members>
     <members>copado__ADD_OAUTH</members>
     <members>copado__ADD_REMOVE_TEST_CASE_DESCRIPTION</members>
     <members>copado__ADD_ROW</members>
@@ -2254,26 +2343,36 @@
     <members>copado__ADD_STEP</members>
     <members>copado__ADD_SUITES_TO_A_GROUP</members>
     <members>copado__ADD_UPDATE_USER</members>
+    <members>copado__ADD_URL_PARAMETERS</members>
     <members>copado__ADD_USERPASS</members>
     <members>copado__ADVANCED_METADATA_FILTERS</members>
     <members>copado__ALL</members>
     <members>copado__ALL_FLOW_STEPS_WITH_BRANCH_NAME</members>
+    <members>copado__ANALYSIS_SCORE</members>
     <members>copado__APEX_CLASS</members>
+    <members>copado__APEX_RULES_SET</members>
     <members>copado__APEX_TESTS_BELONG_TO_MULTIPLE_NAMESPACES</members>
+    <members>copado__APEX_TESTS_RESULTS_TRIMMED</members>
+    <members>copado__APEX_TEST_RESULT_SUMMARY</members>
     <members>copado__APEX_TEST_RESULT_SUMMARY_INFO</members>
     <members>copado__API_KEY</members>
     <members>copado__ARE_YOU_SURE</members>
     <members>copado__ASSIGNED_USERS</members>
+    <members>copado__ASSIGN_CAD_LICENSE</members>
     <members>copado__ASSIGN_CCM_LICENSE</members>
     <members>copado__ASSIGN_COPADO_LICENSE</members>
     <members>copado__ASSIGN_CST_LICENSE</members>
     <members>copado__ATTENTION_REQUIRED</members>
+    <members>copado__AUTO_RESOLVED_CONFLICTS</members>
     <members>copado__AVAILABLE_FIELDS</members>
     <members>copado__BACK</members>
     <members>copado__BACKUP_NOW</members>
     <members>copado__BACKUP_STARTED</members>
+    <members>copado__BACK_PROMOTION_NOT_ENABLED</members>
     <members>copado__BASIC_INFORMATION</members>
     <members>copado__BEFORE_EDITING_PRESS_EDIT_BUTTON</members>
+    <members>copado__BODY</members>
+    <members>copado__BRANCH</members>
     <members>copado__BRANCH_AND_SOURCE_ENVIRONMENT_EQUALS</members>
     <members>copado__BRANCH_MGMT_LICENSE_EXCEEDED</members>
     <members>copado__BRANCH_MGMT_NOT_ENABLED</members>
@@ -2284,9 +2383,14 @@
     <members>copado__BUTTONS</members>
     <members>copado__BUY_CREDITS_BTN_LABEL</members>
     <members>copado__CACHE_REFRESHED_NOW</members>
+    <members>copado__CAD_LICENSES_USED</members>
+    <members>copado__CAD_LICENSE_LIMIT_REACHED</members>
+    <members>copado__CAD_License_Restriction</members>
+    <members>copado__CAD_USERS</members>
     <members>copado__CANCELLED</members>
     <members>copado__CANCELLING</members>
     <members>copado__CANCEL_DEPLOYMENT</members>
+    <members>copado__CBM2_at_least1_us</members>
     <members>copado__CBM_FLOW_INVALID</members>
     <members>copado__CCM_DESTINATION_ORG_INVALID</members>
     <members>copado__CCM_LICENSES_USED</members>
@@ -2298,6 +2402,8 @@
     <members>copado__CLICK_TO_REMOVE_STEP</members>
     <members>copado__CLONE</members>
     <members>copado__CLOSE</members>
+    <members>copado__COMMITS_AHEAD</members>
+    <members>copado__COMMITS_BEHIND</members>
     <members>copado__COMMITS_BEING_RETRIEVED</members>
     <members>copado__COMMIT_FILES_NOT_ALLOWED</members>
     <members>copado__COMMIT_NOW</members>
@@ -2312,6 +2418,10 @@
     <members>copado__COPADO_LICENSE_LIMIT_REACHED</members>
     <members>copado__COPADO_ORG_SETUP</members>
     <members>copado__COPADO_ORG_SETUP_DESCRIPTION</members>
+    <members>copado__COPADO_ORG_SETUP_ORG_FULLNAME</members>
+    <members>copado__COPADO_ORG_SETUP_ORG_ID</members>
+    <members>copado__COPADO_ORG_SETUP_ORG_NAME</members>
+    <members>copado__COPADO_ORG_SETUP_ORG_USERNAME</members>
     <members>copado__COPADO_ORG_SETUP_TIP_STEP_1</members>
     <members>copado__COPADO_ORG_SETUP_TIP_STEP_2</members>
     <members>copado__COPADO_SETUP_WIZARD_DESCRIPTION</members>
@@ -2352,10 +2462,12 @@
     <members>copado__CUSTOMER_ORG_NOT_EXISTS</members>
     <members>copado__CUSTOMER_ORG_NOT_VALIDATED</members>
     <members>copado__Cancel</members>
+    <members>copado__Change_Management_Feature_Not_Enabled</members>
     <members>copado__Create_Pull_Request</members>
     <members>copado__DAILY</members>
     <members>copado__DATE</members>
     <members>copado__DAY_S</members>
+    <members>copado__DEFAULT_RULESET_GENERATED</members>
     <members>copado__DELETE</members>
     <members>copado__DELETE_SUCCESS_CLOSE_WINDOW</members>
     <members>copado__DEPLOY</members>
@@ -2363,6 +2475,7 @@
     <members>copado__DEPLOYLATER_DT_MUST_BE_FUTURE</members>
     <members>copado__DEPLOYMENT</members>
     <members>copado__DEPLOYMENT_COMPLETED_SUCCESSFULLY</members>
+    <members>copado__DEPLOYMENT_ERRORS</members>
     <members>copado__DEPLOYMENT_HISTORY</members>
     <members>copado__DEPLOYMENT_JOB</members>
     <members>copado__DEPLOYMENT_NAME_REQUIRED</members>
@@ -2385,6 +2498,14 @@
     <members>copado__DRAG_TO_REORDER_STEP</members>
     <members>copado__DUPLICATED_ENVIRONMENTAL_VARIABLE</members>
     <members>copado__DURATION</members>
+    <members>copado__DYNAMIC_URL_PARAMETERS</members>
+    <members>copado__DeploymentTask_Alert_OrgCred</members>
+    <members>copado__DeploymentTask_Alert_ProperUS</members>
+    <members>copado__DeploymentTask_DeleteConfirm</members>
+    <members>copado__DeploymentTask_Perform_Destination</members>
+    <members>copado__DeploymentTask_Perform_Source</members>
+    <members>copado__DeploymentTask_Task_Description</members>
+    <members>copado__DeploymentTask_Task_Details</members>
     <members>copado__EDIT</members>
     <members>copado__EDIT_SELECTION</members>
     <members>copado__ENABLE_AUTO_RECHARGE</members>
@@ -2396,9 +2517,12 @@
     <members>copado__ENV_VARS_COMMIT</members>
     <members>copado__ENV_VARS_DEPLOY</members>
     <members>copado__ENV_VARS_DOCS</members>
+    <members>copado__ENV_VARS_DUPLICATE_VAL_ENV</members>
     <members>copado__ENV_VARS_EASY_VALUES</members>
     <members>copado__ENV_VARS_GOOD_VALUES</members>
+    <members>copado__ENV_VARS_MISSING_VALS</members>
     <members>copado__ENV_VARS_MORE</members>
+    <members>copado__ENV_VARS_VALUE_REQUIRED</members>
     <members>copado__ERROR</members>
     <members>copado__ERROR_MSG_PREV_META_MISSING</members>
     <members>copado__ERROR_PROMOTION_DESTINATION_ORG_NOT_FOUND</members>
@@ -2418,6 +2542,9 @@
     <members>copado__FEATURE_NOT_SUPPORTED</members>
     <members>copado__FETCHING_COMMITS_FOR_USER_STORY</members>
     <members>copado__FIELDS</members>
+    <members>copado__FILE</members>
+    <members>copado__FILE_DIFFERENCES</members>
+    <members>copado__FILL_REQUIRED_FIELDS</members>
     <members>copado__FIRST_SELECT_A_USER</members>
     <members>copado__FLOW_CREDENTIAL_ERROR</members>
     <members>copado__FRACTION_OUT_OF_LABEL</members>
@@ -2436,6 +2563,7 @@
     <members>copado__GIT_UPSERTS</members>
     <members>copado__GIT_USER_STORY_COMMIT_DESCRIPTION</members>
     <members>copado__GROUP_BY_SELENIUM_MANAGER</members>
+    <members>copado__HEADERS</members>
     <members>copado__HEADER_CREATE_DEPLOYMENT</members>
     <members>copado__HEADER_CREATE_STEP</members>
     <members>copado__HEADER_DESC_CREATE_DEPLOYMENT</members>
@@ -2454,9 +2582,11 @@
     <members>copado__IM_DONE</members>
     <members>copado__INFO</members>
     <members>copado__INFORMATION</members>
+    <members>copado__INFO_URL</members>
     <members>copado__INPROGRESS</members>
     <members>copado__INSUFFICENT_ACCESS</members>
     <members>copado__IN_USERSTORY</members>
+    <members>copado__JOB_MANAGER_MESSAGE</members>
     <members>copado__JOB_SETUP</members>
     <members>copado__JOB_UNSCHEDULED_SUCCESSFULLY</members>
     <members>copado__JQX_PAGERGOTOPAGESTRING</members>
@@ -2486,20 +2616,26 @@
     <members>copado__LICENSE_MANAGER_INACTIVE_DESCRIPTON</members>
     <members>copado__LICENSE_MANAGER_INTRODUCTION</members>
     <members>copado__LICENSE_UPSERT_SUCCESSFUL</members>
+    <members>copado__LINE</members>
     <members>copado__LINES_COVERED</members>
     <members>copado__LINES_COVERED_TOTAL_LINES</members>
     <members>copado__LINES_NOT_COVERED</members>
     <members>copado__LOADING</members>
     <members>copado__LOOK_UP_COPADO_WEBHOOK</members>
+    <members>copado__Licenses_Exceeded</members>
     <members>copado__MANAGE_AUTO_RECHARGE</members>
     <members>copado__MANAGE_SUBSCRIPTION</members>
+    <members>copado__MERGED_FILES</members>
     <members>copado__MESSAGE</members>
+    <members>copado__MESSAGE_CAPITALS</members>
     <members>copado__METADATA_FILTERED</members>
+    <members>copado__METADATA_NOT_FOUND</members>
     <members>copado__METHODS</members>
     <members>copado__METHOD_NAME</members>
     <members>copado__MILLISECONDS</members>
     <members>copado__MINUTES</members>
     <members>copado__MISSING_DEST_ORGS_MESSAGE</members>
+    <members>copado__MISSING_PERMISSIONS_CBM_FLOW</members>
     <members>copado__MISSING_STEPS_MESSAGE</members>
     <members>copado__MONDAY</members>
     <members>copado__MUST_BUILD_VALID_AND_TESTED_QUERY</members>
@@ -2520,11 +2656,14 @@
     <members>copado__NO_APEX_TESTS_FOUND</members>
     <members>copado__NO_APEX_TESTS_FOUND_REFRESH_USER_STORY</members>
     <members>copado__NO_APEX_TESTS_SELECTED</members>
+    <members>copado__NO_DATA_TO_DISPLAY</members>
     <members>copado__NO_DESTINATION_ORGS_IN_DEPLOYMENT</members>
     <members>copado__NO_JOB_FOUND</members>
     <members>copado__NO_ORG_CREDENTIAL_ON_USER_STORY</members>
     <members>copado__NO_PERMISSIONS_FOUND</members>
     <members>copado__NO_SETTING_SELECTED</members>
+    <members>copado__NO_STATIC_CODE_ATTACHMENT</members>
+    <members>copado__NO_STATIC_CODE_RESULTS</members>
     <members>copado__NO_STEPS_IN_DEPLOYMENT</members>
     <members>copado__NO_STEP_RESULTS_FOUND</members>
     <members>copado__NO_TEST_RUN_RESULTS</members>
@@ -2541,10 +2680,12 @@
     <members>copado__ORG_CREDENTIAL_NOT_PART_OF_ENVIRONMENT</members>
     <members>copado__ORG_DIFF_DESCRIPTION</members>
     <members>copado__ORG_EDIT_DESCRIPTION</members>
+    <members>copado__ORG_NOT_FOUND</members>
     <members>copado__ORG_NOT_VALIDATED</members>
     <members>copado__OS</members>
     <members>copado__OS_VERSION</members>
     <members>copado__OTHER_INFORMATION</members>
+    <members>copado__OWNER_ALIAS</members>
     <members>copado__PASSED</members>
     <members>copado__PASSWORD</members>
     <members>copado__PASS_FAIL_COLUMN_HEADER</members>
@@ -2558,6 +2699,8 @@
     <members>copado__POPUP_BLOCKER_MESSAGE</members>
     <members>copado__PRELOAD_FILTER_USER_STORIES</members>
     <members>copado__PRE_POST_BUILD_AUTOMATION</members>
+    <members>copado__PRIORITY</members>
+    <members>copado__PROBLEM_RETRIEVING_META_ATTACH</members>
     <members>copado__PROFILE_NAME</members>
     <members>copado__PROMOTE_SELENIUM_TC_VERSION</members>
     <members>copado__PROMOTE_TEST_CASE_DESCRIPTION</members>
@@ -2569,6 +2712,7 @@
     <members>copado__PROMOTION_RUN_SOURCE_TESTS_REGRESSION</members>
     <members>copado__PROMOTION_RUN_SOURCE_TESTS_USER_STORY</members>
     <members>copado__PROMOTION_SELENIUM_TESTS</members>
+    <members>copado__PROMOTION_USER_STORY_METADATA</members>
     <members>copado__QUERY</members>
     <members>copado__QUERY_BUILDER</members>
     <members>copado__QUERY_TEST_SUCCESSFUL</members>
@@ -2598,16 +2742,22 @@
     <members>copado__ROLE_NAME</members>
     <members>copado__ROLLBACK_SELENIUM_TC_VERSION</members>
     <members>copado__ROLLBACK_TEST_CASE_DESCRIPTION</members>
+    <members>copado__RULE</members>
+    <members>copado__RULESET_GENERATOR</members>
+    <members>copado__RULES_VIOLATED</members>
+    <members>copado__RULE_NAME</members>
     <members>copado__RUNNING_APEX_TESTS</members>
     <members>copado__RUN_ALL_TESTS</members>
     <members>copado__RUN_ALL_TESTS_TO_LOAD_TEST_RESULTS_FOR_ORG</members>
     <members>copado__RUN_APEX_TESTS</members>
+    <members>copado__RUN_STATIC_CODE_ANALYSIS</members>
     <members>copado__SATURDAY</members>
     <members>copado__SAVE_AND_CLOSE</members>
     <members>copado__SAVE_DEPLOYMENT_FIRST</members>
     <members>copado__SAVE_DEPLOYMENT_TO_ADD_DESTINATION_ORGS</members>
     <members>copado__SAVE_NEW_STEP_FIRST_TO_ADD_NEW_STEP</members>
     <members>copado__SAVE_SUCCESS</members>
+    <members>copado__SCA_SETTINGS_NOT_FOUND</members>
     <members>copado__SCHEDULE</members>
     <members>copado__SCHEDULE_INFORMATION</members>
     <members>copado__SECONDS</members>
@@ -2619,6 +2769,7 @@
     <members>copado__SELECT_AT_LEAST_ONE_RECORD</members>
     <members>copado__SELECT_GROUP_TO_ADD_RUNS</members>
     <members>copado__SELECT_GROUP_TO_ADD_SUITES</members>
+    <members>copado__SELECT_METADATA_TYPE</members>
     <members>copado__SELECT_STEP_TYPE_FIRST</members>
     <members>copado__SELENIUM_GETTING_STARTED_APIKEY</members>
     <members>copado__SELENIUM_GETTING_STARTED_BIND</members>
@@ -2627,6 +2778,7 @@
     <members>copado__SELENIUM_GETTING_STARTED_HEADER_TITLE</members>
     <members>copado__SELENIUM_GROUPS_UPDATED</members>
     <members>copado__SELENIUM_NOT_ENABLED</members>
+    <members>copado__SELENIUM_NOT_LICENSED</members>
     <members>copado__SELENIUM_TEST_GROUP</members>
     <members>copado__SELENIUM_TEST_RESULTS_SUMMARY</members>
     <members>copado__SETUP_ACTION_REQUIRED_MSG</members>
@@ -2636,6 +2788,7 @@
     <members>copado__SOBJECT</members>
     <members>copado__SOQL_HASNOT_EXTERNALID_ERROR</members>
     <members>copado__SOQL_MALFORMED_ERROR</members>
+    <members>copado__SOURCE_CODE_ANALYSIS</members>
     <members>copado__SOURCE_ORG_CREDENTIAL_REQUIRED_FOR_DEPLOYMENT</members>
     <members>copado__SOURCE_REGRESSION_TESTS</members>
     <members>copado__SOURCE_USER_STORY_TESTS</members>
@@ -2643,7 +2796,11 @@
     <members>copado__STARTING_COMMIT</members>
     <members>copado__STARTS_AT</members>
     <members>copado__START_TIME</members>
+    <members>copado__STATIC_CODE_ANALYSIS_DETAILS</members>
+    <members>copado__STATIC_CODE_ANALYSIS_REQUESTED</members>
+    <members>copado__STATIC_CODE_ANALYSIS_SUMMARY</members>
     <members>copado__STATIC_RESOURCES_TITLE</members>
+    <members>copado__STATUS</members>
     <members>copado__STATUS_MANAGER_CLEAR_STATUS</members>
     <members>copado__STATUS_MANAGER_CONFIRM_RESET</members>
     <members>copado__STEP_DELETED</members>
@@ -2681,6 +2838,41 @@
     <members>copado__Save</members>
     <members>copado__Save_And_Run</members>
     <members>copado__Select_CI_Job</members>
+    <members>copado__SprintWall_Action_Edit</members>
+    <members>copado__SprintWall_Action_Edit_Add_task</members>
+    <members>copado__SprintWall_Action_Edit_Move_to_next_Sprint</members>
+    <members>copado__SprintWall_Action_Remove_from_Sprint</members>
+    <members>copado__SprintWall_Actual_Velocity</members>
+    <members>copado__SprintWall_All_Sprints</members>
+    <members>copado__SprintWall_Button_Cancel</members>
+    <members>copado__SprintWall_Button_MassUpdate</members>
+    <members>copado__SprintWall_Button_New_US</members>
+    <members>copado__SprintWall_Confirm_Delete_Task</members>
+    <members>copado__SprintWall_Confirm_Remove_US</members>
+    <members>copado__SprintWall_DaysLeft_Closed</members>
+    <members>copado__SprintWall_DaysLeft_Not_Started</members>
+    <members>copado__SprintWall_Days_Left</members>
+    <members>copado__SprintWall_Days_Left_View_Sprint</members>
+    <members>copado__SprintWall_Edit_Sprint</members>
+    <members>copado__SprintWall_Header</members>
+    <members>copado__SprintWall_Header_Assignee</members>
+    <members>copado__SprintWall_Header_Completed</members>
+    <members>copado__SprintWall_Header_Points</members>
+    <members>copado__SprintWall_Header_Status</members>
+    <members>copado__SprintWall_Header_Task_Not_Started</members>
+    <members>copado__SprintWall_Header_Title</members>
+    <members>copado__SprintWall_Header_Type</members>
+    <members>copado__SprintWall_In_Progress</members>
+    <members>copado__SprintWall_Name_Header</members>
+    <members>copado__SprintWall_New_US_Record_Type</members>
+    <members>copado__SprintWall_Next_Sprint</members>
+    <members>copado__SprintWall_Planned_Velocity</members>
+    <members>copado__SprintWall_Previous_Sprint</members>
+    <members>copado__SprintWall_Task_Status_Completed</members>
+    <members>copado__SprintWall_Task_Status_In_Progress</members>
+    <members>copado__SprintWall_Task_Status_Not_Started</members>
+    <members>copado__SprintWall_Tasks_Labels_Hours</members>
+    <members>copado__TASK_NAME</members>
     <members>copado__TC_PROMOTED_SUCCESS</members>
     <members>copado__TC_REPLACE</members>
     <members>copado__TC_ROLLBACK_SUCCESS</members>
@@ -2705,6 +2897,7 @@
     <members>copado__TUESDAY</members>
     <members>copado__TYPE</members>
     <members>copado__This_test_is_already_running</members>
+    <members>copado__Toggle_User_Stories_Ahead_and_Behind</members>
     <members>copado__UNSAVED_CHANGES</members>
     <members>copado__UNSELECT_ALL</members>
     <members>copado__UNSUPPORTED_CI_TOOL_TYPE</members>
@@ -2713,14 +2906,19 @@
     <members>copado__UPDATE_BUTTON</members>
     <members>copado__UPDATE_SAVE</members>
     <members>copado__URL_CALLOUT_REQUIRED_FIELDS_MESSAGE</members>
+    <members>copado__URL_PARAMETERS</members>
     <members>copado__USERSTORY_HAS_NO_ORG_CREDENTIAL_SUMMARY</members>
     <members>copado__USERSTORY_HAS_NO_ORG_CREDENTIAL_TITLE</members>
     <members>copado__USERSTORY_HAS_NO_TEST_RESULTS_SUMMARY</members>
     <members>copado__USERSTORY_HAS_NO_TEST_RESULTS_TITLE</members>
+    <members>copado__USER_STORIES_AHEAD</members>
+    <members>copado__USER_STORIES_BEHIND</members>
     <members>copado__USER_STORIES_NOT_INCLUDED_IN_PROMOTION</members>
     <members>copado__USER_STORIES_TO_BE_PROMOTED</members>
     <members>copado__USER_STORY</members>
+    <members>copado__USER_STORY_ANALYSIS_REQUESTED</members>
     <members>copado__USER_STORY_ASSIGN_RELEASE</members>
+    <members>copado__USER_STORY_CODE_ANALYSIS</members>
     <members>copado__USER_STORY_COMMIT_INTM_DESCRIPTION</members>
     <members>copado__USER_STORY_COMMIT_INTM_TITLE</members>
     <members>copado__USER_STORY_COMMIT_NO_ENVIRONMENT</members>
@@ -2730,6 +2928,7 @@
     <members>copado__USER_STORY_FIELDS</members>
     <members>copado__USER_STORY_IMPORT_DESCRIPTION</members>
     <members>copado__USER_STORY_IMPORT_SELECTION</members>
+    <members>copado__USER_STORY_NOT_FOUND</members>
     <members>copado__USER_STORY_TEST</members>
     <members>copado__USER_TERRITORIES</members>
     <members>copado__USE_CRONMAKER</members>
@@ -2750,6 +2949,10 @@
   <types>
     <members>CustomLabels</members>
     <name>CustomLabels</name>
+  </types>
+  <types>
+    <members>copado__Copado_Setting.Big_Metadata</members>
+    <name>CustomMetadata</name>
   </types>
   <types>
     <members>Account</members>
@@ -2807,6 +3010,7 @@
     <members>copado__Continuous_Integration_Permission__c</members>
     <members>copado__Continuous_Integration__c</members>
     <members>copado__Copado_Notification__c</members>
+    <members>copado__Copado_Setting__mdt</members>
     <members>copado__Deployment_Flow_Step__c</members>
     <members>copado__Deployment_Flow__c</members>
     <members>copado__Deployment_History__c</members>
@@ -2852,6 +3056,9 @@
     <members>copado__Selenium_Test_Suite__c</members>
     <members>copado__Snapshot_Difference__c</members>
     <members>copado__Sprint__c</members>
+    <members>copado__Static_Code_Analysis_Result__c</members>
+    <members>copado__Static_Code_Analysis_Rule__c</members>
+    <members>copado__Static_Code_Analysis_Settings__c</members>
     <members>copado__Step__c</members>
     <members>copado__Test_Run_Step__c</members>
     <members>copado__Test_Run__c</members>
@@ -2861,6 +3068,7 @@
     <members>copado__User_Story_Commit__c</members>
     <members>copado__User_Story_Metadata__c</members>
     <members>copado__User_Story_Selenium_Test__c</members>
+    <members>copado__User_Story_Task__c</members>
     <members>copado__User_Story__c</members>
     <name>CustomObject</name>
   </types>
@@ -2874,6 +3082,8 @@
     <members>copado__Continuous_Integration_Permission__c-en_US</members>
     <members>copado__Continuous_Integration__c-en_US</members>
     <members>copado__Copado_Notification__c-en_US</members>
+    <members>copado__Copado_Setting__mdt-en_US</members>
+    <members>copado__Copado_Setting__mdt-es</members>
     <members>copado__Deployment_Flow_Step__c-en_US</members>
     <members>copado__Deployment_Flow__c-en_US</members>
     <members>copado__Deployment_History__c-en_US</members>
@@ -2921,6 +3131,9 @@
     <members>copado__Selenium_Test_Suite__c-en_US</members>
     <members>copado__Snapshot_Difference__c-en_US</members>
     <members>copado__Sprint__c-en_US</members>
+    <members>copado__Static_Code_Analysis_Result__c-en_US</members>
+    <members>copado__Static_Code_Analysis_Rule__c-en_US</members>
+    <members>copado__Static_Code_Analysis_Settings__c-en_US</members>
     <members>copado__Step__c-en_US</members>
     <members>copado__Step__c-es</members>
     <members>copado__Test_Run_Step__c-en_US</members>
@@ -2931,13 +3144,19 @@
     <members>copado__User_Story_Commit__c-en_US</members>
     <members>copado__User_Story_Metadata__c-en_US</members>
     <members>copado__User_Story_Selenium_Test__c-en_US</members>
+    <members>copado__User_Story_Task__c-en_US</members>
     <members>copado__User_Story__c-en_US</members>
     <name>CustomObjectTranslation</name>
+  </types>
+  <types>
+    <members>copado__Edit_Git_Promotion_Step</members>
+    <name>CustomPermission</name>
   </types>
   <types>
     <members>copado__Account_Summary</members>
     <members>copado__Continuous_Integration__c</members>
     <members>copado__Copado_License_Manager</members>
+    <members>copado__Copado_Notification__c</members>
     <members>copado__Deployment_Flow__c</members>
     <members>copado__Deployment__c</members>
     <members>copado__Environment__c</members>
@@ -2964,6 +3183,7 @@
     <members>copado__Selenium_Test_Suite__c</members>
     <members>copado__Snapshot_Difference__c</members>
     <members>copado__Sprint__c</members>
+    <members>copado__Static_Code_Analysis_Settings__c</members>
     <members>copado__Test_Run__c</members>
     <members>copado__Test_Script__c</members>
     <members>copado__User_Story__c</members>
@@ -3061,14 +3281,17 @@
     <members>copado__External_CI_Job__c.copado__relatedListFields</members>
     <members>copado__Git_Backup__c.copado__Commit_Files_Information</members>
     <members>copado__Git_Backup__c.copado__CustomFields</members>
+    <members>copado__Git_Org_Commit__c.copado__CBM_Fields</members>
     <members>copado__Git_Repository__c.copado__CustomFields</members>
     <members>copado__Kanban_Board__c.copado__Edit</members>
     <members>copado__Promotion__c.copado__CustomFields</members>
     <members>copado__Step__c.copado__ViewDeploymentColumns</members>
     <members>copado__Test_Run__c.copado__InputFields</members>
     <members>copado__Test_Run__c.copado__OutputFields</members>
+    <members>copado__User_Story__c.copado__CBM_Fields</members>
     <members>copado__User_Story__c.copado__Commit_Files_Information</members>
     <members>copado__User_Story__c.copado__PromotionRelatedList</members>
+    <members>copado__User_Story__c.copado__SprintWall_MassUpdate</members>
     <name>FieldSet</name>
   </types>
   <types>
@@ -3142,6 +3365,7 @@
     <members>copado__Continuous_Integration_Permission__c-copado__Continuous Integration Permission Layout</members>
     <members>copado__Continuous_Integration__c-copado__Continuous Integration Layout</members>
     <members>copado__Copado_Notification__c-copado__Copado Notification Layout</members>
+    <members>copado__Copado_Setting__mdt-copado__Copado Setting Layout</members>
     <members>copado__Deployment_Flow_Step__c-copado__Deployment Flow Step Layout</members>
     <members>copado__Deployment_Flow__c-copado__Deployment Flow Layout</members>
     <members>copado__Deployment_History__c-copado__Copado Deployment History Layout</members>
@@ -3192,6 +3416,9 @@
     <members>copado__Selenium_Test_Suite__c-copado__Selenium Test Suite Layout</members>
     <members>copado__Snapshot_Difference__c-copado__Snapshot Difference Layout</members>
     <members>copado__Sprint__c-copado__Sprint Layout</members>
+    <members>copado__Static_Code_Analysis_Result__c-copado__Static Code Analysis Result Layout</members>
+    <members>copado__Static_Code_Analysis_Rule__c-copado__Static Code Analysis Rule Layout</members>
+    <members>copado__Static_Code_Analysis_Settings__c-copado__Static Code Analysis Settings Layout</members>
     <members>copado__Step__c-copado__Step Layout</members>
     <members>copado__Test_Run_Step__c-copado__Test Execution Step Layout</members>
     <members>copado__Test_Run_Step__c-copado__Test Run Step Layout</members>
@@ -3203,6 +3430,7 @@
     <members>copado__User_Story_Commit__c-copado__User Story Commit Layout</members>
     <members>copado__User_Story_Metadata__c-copado__User Story Metadata Layout</members>
     <members>copado__User_Story_Selenium_Test__c-copado__User Story Selenium Test Layout</members>
+    <members>copado__User_Story_Task__c-copado__User Story Task Layout</members>
     <members>copado__User_Story__c-copado__User Story Layout</members>
     <name>Layout</name>
   </types>
@@ -3264,6 +3492,7 @@
     <members>WorkFeedbackTemplate.All</members>
     <members>copado__Continuous_Integration_Permission__c.copado__All</members>
     <members>copado__Continuous_Integration__c.copado__All</members>
+    <members>copado__Copado_Notification__c.copado__All</members>
     <members>copado__Deployment_Flow__c.copado__All</members>
     <members>copado__Deployment__c.copado__All</members>
     <members>copado__Environment__c.copado__All</members>
@@ -3287,6 +3516,7 @@
     <members>copado__Selenium_Test_Suite__c.copado__All</members>
     <members>copado__Snapshot_Difference__c.copado__All</members>
     <members>copado__Sprint__c.copado__All</members>
+    <members>copado__Static_Code_Analysis_Settings__c.copado__All</members>
     <members>copado__Test_Run__c.copado__All</members>
     <members>copado__Test_Script__c.copado__All</members>
     <members>copado__User_Story__c.copado__All</members>
@@ -3357,6 +3587,7 @@
     <members>copado__Snapshot_Differences_View_All</members>
     <members>copado__Sprints_Manage</members>
     <members>copado__Sprints_View</members>
+    <members>copado__Static_Code_Analysis</members>
     <members>copado__Test_Runs_Edit</members>
     <members>copado__Test_Runs_Modify_All</members>
     <members>copado__Test_Runs_Read_Only</members>
@@ -3442,6 +3673,9 @@
     <members>Metric.Progress</members>
     <members>copado__Selenium_Test_Run__c.copado__Generic_Web_Application</members>
     <members>copado__Selenium_Test_Run__c.copado__Salesforce</members>
+    <members>copado__User_Story__c.copado__Bug</members>
+    <members>copado__User_Story__c.copado__Investigation</members>
+    <members>copado__User_Story__c.copado__User_Story</members>
     <name>RecordType</name>
   </types>
   <types>
@@ -3582,6 +3816,8 @@
     <members>copado__Selenium_Test_Suite__c</members>
     <members>copado__Snapshot_Difference__c</members>
     <members>copado__Sprint__c</members>
+    <members>copado__Static_Code_Analysis_Result__c</members>
+    <members>copado__Static_Code_Analysis_Settings__c</members>
     <members>copado__Test_Script__c</members>
     <members>copado__User_Persona_Assignment__c</members>
     <members>copado__User_Story__c</members>
@@ -3626,8 +3862,12 @@
     <members>copado__CopadoChangeManagement</members>
     <members>copado__CopadoKanban</members>
     <members>copado__CreateTestScriptSteps</members>
+    <members>copado__CustomSettingComponent</members>
+    <members>copado__DataComponent</members>
     <members>copado__DataTables</members>
+    <members>copado__DataTables10</members>
     <members>copado__JsRemoting</members>
+    <members>copado__MetadataComponent</members>
     <members>copado__SLDS</members>
     <members>copado__SeleniumStatics</members>
     <members>copado__Statics</members>
@@ -3649,6 +3889,7 @@
     <members>copado__jqw430</members>
     <members>copado__jqx</members>
     <members>copado__localStreamingService</members>
+    <members>copado__metadataGrid2</members>
     <members>copado__metadataReplace</members>
     <members>copado__metadataselector</members>
     <members>copado__orgMetadata</members>
@@ -3664,6 +3905,8 @@
     <name>StaticResource</name>
   </types>
   <types>
+    <members>copado__Environmental_Variable__c.copado__Value_is_required</members>
+    <members>copado__Git_Org_Commit__c.copado__Commit_Id_Status_Complete</members>
     <members>copado__OrgDiff__c.copado__Should_be_differents</members>
     <members>copado__Selenium_Group_Org_Credential__c.copado__Environment_Match</members>
     <members>copado__Selenium_Test_Group__c.copado__Environment_Required</members>
@@ -3701,6 +3944,7 @@
     <members>copado__Selenium_Test_Suite__c.copado__Add_Remove_Test_Cases</members>
     <members>copado__Selenium_Test_Suite__c.copado__Add_Selection_to_a_Test_Group</members>
     <members>copado__Selenium_Test_Suite__c.copado__Quick_Run</members>
+    <members>copado__Static_Code_Analysis_Settings__c.copado__Generate_Default_RuleSet</members>
     <members>copado__Test_Run__c.copado__Execute_Test_Run</members>
     <members>copado__Test_Script__c.copado__Add_Test_Script_Steps</members>
     <members>copado__User_Story__c.copado__Add_Apex_Tests</members>
@@ -3712,6 +3956,8 @@
     <members>copado__User_Story__c.copado__Manage_Selenium_Tests</members>
     <members>copado__User_Story__c.copado__Mass_Add_User_Stories</members>
     <members>copado__User_Story__c.copado__Mass_Add_User_Stories_Sprint</members>
+    <members>copado__User_Story__c.copado__Run_Static_Code_Analysis</members>
+    <members>copado__User_Story__c.copado__Static_Code_Analysis_Summary</members>
     <name>WebLink</name>
   </types>
   <types>
@@ -3758,6 +4004,7 @@
     <members>copado__Continuous_Integration_Permission__c</members>
     <members>copado__Continuous_Integration__c</members>
     <members>copado__Copado_Notification__c</members>
+    <members>copado__Copado_Setting__mdt</members>
     <members>copado__Deployment_Flow_Step__c</members>
     <members>copado__Deployment_Flow__c</members>
     <members>copado__Deployment_History__c</members>
@@ -3803,6 +4050,9 @@
     <members>copado__Selenium_Test_Suite__c</members>
     <members>copado__Snapshot_Difference__c</members>
     <members>copado__Sprint__c</members>
+    <members>copado__Static_Code_Analysis_Result__c</members>
+    <members>copado__Static_Code_Analysis_Rule__c</members>
+    <members>copado__Static_Code_Analysis_Settings__c</members>
     <members>copado__Step__c</members>
     <members>copado__Test_Run_Step__c</members>
     <members>copado__Test_Run__c</members>
@@ -3812,6 +4062,7 @@
     <members>copado__User_Story_Commit__c</members>
     <members>copado__User_Story_Metadata__c</members>
     <members>copado__User_Story_Selenium_Test__c</members>
+    <members>copado__User_Story_Task__c</members>
     <members>copado__User_Story__c</members>
     <name>Workflow</name>
   </types>

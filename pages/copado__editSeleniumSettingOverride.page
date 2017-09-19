@@ -15,6 +15,7 @@
         <script type="text/javascript">
             var $copado = jQuery.noConflict(); 
             var __sfdcSessionId = '{!GETSESSIONID()}';
+            var Copado_Licenses = {!CurrentUserLicenses};
         </script>
         <script src="/soap/ajax/36.0/connection.js"></script>
     </head>

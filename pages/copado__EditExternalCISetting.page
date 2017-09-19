@@ -1,17 +1,16 @@
 <apex:page showHeader="true" sidebar="true" standardController="copado__External_CI_Setting__c" extensions="copado.EditExternalCISetting" title="{!$Label.site.edit} {!$ObjectType.copado__External_CI_Setting__c.Label}">
-	
+<apex:pageMessages id="theMessages"/>	
 	<html>
 		<head>
 		<apex:slds />
 		<c:GAnalytics />
 		</head>
 		<body  class="slds-scope">
-			<apex:form id="form">
+			<apex:form id="form" rendered="{!AND(showOptions,!showError)}">
 				<!--<apex:sectionHeader title="{!$ObjectType.External_CI_Setting__c.Label} {!$Label.EDIT}" subtitle="{!IF(ISBLANK(externalCISetting.Name),'New '+ $ObjectType.External_CI_Setting__c.Label ,externalCISetting.Name)}" description="{!$Label.EXTERNAL_CI_SETTING_DESC}"/>
 				<apex:pageMessages id="theMessages"/>-->
 
 				<div class="slds-page-header">
-					<apex:pageMessages id="theMessages"/>
 					<div class="slds-grid">
 						<div class="slds-col slds-has-flexi-truncate">
 							<div class="slds-media">

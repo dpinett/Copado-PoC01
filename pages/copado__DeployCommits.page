@@ -10,6 +10,7 @@
     <script type="text/javascript"> 
         var $copado = jQuery.noConflict(); 
     	var __sfdcSessionId = '{!GETSESSIONID()}';
+        var Copado_Licenses = {!CurrentUserLicenses};
     </script>
     <c:WizardUtils />
     <script id="connectionJS" src="/soap/ajax/34.0/connection.js" />
@@ -21,8 +22,8 @@
                 branch: '{!JSENCODE(branch)}',
                 fromCommitId: '{!JSENCODE(startCommit)}',
                 toCommitId: '{!JSENCODE(endCommit)}',
-                runAllTests: '{!JSENCODE(IF(step.Run_all_tests__c,'true','false'))}',
-                checkOnly: '{!JSENCODE(IF(step.CheckOnly__c,'true','false'))}',
+                runAllTests: ('{!JSENCODE(IF(step.Run_all_tests__c,'true','false'))}' == 'true'),
+                checkOnly: ('{!JSENCODE(IF(step.CheckOnly__c,'true','false'))}' == 'true'),
                 deploymentName: '{!JSENCODE(deployment.Name)}'
             },
             server: {

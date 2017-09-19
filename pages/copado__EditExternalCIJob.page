@@ -1,4 +1,6 @@
 <apex:page docType="html-5.0" standardController="copado__External_CI_Job__c" applyHtmlTag="true" showHeader="true" sidebar="true" standardStylesheets="true" extensions="copado.ExternalCIJobsExtension" title="{!$Label.site.edit} {!$ObjectType.copado__External_CI_Job__c.Label}">
+<apex:pageMessages id="theMessages"/>
+<apex:outputPanel layout="block" rendered="{!AND(showOptions,!showError)}">
 	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
 	    <head>
 	      <c:GAnalytics />
@@ -491,4 +493,5 @@
             </apex:actionStatus>
 		</body>
 	</html>
+</apex:outputPanel>	
 </apex:page>

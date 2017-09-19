@@ -21,7 +21,7 @@
     
 	<apex:form id="theForm">
         <apex:pageMessages id="theMessages"/>
-    	<apex:pageBlock id="pb_main" mode="edit">
+    	<apex:pageBlock id="pb_main" mode="edit" rendered="{!AND(showOptions,!showError)}">
         <apex:pageBlockButtons id="pbb_main">
             <apex:commandButton action="{!save_job}" value="{!$Label.copado__save}" id="btnSave"/>
             <apex:commandButton action="{!cancel}" value="{!$Label.copado__cancel}" id="btnCancel" immediate="true"/>
