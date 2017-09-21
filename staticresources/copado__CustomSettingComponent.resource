@@ -8,23 +8,23 @@ customSetting.ui = customSetting.ui || {};
 
 
 customSetting.data = {
-	objSelected: 0,
-	completeObjSelected: 0,
-	step: false,
-	values: []
+    objSelected: 0,
+    completeObjSelected: 0,
+    step: false,
+    values: []
 };
 
 initCS = function(task){
     console.debug("initCS()");
 
-	customSetting.data.step = task;
-	customSetting.ops.getObjects(task, customSetting.ops.getObjectsCB);
+    customSetting.data.step = task;
+    customSetting.ops.getObjects(task, customSetting.ops.getObjectsCB);
 
     customSetting.ui.getCSValues = $copado('#getCSValues');
     customSetting.ui.toogleAll = $copado('#cs-toggle-all');
     customSetting.ui.refreshCache = $copado('#refresh-cache-cs');
 
-	if (customSetting.started) {
+    if (customSetting.started) {
         customSetting.ops.reset();
     } else {
         customSetting.started = true;
@@ -33,15 +33,16 @@ initCS = function(task){
     customSetting.ui.getCSValues.off('click');
     customSetting.ui.refreshCache.off('click');
 
-    customSetting.ui.toogleAll.on('click', customSetting.ops.toggleAll);
+    customSetting.ui.toogleAll.on('click', customSetting.ops.toggleAll);    
     customSetting.ui.getCSValues.on('click', customSetting.ops.getCSValues);
     customSetting.ui.refreshCache.on('click', customSetting.ops.refreshCache);
+    
 };
 
 customSetting.ops.reset = function(){
-	$copado('#cs-values').html('');
-	customSetting.data.objSelected = false;
-	customSetting.data.completeObjSelected = false;
+    $copado('#cs-values').html('');
+    customSetting.data.objSelected = false;
+    customSetting.data.completeObjSelected = false;
 };
 
 customSetting.ops.refreshCache = function() {
@@ -92,7 +93,10 @@ customSetting.ops.createObjectSelector = function(selector, data, cb) {
         height: '25px',
         selectedIndex: 0
     });
-
+    if(data.length == 1){
+        customSetting.ops.onSelectObject(data[0].N,customSetting.ops.prepareSource(data));
+        console.log('what is this item',customSetting.ops.prepareSource(data));
+    }
     $objects.bind('select', function(event) {
         var args = event.args;
         if (args && !isNaN(args.index)) {
@@ -110,11 +114,13 @@ customSetting.ops.createObjectSelector = function(selector, data, cb) {
 };
 
 customSetting.ops.toggleAll = function() {
-    var prev = customSetting.ui.toogleAll.attr('data-all');
-    customSetting.ui.toogleAll.attr('data-all', !prev).html(prev ? 'Unselect all' : 'Select all');
-    var options = $copado('#cs-values').find('option');
-    options.attr('selected', !prev ? 'selected' : false);
-
+    var prev = $copado(this).attr('data-all');    
+    console.log('prev',prev=="true",$copado(this));
+    $copado(this).attr('data-all',prev!="true").val(prev == "true" ? 'Unselect all' : 'Select all');
+    console.log('asagsagag',$copado('#cs-toggle-all').attr('data-all'));
+    var options = $copado('#cs-values').find('option');    
+    var selectVal = prev=="true" ? true : false;
+    options.prop('selected', selectVal);        
     return false;
 };
 
@@ -146,7 +152,7 @@ customSetting.ops.getObjects = function(step, cb, force) {
     });
 };
 customSetting.ops.getRemoteCSValues = function() {
-	lock();
+    lock();
     dw.u.getRemote(datasetup.config.custom_settings_url.replace('{sobject}', customSetting.data.objSelected), function(res) {
         customSetting.data.values = res.sort(function(a, b) {
             if (a.Name < b.Name)
@@ -183,7 +189,7 @@ customSetting.ops.prepareGrid = function() {
 };
 
 customSetting.ops.enabledBtn = function(sel, label) {
-	customSetting.ops.setBtn(true, sel, label);
+    customSetting.ops.setBtn(true, sel, label);
 };
 
 customSetting.ops.setBtn = function(action, sel, label) {
@@ -206,8 +212,8 @@ customSetting.ops.setBtn = function(action, sel, label) {
 
 customSetting.ops.getCSValues = function() {
     if (!customSetting.data.objSelected) {
-    	console.log('no selected');
-    	customSetting.ui.getCSValues.attr('disabled','disabled');
+        console.log('no selected');
+        customSetting.ui.getCSValues.attr('disabled','disabled');
         return false;
     }
 
