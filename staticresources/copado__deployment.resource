@@ -648,8 +648,6 @@ var copadoApp = {
         //
         var hasChanged = step.Name != newStep.name || step[copadoApp.ns + 'Type__c'] != newStep.type || step[copadoApp.ns + 'CheckOnly__c'] != newStep.check;
 
-
-
         if (hasChanged) {
             //updating local data by reference 
             step.Name = newStep.name;
@@ -856,7 +854,7 @@ var copadoApp = {
 
         $row.find('input.js-step-name').val(step.Name);
         $row.find('span.js-step-name').html(step.Name);
-        $row.find('input.js-step-check').attr('checked', step[copadoApp.ns + 'CheckOnly__c']);
+        $row.find('input.js-step-check').prop('checked', step[copadoApp.ns + 'CheckOnly__c']);
         $row.find('.js-step-type').val(step[copadoApp.ns + 'Type__c']);
 
         $row.find('.js-action-selectStep')
@@ -991,7 +989,7 @@ var copadoApp = {
         $new.find('input.js-step-name').val(step.Name);
         $new.find('span.js-step-name').html(step.Name);
         $new.find('.js-step-type').val(step[copadoApp.ns + 'Type__c']);
-        $new.find('.js-step-check').attr('checked', step[copadoApp.ns + 'CheckOnly__c']).hide();
+        $new.find('.js-step-check').prop('checked', step[copadoApp.ns + 'CheckOnly__c']).hide();
         $new.find('.js-col-actions').attr('data-stepid', step.Id);
         $new.find('.js-step-type').attr('data-stepid', step.Id);
 
@@ -2124,7 +2122,6 @@ var copadoStep = {
     upsertSObjectStep: function(s, cb) {
 
         var step = new sforce.SObject(copadoApp.ns + "Step__c");
-
         step.Name = s.name;
         //step[copadoApp.ns+'Order__c'] = s.order;//$copado(rock.el(rock.stepUI.order)).val();
         step[copadoApp.ns + 'Type__c'] = s.type
@@ -3464,7 +3461,6 @@ rock.upsertStep = function(cb) {
     //step[copadoApp.ns+'Type__c'] = copadoStep.stepType
     //step[copadoApp.ns+'Deployment__c'] = rock..deploymentId;
     //step[copadoApp.ns+'CheckOnly__c'] = //$copado(rock.el(rock.stepUI.checkOnly)).is(':checked') ? true : false;
-
     console.log('TODO checkonly & order');
 
     step.Id = rock.stepId;
