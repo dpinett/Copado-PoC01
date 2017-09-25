@@ -4,7 +4,8 @@
     <customButtons>copado__Add_Metadata</customButtons>
     <customButtons>copado__Add_Commits</customButtons>
     <customButtons>copado__Commit_Files</customButtons>
-    <excludeButtons>Submit</excludeButtons>
+    <customButtons>copado__Run_Static_Code_Analysis</customButtons>
+    <customButtons>copado__Static_Code_Analysis_Summary</customButtons>
     <layoutSections>
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
@@ -67,7 +68,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>copado__Stop_Indexing_Metadata__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>copado__Status__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>copado__Exclude_From_CBM__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -377,6 +386,14 @@
         <relatedList>copado__Test_Run__c.copado__User_Story__c</relatedList>
     </relatedLists>
     <relatedLists>
+        <fields>OBJECT_ID</fields>
+        <fields>NAME</fields>
+        <fields>copado__Rules_Violated__c</fields>
+        <fields>CREATED_DATE</fields>
+        <fields>copado__Score__c</fields>
+        <relatedList>copado__Static_Code_Analysis_Result__c.copado__User_Story__c</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>NAME</fields>
         <fields>copado__Promotion__c.NAME</fields>
         <fields>copado__Promotion__c.copado__Status__c</fields>
@@ -473,7 +490,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0Y000000kohW</masterLabel>
+        <masterLabel>00h0Y000003tq2R</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>
