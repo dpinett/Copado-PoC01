@@ -3845,6 +3845,7 @@
     <members>Industry</members>
     <members>LeadSource</members>
     <members>LeadStatus</members>
+    <members>OpportunityCompetitor</members>
     <members>OpportunityStage</members>
     <members>OpportunityType</members>
     <members>OrderStatus</members>
