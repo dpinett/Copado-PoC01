@@ -273,7 +273,7 @@
                         localization: localizationobj,
                         columns: [
                             {text:copadoLabels.selected, columntype:'checkbox', filtertype:'bool', datafield:'s', width:60},
-                            {text:'{!$ObjectType.Step__c.Fields.Status__c.Label}', filtertype:'checkedlist', datafield:'d', width:120, cellsrenderer:cellsrenderer},
+                            {text:'{!$ObjectType.Step__c.Fields.Status__c.Label}', filtertype:'checkedlist', datafield:'d', width:120, editable: false, cellsrenderer:cellsrenderer},
                             {text:copadoLabels.name, filtertype:'textbox', filtercondition:'contains', editable:false, datafield:'f', cellsrenderer:cellsrendererView}
                         ]
                     });
@@ -388,9 +388,11 @@
                     var att = dw.u.getAttach(parentId,attachName);
                     
                     if(!att.length)return '';
-                    console.log('prepare ZIP file: ' + attachName);
+                    console.log('prepare ZIP file: ' + attachName,fileName);
                     var zip = new JSZip(att[0].Body,{base64:true});
-                    console.log('reading zipped file body: ' + fileName + '@' + attachName);
+                    //console.log('zip...',zip,zip.file('aura/'fileName)); //delete this log
+                    //console.log('reading zipped file body: ' + fileName + '@' + attachName);
+                    if(fileName.endsWith('/')) fileName = fileName+'PathTest.cmp'
                     return zip.file(fileName).asText()
                 },
         
