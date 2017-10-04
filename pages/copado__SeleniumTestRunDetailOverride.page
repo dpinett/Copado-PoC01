@@ -43,8 +43,10 @@
             $copado('div.selenese table td:nth-of-type(2):contains("echo")').parent().find('td').css('color', '#999');
             var link = $copado('div.selenese > h2 a');
             if(link&&link.length) {
-                var id = link.attr('href').replace('/','');
-                link.parent().append('&nbsp; <span style="font-size: 8pt;"><a href="copado:selenese/'+id+'">(open in recorder)</a></span>')
+                link.each(function() {
+                    var id = $copado(this).attr('href').replace('/','');
+                    $copado(this).parent().append('&nbsp; <span style="font-size: 8pt;"><a href="copado:selenese/'+id+'">(open in recorder)</a></span>')
+                })
             }
 
         });
