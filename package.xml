@@ -1800,6 +1800,14 @@
     <members>UserProvisioningRequest.SystemModstamp</members>
     <members>UserProvisioningRequest.UserProvAccountId</members>
     <members>UserProvisioningRequest.UserProvConfigId</members>
+    <members>copado__Apex_Test_Result__c.CreatedById</members>
+    <members>copado__Apex_Test_Result__c.CreatedDate</members>
+    <members>copado__Apex_Test_Result__c.Id</members>
+    <members>copado__Apex_Test_Result__c.IsDeleted</members>
+    <members>copado__Apex_Test_Result__c.LastModifiedById</members>
+    <members>copado__Apex_Test_Result__c.LastModifiedDate</members>
+    <members>copado__Apex_Test_Result__c.Name</members>
+    <members>copado__Apex_Test_Result__c.SystemModstamp</members>
     <members>copado__Apex_Test_Result__c.copado__Details__c</members>
     <members>copado__Apex_Test_Result__c.copado__Failures__c</members>
     <members>copado__Apex_Test_Result__c.copado__Org__c</members>
@@ -1807,6 +1815,15 @@
     <members>copado__Apex_Test_Result__c.copado__Successes__c</members>
     <members>copado__Apex_Test_Result__c.copado__Tests_run__c</members>
     <members>copado__Apex_Test_Result__c.copado__Total_time__c</members>
+    <members>copado__AuxiliaryObject__c.CreatedById</members>
+    <members>copado__AuxiliaryObject__c.CreatedDate</members>
+    <members>copado__AuxiliaryObject__c.Id</members>
+    <members>copado__AuxiliaryObject__c.IsDeleted</members>
+    <members>copado__AuxiliaryObject__c.LastModifiedById</members>
+    <members>copado__AuxiliaryObject__c.LastModifiedDate</members>
+    <members>copado__AuxiliaryObject__c.Name</members>
+    <members>copado__AuxiliaryObject__c.OwnerId</members>
+    <members>copado__AuxiliaryObject__c.SystemModstamp</members>
     <members>copado__AuxiliaryObject__c.copado__Continuous_Integration__c</members>
     <members>copado__AuxiliaryObject__c.copado__Deployment_Flow__c</members>
     <members>copado__AuxiliaryObject__c.copado__Deployment__c</members>
@@ -1818,9 +1835,25 @@
     <members>copado__AuxiliaryObject__c.copado__Selenium_Test_Group__c</members>
     <members>copado__AuxiliaryObject__c.copado__Selenium_Test_Run__c</members>
     <members>copado__AuxiliaryObject__c.copado__Snapshot_Difference__c</members>
+    <members>copado__Branch_Management_Permission__c.CreatedById</members>
+    <members>copado__Branch_Management_Permission__c.CreatedDate</members>
+    <members>copado__Branch_Management_Permission__c.Id</members>
+    <members>copado__Branch_Management_Permission__c.IsDeleted</members>
+    <members>copado__Branch_Management_Permission__c.LastModifiedById</members>
+    <members>copado__Branch_Management_Permission__c.LastModifiedDate</members>
+    <members>copado__Branch_Management_Permission__c.Name</members>
+    <members>copado__Branch_Management_Permission__c.SystemModstamp</members>
     <members>copado__Branch_Management_Permission__c.copado__Allow_Deployments__c</members>
     <members>copado__Branch_Management_Permission__c.copado__Environment__c</members>
     <members>copado__Branch_Management_Permission__c.copado__User__c</members>
+    <members>copado__Build_Task__c.CreatedById</members>
+    <members>copado__Build_Task__c.CreatedDate</members>
+    <members>copado__Build_Task__c.Id</members>
+    <members>copado__Build_Task__c.IsDeleted</members>
+    <members>copado__Build_Task__c.LastModifiedById</members>
+    <members>copado__Build_Task__c.LastModifiedDate</members>
+    <members>copado__Build_Task__c.Name</members>
+    <members>copado__Build_Task__c.SystemModstamp</members>
     <members>copado__Build_Task__c.copado__Continuous_Integration__c</members>
     <members>copado__Build_Task__c.copado__Deployment__c</members>
     <members>copado__Build_Task__c.copado__Duration__c</members>
@@ -1828,11 +1861,30 @@
     <members>copado__Build_Task__c.copado__Status__c</members>
     <members>copado__Build_Task__c.copado__Type__c</members>
     <members>copado__Change_Management_Settings__c.copado__Minimum_Apex_Test_Coverage__c</members>
+    <members>copado__Continuous_Integration_Permission__c.CreatedById</members>
+    <members>copado__Continuous_Integration_Permission__c.CreatedDate</members>
+    <members>copado__Continuous_Integration_Permission__c.Id</members>
+    <members>copado__Continuous_Integration_Permission__c.IsDeleted</members>
+    <members>copado__Continuous_Integration_Permission__c.LastModifiedById</members>
+    <members>copado__Continuous_Integration_Permission__c.LastModifiedDate</members>
+    <members>copado__Continuous_Integration_Permission__c.Name</members>
+    <members>copado__Continuous_Integration_Permission__c.SystemModstamp</members>
     <members>copado__Continuous_Integration_Permission__c.copado__Access__c</members>
     <members>copado__Continuous_Integration_Permission__c.copado__Continuous_Integration__c</members>
     <members>copado__Continuous_Integration_Permission__c.copado__Email_Notification__c</members>
     <members>copado__Continuous_Integration_Permission__c.copado__Email_Template_Name__c</members>
     <members>copado__Continuous_Integration_Permission__c.copado__User__c</members>
+    <members>copado__Continuous_Integration__c.CreatedById</members>
+    <members>copado__Continuous_Integration__c.CreatedDate</members>
+    <members>copado__Continuous_Integration__c.Id</members>
+    <members>copado__Continuous_Integration__c.IsDeleted</members>
+    <members>copado__Continuous_Integration__c.LastModifiedById</members>
+    <members>copado__Continuous_Integration__c.LastModifiedDate</members>
+    <members>copado__Continuous_Integration__c.LastReferencedDate</members>
+    <members>copado__Continuous_Integration__c.LastViewedDate</members>
+    <members>copado__Continuous_Integration__c.Name</members>
+    <members>copado__Continuous_Integration__c.OwnerId</members>
+    <members>copado__Continuous_Integration__c.SystemModstamp</members>
     <members>copado__Continuous_Integration__c.copado__Active__c</members>
     <members>copado__Continuous_Integration__c.copado__Branch__c</members>
     <members>copado__Continuous_Integration__c.copado__Check_Only__c</members>
@@ -1850,6 +1902,17 @@
     <members>copado__Copado_License__c.copado__Enable_CCM__c</members>
     <members>copado__Copado_License__c.copado__Enable_CST__c</members>
     <members>copado__Copado_License__c.copado__Enable_Copado__c</members>
+    <members>copado__Copado_Notification__c.CreatedById</members>
+    <members>copado__Copado_Notification__c.CreatedDate</members>
+    <members>copado__Copado_Notification__c.Id</members>
+    <members>copado__Copado_Notification__c.IsDeleted</members>
+    <members>copado__Copado_Notification__c.LastModifiedById</members>
+    <members>copado__Copado_Notification__c.LastModifiedDate</members>
+    <members>copado__Copado_Notification__c.LastReferencedDate</members>
+    <members>copado__Copado_Notification__c.LastViewedDate</members>
+    <members>copado__Copado_Notification__c.Name</members>
+    <members>copado__Copado_Notification__c.OwnerId</members>
+    <members>copado__Copado_Notification__c.SystemModstamp</members>
     <members>copado__Copado_Notification__c.copado__AttachmentId__c</members>
     <members>copado__Copado_Notification__c.copado__Matching_Key__c</members>
     <members>copado__Copado_Notification__c.copado__Message__c</members>
@@ -1860,6 +1923,14 @@
     <members>copado__Copado_Notification__c.copado__isSuccess__c</members>
     <members>copado__Copado_Notification__c.copado__status__c</members>
     <members>copado__Copado_Setting__mdt.copado__Enabled__c</members>
+    <members>copado__Deployment_Flow_Step__c.CreatedById</members>
+    <members>copado__Deployment_Flow_Step__c.CreatedDate</members>
+    <members>copado__Deployment_Flow_Step__c.Id</members>
+    <members>copado__Deployment_Flow_Step__c.IsDeleted</members>
+    <members>copado__Deployment_Flow_Step__c.LastModifiedById</members>
+    <members>copado__Deployment_Flow_Step__c.LastModifiedDate</members>
+    <members>copado__Deployment_Flow_Step__c.Name</members>
+    <members>copado__Deployment_Flow_Step__c.SystemModstamp</members>
     <members>copado__Deployment_Flow_Step__c.copado__Automatically_Merge_and_Deploy__c</members>
     <members>copado__Deployment_Flow_Step__c.copado__Branch__c</members>
     <members>copado__Deployment_Flow_Step__c.copado__Commits_Ahead__c</members>
@@ -1876,6 +1947,17 @@
     <members>copado__Deployment_Flow_Step__c.copado__Sync_Merge_State__c</members>
     <members>copado__Deployment_Flow_Step__c.copado__Sync_Pull_State__c</members>
     <members>copado__Deployment_Flow_Step__c.copado__Test_Level__c</members>
+    <members>copado__Deployment_Flow__c.CreatedById</members>
+    <members>copado__Deployment_Flow__c.CreatedDate</members>
+    <members>copado__Deployment_Flow__c.Id</members>
+    <members>copado__Deployment_Flow__c.IsDeleted</members>
+    <members>copado__Deployment_Flow__c.LastModifiedById</members>
+    <members>copado__Deployment_Flow__c.LastModifiedDate</members>
+    <members>copado__Deployment_Flow__c.LastReferencedDate</members>
+    <members>copado__Deployment_Flow__c.LastViewedDate</members>
+    <members>copado__Deployment_Flow__c.Name</members>
+    <members>copado__Deployment_Flow__c.OwnerId</members>
+    <members>copado__Deployment_Flow__c.SystemModstamp</members>
     <members>copado__Deployment_Flow__c.copado__Active__c</members>
     <members>copado__Deployment_Flow__c.copado__Branch_Management_Coordinates__c</members>
     <members>copado__Deployment_Flow__c.copado__Disable_Validations__c</members>
@@ -1885,6 +1967,16 @@
     <members>copado__Deployment_Flow__c.copado__Main_Branch__c</members>
     <members>copado__Deployment_Flow__c.copado__Manage_Branches__c</members>
     <members>copado__Deployment_Flow__c.copado__Static_Code_Analysis_Settings__c</members>
+    <members>copado__Deployment_History__c.CreatedById</members>
+    <members>copado__Deployment_History__c.CreatedDate</members>
+    <members>copado__Deployment_History__c.Id</members>
+    <members>copado__Deployment_History__c.IsDeleted</members>
+    <members>copado__Deployment_History__c.LastActivityDate</members>
+    <members>copado__Deployment_History__c.LastModifiedById</members>
+    <members>copado__Deployment_History__c.LastModifiedDate</members>
+    <members>copado__Deployment_History__c.Name</members>
+    <members>copado__Deployment_History__c.OwnerId</members>
+    <members>copado__Deployment_History__c.SystemModstamp</members>
     <members>copado__Deployment_History__c.copado__Date__c</members>
     <members>copado__Deployment_History__c.copado__Deployment_Id__c</members>
     <members>copado__Deployment_History__c.copado__Deployment__c</members>
@@ -1894,6 +1986,15 @@
     <members>copado__Deployment_History__c.copado__Object__c</members>
     <members>copado__Deployment_History__c.copado__Old_Value__c</members>
     <members>copado__Deployment_History__c.copado__User__c</members>
+    <members>copado__Deployment_Job__c.CreatedById</members>
+    <members>copado__Deployment_Job__c.CreatedDate</members>
+    <members>copado__Deployment_Job__c.Id</members>
+    <members>copado__Deployment_Job__c.IsDeleted</members>
+    <members>copado__Deployment_Job__c.LastActivityDate</members>
+    <members>copado__Deployment_Job__c.LastModifiedById</members>
+    <members>copado__Deployment_Job__c.LastModifiedDate</members>
+    <members>copado__Deployment_Job__c.Name</members>
+    <members>copado__Deployment_Job__c.SystemModstamp</members>
     <members>copado__Deployment_Job__c.copado__Async_Job_ID__c</members>
     <members>copado__Deployment_Job__c.copado__Deployed__c</members>
     <members>copado__Deployment_Job__c.copado__Destination_Org__c</members>
@@ -1904,6 +2005,14 @@
     <members>copado__Deployment_Job__c.copado__Step__c</members>
     <members>copado__Deployment_Job__c.copado__To_Org_Name__c</members>
     <members>copado__Deployment_Job__c.copado__Validation_ID__c</members>
+    <members>copado__Deployment_Task__c.CreatedById</members>
+    <members>copado__Deployment_Task__c.CreatedDate</members>
+    <members>copado__Deployment_Task__c.Id</members>
+    <members>copado__Deployment_Task__c.IsDeleted</members>
+    <members>copado__Deployment_Task__c.LastModifiedById</members>
+    <members>copado__Deployment_Task__c.LastModifiedDate</members>
+    <members>copado__Deployment_Task__c.Name</members>
+    <members>copado__Deployment_Task__c.SystemModstamp</members>
     <members>copado__Deployment_Task__c.copado__Order__c</members>
     <members>copado__Deployment_Task__c.copado__Perform_Manual_Task__c</members>
     <members>copado__Deployment_Task__c.copado__Perform_in_Destination_Orgs__c</members>
@@ -1913,6 +2022,18 @@
     <members>copado__Deployment_Task__c.copado__Type__c</members>
     <members>copado__Deployment_Task__c.copado__User_Story__c</members>
     <members>copado__Deployment_Task__c.copado__dataJSON__c</members>
+    <members>copado__Deployment__c.CreatedById</members>
+    <members>copado__Deployment__c.CreatedDate</members>
+    <members>copado__Deployment__c.Id</members>
+    <members>copado__Deployment__c.IsDeleted</members>
+    <members>copado__Deployment__c.LastActivityDate</members>
+    <members>copado__Deployment__c.LastModifiedById</members>
+    <members>copado__Deployment__c.LastModifiedDate</members>
+    <members>copado__Deployment__c.LastReferencedDate</members>
+    <members>copado__Deployment__c.LastViewedDate</members>
+    <members>copado__Deployment__c.Name</members>
+    <members>copado__Deployment__c.OwnerId</members>
+    <members>copado__Deployment__c.SystemModstamp</members>
     <members>copado__Deployment__c.copado__Build_Task__c</members>
     <members>copado__Deployment__c.copado__Completed__c</members>
     <members>copado__Deployment__c.copado__Count_Completed__c</members>
@@ -1929,6 +2050,17 @@
     <members>copado__Deployment__c.copado__Send_Deployment_Complete_email__c</members>
     <members>copado__Deployment__c.copado__Server_URL__c</members>
     <members>copado__Deployment__c.copado__Status__c</members>
+    <members>copado__Destination_Org__c.CreatedById</members>
+    <members>copado__Destination_Org__c.CreatedDate</members>
+    <members>copado__Destination_Org__c.Id</members>
+    <members>copado__Destination_Org__c.IsDeleted</members>
+    <members>copado__Destination_Org__c.LastActivityDate</members>
+    <members>copado__Destination_Org__c.LastModifiedById</members>
+    <members>copado__Destination_Org__c.LastModifiedDate</members>
+    <members>copado__Destination_Org__c.LastReferencedDate</members>
+    <members>copado__Destination_Org__c.LastViewedDate</members>
+    <members>copado__Destination_Org__c.Name</members>
+    <members>copado__Destination_Org__c.SystemModstamp</members>
     <members>copado__Destination_Org__c.copado__Completed__c</members>
     <members>copado__Destination_Org__c.copado__Count_Completed__c</members>
     <members>copado__Destination_Org__c.copado__Deployed__c</members>
@@ -1939,6 +2071,17 @@
     <members>copado__Destination_Org__c.copado__Step_Count__c</members>
     <members>copado__Destination_Org__c.copado__To_Org_Name__c</members>
     <members>copado__Destination_Org__c.copado__To_Org__c</members>
+    <members>copado__Environment__c.CreatedById</members>
+    <members>copado__Environment__c.CreatedDate</members>
+    <members>copado__Environment__c.Id</members>
+    <members>copado__Environment__c.IsDeleted</members>
+    <members>copado__Environment__c.LastModifiedById</members>
+    <members>copado__Environment__c.LastModifiedDate</members>
+    <members>copado__Environment__c.LastReferencedDate</members>
+    <members>copado__Environment__c.LastViewedDate</members>
+    <members>copado__Environment__c.Name</members>
+    <members>copado__Environment__c.OwnerId</members>
+    <members>copado__Environment__c.SystemModstamp</members>
     <members>copado__Environment__c.copado__Current_Code_Coverage__c</members>
     <members>copado__Environment__c.copado__Current_SCA_Score__c</members>
     <members>copado__Environment__c.copado__Maximum_SCA_Score__c</members>
@@ -1947,11 +2090,39 @@
     <members>copado__Environment__c.copado__Org_ID__c</members>
     <members>copado__Environment__c.copado__Run_all_tests__c</members>
     <members>copado__Environment__c.copado__Type__c</members>
+    <members>copado__Environmental_Variable__c.CreatedById</members>
+    <members>copado__Environmental_Variable__c.CreatedDate</members>
+    <members>copado__Environmental_Variable__c.Id</members>
+    <members>copado__Environmental_Variable__c.IsDeleted</members>
+    <members>copado__Environmental_Variable__c.LastModifiedById</members>
+    <members>copado__Environmental_Variable__c.LastModifiedDate</members>
+    <members>copado__Environmental_Variable__c.Name</members>
+    <members>copado__Environmental_Variable__c.SystemModstamp</members>
     <members>copado__Environmental_Variable__c.copado__Environment__c</members>
     <members>copado__Environmental_Variable__c.copado__Value__c</members>
+    <members>copado__Epic__c.CreatedById</members>
+    <members>copado__Epic__c.CreatedDate</members>
+    <members>copado__Epic__c.Id</members>
+    <members>copado__Epic__c.IsDeleted</members>
+    <members>copado__Epic__c.LastActivityDate</members>
+    <members>copado__Epic__c.LastModifiedById</members>
+    <members>copado__Epic__c.LastModifiedDate</members>
+    <members>copado__Epic__c.LastReferencedDate</members>
+    <members>copado__Epic__c.LastViewedDate</members>
+    <members>copado__Epic__c.Name</members>
+    <members>copado__Epic__c.OwnerId</members>
+    <members>copado__Epic__c.SystemModstamp</members>
     <members>copado__Epic__c.copado__Epic_Details__c</members>
     <members>copado__Epic__c.copado__Epic_Title__c</members>
     <members>copado__Epic__c.copado__Status__c</members>
+    <members>copado__External_CI_Job_Result__c.CreatedById</members>
+    <members>copado__External_CI_Job_Result__c.CreatedDate</members>
+    <members>copado__External_CI_Job_Result__c.Id</members>
+    <members>copado__External_CI_Job_Result__c.IsDeleted</members>
+    <members>copado__External_CI_Job_Result__c.LastModifiedById</members>
+    <members>copado__External_CI_Job_Result__c.LastModifiedDate</members>
+    <members>copado__External_CI_Job_Result__c.Name</members>
+    <members>copado__External_CI_Job_Result__c.SystemModstamp</members>
     <members>copado__External_CI_Job_Result__c.copado__Description__c</members>
     <members>copado__External_CI_Job_Result__c.copado__Duration__c</members>
     <members>copado__External_CI_Job_Result__c.copado__End_Time__c</members>
@@ -1963,6 +2134,16 @@
     <members>copado__External_CI_Job_Result__c.copado__Start_Time__c</members>
     <members>copado__External_CI_Job_Result__c.copado__Status__c</members>
     <members>copado__External_CI_Job_Result__c.copado__User_Story__c</members>
+    <members>copado__External_CI_Job__c.CreatedById</members>
+    <members>copado__External_CI_Job__c.CreatedDate</members>
+    <members>copado__External_CI_Job__c.Id</members>
+    <members>copado__External_CI_Job__c.IsDeleted</members>
+    <members>copado__External_CI_Job__c.LastModifiedById</members>
+    <members>copado__External_CI_Job__c.LastModifiedDate</members>
+    <members>copado__External_CI_Job__c.LastReferencedDate</members>
+    <members>copado__External_CI_Job__c.LastViewedDate</members>
+    <members>copado__External_CI_Job__c.Name</members>
+    <members>copado__External_CI_Job__c.SystemModstamp</members>
     <members>copado__External_CI_Job__c.copado__Continue_on_failure__c</members>
     <members>copado__External_CI_Job__c.copado__Environment__c</members>
     <members>copado__External_CI_Job__c.copado__External_CI_Setting__c</members>
@@ -1972,6 +2153,17 @@
     <members>copado__External_CI_Job__c.copado__Timeout_in_minutes__c</members>
     <members>copado__External_CI_Job__c.copado__User_Story__c</members>
     <members>copado__External_CI_Job__c.copado__dataJSON__c</members>
+    <members>copado__External_CI_Setting__c.CreatedById</members>
+    <members>copado__External_CI_Setting__c.CreatedDate</members>
+    <members>copado__External_CI_Setting__c.Id</members>
+    <members>copado__External_CI_Setting__c.IsDeleted</members>
+    <members>copado__External_CI_Setting__c.LastModifiedById</members>
+    <members>copado__External_CI_Setting__c.LastModifiedDate</members>
+    <members>copado__External_CI_Setting__c.LastReferencedDate</members>
+    <members>copado__External_CI_Setting__c.LastViewedDate</members>
+    <members>copado__External_CI_Setting__c.Name</members>
+    <members>copado__External_CI_Setting__c.OwnerId</members>
+    <members>copado__External_CI_Setting__c.SystemModstamp</members>
     <members>copado__External_CI_Setting__c.copado__API_Token__c</members>
     <members>copado__External_CI_Setting__c.copado__CI_Tool__c</members>
     <members>copado__External_CI_Setting__c.copado__Credential_Validated__c</members>
@@ -1981,6 +2173,17 @@
     <members>copado__Feature__c.copado__Enabled__c</members>
     <members>copado__Feature__c.copado__Expiration_Date__c</members>
     <members>copado__Feature__c.copado__Quantity__c</members>
+    <members>copado__Git_Backup__c.CreatedById</members>
+    <members>copado__Git_Backup__c.CreatedDate</members>
+    <members>copado__Git_Backup__c.Id</members>
+    <members>copado__Git_Backup__c.IsDeleted</members>
+    <members>copado__Git_Backup__c.LastActivityDate</members>
+    <members>copado__Git_Backup__c.LastModifiedById</members>
+    <members>copado__Git_Backup__c.LastModifiedDate</members>
+    <members>copado__Git_Backup__c.LastReferencedDate</members>
+    <members>copado__Git_Backup__c.LastViewedDate</members>
+    <members>copado__Git_Backup__c.Name</members>
+    <members>copado__Git_Backup__c.SystemModstamp</members>
     <members>copado__Git_Backup__c.copado__Branch__c</members>
     <members>copado__Git_Backup__c.copado__Frequency__c</members>
     <members>copado__Git_Backup__c.copado__Git_Repository__c</members>
@@ -1989,12 +2192,29 @@
     <members>copado__Git_Backup__c.copado__Metadata_Types__c</members>
     <members>copado__Git_Backup__c.copado__Org__c</members>
     <members>copado__Git_Backup__c.copado__View_in_Git__c</members>
+    <members>copado__Git_Commit__c.CreatedById</members>
+    <members>copado__Git_Commit__c.CreatedDate</members>
+    <members>copado__Git_Commit__c.Id</members>
+    <members>copado__Git_Commit__c.IsDeleted</members>
+    <members>copado__Git_Commit__c.LastModifiedById</members>
+    <members>copado__Git_Commit__c.LastModifiedDate</members>
+    <members>copado__Git_Commit__c.Name</members>
+    <members>copado__Git_Commit__c.OwnerId</members>
+    <members>copado__Git_Commit__c.SystemModstamp</members>
     <members>copado__Git_Commit__c.copado__Branch__c</members>
     <members>copado__Git_Commit__c.copado__Changes__c</members>
     <members>copado__Git_Commit__c.copado__Commit_Date__c</members>
     <members>copado__Git_Commit__c.copado__Commit_Id__c</members>
     <members>copado__Git_Commit__c.copado__Commit_Message__c</members>
     <members>copado__Git_Commit__c.copado__Git_Repository__c</members>
+    <members>copado__Git_Org_Commit__c.CreatedById</members>
+    <members>copado__Git_Org_Commit__c.CreatedDate</members>
+    <members>copado__Git_Org_Commit__c.Id</members>
+    <members>copado__Git_Org_Commit__c.IsDeleted</members>
+    <members>copado__Git_Org_Commit__c.LastModifiedById</members>
+    <members>copado__Git_Org_Commit__c.LastModifiedDate</members>
+    <members>copado__Git_Org_Commit__c.Name</members>
+    <members>copado__Git_Org_Commit__c.SystemModstamp</members>
     <members>copado__Git_Org_Commit__c.copado__Changes__c</members>
     <members>copado__Git_Org_Commit__c.copado__Commit_Date__c</members>
     <members>copado__Git_Org_Commit__c.copado__Commit_Id__c</members>
@@ -2003,22 +2223,67 @@
     <members>copado__Git_Org_Commit__c.copado__Org__c</members>
     <members>copado__Git_Org_Commit__c.copado__Status__c</members>
     <members>copado__Git_Org_Commit__c.copado__View_in_Git__c</members>
+    <members>copado__Git_Repository__c.CreatedById</members>
+    <members>copado__Git_Repository__c.CreatedDate</members>
+    <members>copado__Git_Repository__c.Id</members>
+    <members>copado__Git_Repository__c.IsDeleted</members>
+    <members>copado__Git_Repository__c.LastModifiedById</members>
+    <members>copado__Git_Repository__c.LastModifiedDate</members>
+    <members>copado__Git_Repository__c.LastReferencedDate</members>
+    <members>copado__Git_Repository__c.LastViewedDate</members>
+    <members>copado__Git_Repository__c.Name</members>
+    <members>copado__Git_Repository__c.OwnerId</members>
+    <members>copado__Git_Repository__c.SystemModstamp</members>
     <members>copado__Git_Repository__c.copado__Branch_Base_URL__c</members>
     <members>copado__Git_Repository__c.copado__Commit_Base_URL__c</members>
     <members>copado__Git_Repository__c.copado__Password__c</members>
     <members>copado__Git_Repository__c.copado__URI__c</members>
     <members>copado__Git_Repository__c.copado__Username__c</members>
+    <members>copado__Kanban_Board__c.CreatedById</members>
+    <members>copado__Kanban_Board__c.CreatedDate</members>
+    <members>copado__Kanban_Board__c.Id</members>
+    <members>copado__Kanban_Board__c.IsDeleted</members>
+    <members>copado__Kanban_Board__c.LastModifiedById</members>
+    <members>copado__Kanban_Board__c.LastModifiedDate</members>
+    <members>copado__Kanban_Board__c.LastReferencedDate</members>
+    <members>copado__Kanban_Board__c.LastViewedDate</members>
+    <members>copado__Kanban_Board__c.Name</members>
+    <members>copado__Kanban_Board__c.OwnerId</members>
+    <members>copado__Kanban_Board__c.SystemModstamp</members>
     <members>copado__Kanban_Board__c.copado__Columns_SOQL__c</members>
     <members>copado__Kanban_Board__c.copado__Description__c</members>
     <members>copado__Kanban_Board__c.copado__Field_to_read_update__c</members>
     <members>copado__Kanban_Board__c.copado__JSON_Settings__c</members>
     <members>copado__Kanban_Board__c.copado__SOQL_Query__c</members>
+    <members>copado__OrgDiff__c.CreatedById</members>
+    <members>copado__OrgDiff__c.CreatedDate</members>
+    <members>copado__OrgDiff__c.Id</members>
+    <members>copado__OrgDiff__c.IsDeleted</members>
+    <members>copado__OrgDiff__c.LastActivityDate</members>
+    <members>copado__OrgDiff__c.LastModifiedById</members>
+    <members>copado__OrgDiff__c.LastModifiedDate</members>
+    <members>copado__OrgDiff__c.LastReferencedDate</members>
+    <members>copado__OrgDiff__c.LastViewedDate</members>
+    <members>copado__OrgDiff__c.Name</members>
+    <members>copado__OrgDiff__c.OwnerId</members>
+    <members>copado__OrgDiff__c.SystemModstamp</members>
     <members>copado__OrgDiff__c.copado__From_Date__c</members>
     <members>copado__OrgDiff__c.copado__From_Org__c</members>
     <members>copado__OrgDiff__c.copado__Last_Modified_By_Name__c</members>
     <members>copado__OrgDiff__c.copado__Metadata_Types__c</members>
     <members>copado__OrgDiff__c.copado__To_Date__c</members>
     <members>copado__OrgDiff__c.copado__To_Org__c</members>
+    <members>copado__Org__c.CreatedById</members>
+    <members>copado__Org__c.CreatedDate</members>
+    <members>copado__Org__c.Id</members>
+    <members>copado__Org__c.IsDeleted</members>
+    <members>copado__Org__c.LastModifiedById</members>
+    <members>copado__Org__c.LastModifiedDate</members>
+    <members>copado__Org__c.LastReferencedDate</members>
+    <members>copado__Org__c.LastViewedDate</members>
+    <members>copado__Org__c.Name</members>
+    <members>copado__Org__c.OwnerId</members>
+    <members>copado__Org__c.SystemModstamp</members>
     <members>copado__Org__c.copado__Custom_Domain__c</members>
     <members>copado__Org__c.copado__Default_Credential__c</members>
     <members>copado__Org__c.copado__Disable_Validation__c</members>
@@ -2040,22 +2305,72 @@
     <members>copado__Org__c.copado__Username__c</members>
     <members>copado__Org__c.copado__Validated_Date__c</members>
     <members>copado__Org__c.copado__Validated_Status__c</members>
+    <members>copado__Persona_Permission__c.CreatedById</members>
+    <members>copado__Persona_Permission__c.CreatedDate</members>
+    <members>copado__Persona_Permission__c.Id</members>
+    <members>copado__Persona_Permission__c.IsDeleted</members>
+    <members>copado__Persona_Permission__c.LastModifiedById</members>
+    <members>copado__Persona_Permission__c.LastModifiedDate</members>
+    <members>copado__Persona_Permission__c.Name</members>
+    <members>copado__Persona_Permission__c.SystemModstamp</members>
     <members>copado__Persona_Permission__c.copado__Permission_Set_Name__c</members>
     <members>copado__Persona_Permission__c.copado__Persona__c</members>
+    <members>copado__Persona__c.CreatedById</members>
+    <members>copado__Persona__c.CreatedDate</members>
+    <members>copado__Persona__c.Id</members>
+    <members>copado__Persona__c.IsDeleted</members>
+    <members>copado__Persona__c.LastModifiedById</members>
+    <members>copado__Persona__c.LastModifiedDate</members>
+    <members>copado__Persona__c.LastReferencedDate</members>
+    <members>copado__Persona__c.LastViewedDate</members>
+    <members>copado__Persona__c.Name</members>
+    <members>copado__Persona__c.OwnerId</members>
+    <members>copado__Persona__c.SystemModstamp</members>
     <members>copado__Persona__c.copado__Description__c</members>
     <members>copado__Personal_Settings__c.copado__API_Key__c</members>
     <members>copado__Personal_Settings__c.copado__AccessStatusColumn__c</members>
     <members>copado__Personal_Settings__c.copado__Build_Task_Rows__c</members>
     <members>copado__Personal_Settings__c.copado__DeployConnectionBox_height__c</members>
     <members>copado__Personal_Settings__c.copado__DeployConnectionBox_width__c</members>
+    <members>copado__Project__c.CreatedById</members>
+    <members>copado__Project__c.CreatedDate</members>
+    <members>copado__Project__c.Id</members>
+    <members>copado__Project__c.IsDeleted</members>
+    <members>copado__Project__c.LastActivityDate</members>
+    <members>copado__Project__c.LastModifiedById</members>
+    <members>copado__Project__c.LastModifiedDate</members>
+    <members>copado__Project__c.LastReferencedDate</members>
+    <members>copado__Project__c.LastViewedDate</members>
+    <members>copado__Project__c.Name</members>
+    <members>copado__Project__c.OwnerId</members>
+    <members>copado__Project__c.SystemModstamp</members>
     <members>copado__Project__c.copado__Deployment_Flow__c</members>
     <members>copado__Project__c.copado__Description__c</members>
     <members>copado__Project__c.copado__End_Date__c</members>
     <members>copado__Project__c.copado__Index_Metadata__c</members>
     <members>copado__Project__c.copado__Start_Date__c</members>
     <members>copado__Project__c.copado__Status__c</members>
+    <members>copado__Promoted_User_Story__c.CreatedById</members>
+    <members>copado__Promoted_User_Story__c.CreatedDate</members>
+    <members>copado__Promoted_User_Story__c.Id</members>
+    <members>copado__Promoted_User_Story__c.IsDeleted</members>
+    <members>copado__Promoted_User_Story__c.LastModifiedById</members>
+    <members>copado__Promoted_User_Story__c.LastModifiedDate</members>
+    <members>copado__Promoted_User_Story__c.Name</members>
+    <members>copado__Promoted_User_Story__c.SystemModstamp</members>
     <members>copado__Promoted_User_Story__c.copado__Promotion__c</members>
     <members>copado__Promoted_User_Story__c.copado__User_Story__c</members>
+    <members>copado__Promotion__c.CreatedById</members>
+    <members>copado__Promotion__c.CreatedDate</members>
+    <members>copado__Promotion__c.Id</members>
+    <members>copado__Promotion__c.IsDeleted</members>
+    <members>copado__Promotion__c.LastModifiedById</members>
+    <members>copado__Promotion__c.LastModifiedDate</members>
+    <members>copado__Promotion__c.LastReferencedDate</members>
+    <members>copado__Promotion__c.LastViewedDate</members>
+    <members>copado__Promotion__c.Name</members>
+    <members>copado__Promotion__c.OwnerId</members>
+    <members>copado__Promotion__c.SystemModstamp</members>
     <members>copado__Promotion__c.copado__Back_Promotion__c</members>
     <members>copado__Promotion__c.copado__Create_Full_Permission_Sets_Step__c</members>
     <members>copado__Promotion__c.copado__Create_Full_Profiles_Step__c</members>
@@ -2067,6 +2382,14 @@
     <members>copado__Promotion__c.copado__Source_Environment__c</members>
     <members>copado__Promotion__c.copado__Source_Org_Credential__c</members>
     <members>copado__Promotion__c.copado__Status__c</members>
+    <members>copado__Pull_Request_Review__c.CreatedById</members>
+    <members>copado__Pull_Request_Review__c.CreatedDate</members>
+    <members>copado__Pull_Request_Review__c.Id</members>
+    <members>copado__Pull_Request_Review__c.IsDeleted</members>
+    <members>copado__Pull_Request_Review__c.LastModifiedById</members>
+    <members>copado__Pull_Request_Review__c.LastModifiedDate</members>
+    <members>copado__Pull_Request_Review__c.Name</members>
+    <members>copado__Pull_Request_Review__c.SystemModstamp</members>
     <members>copado__Pull_Request_Review__c.copado__Body__c</members>
     <members>copado__Pull_Request_Review__c.copado__Pull_Request__c</members>
     <members>copado__Pull_Request_Review__c.copado__Review_Action__c</members>
@@ -2076,6 +2399,14 @@
     <members>copado__Pull_Request_Review__c.copado__User_Avatar_Url__c</members>
     <members>copado__Pull_Request_Review__c.copado__User_Avatar__c</members>
     <members>copado__Pull_Request_Review__c.copado__Username__c</members>
+    <members>copado__Pull_Request__c.CreatedById</members>
+    <members>copado__Pull_Request__c.CreatedDate</members>
+    <members>copado__Pull_Request__c.Id</members>
+    <members>copado__Pull_Request__c.IsDeleted</members>
+    <members>copado__Pull_Request__c.LastModifiedById</members>
+    <members>copado__Pull_Request__c.LastModifiedDate</members>
+    <members>copado__Pull_Request__c.Name</members>
+    <members>copado__Pull_Request__c.SystemModstamp</members>
     <members>copado__Pull_Request__c.copado__Assignees__c</members>
     <members>copado__Pull_Request__c.copado__Changed_Files__c</members>
     <members>copado__Pull_Request__c.copado__Closed_At__c</members>
@@ -2095,15 +2426,43 @@
     <members>copado__Pull_Request__c.copado__User_Avatar__c</members>
     <members>copado__Pull_Request__c.copado__User_Story__c</members>
     <members>copado__Pull_Request__c.copado__Username__c</members>
+    <members>copado__Release__c.CreatedById</members>
+    <members>copado__Release__c.CreatedDate</members>
+    <members>copado__Release__c.Id</members>
+    <members>copado__Release__c.IsDeleted</members>
+    <members>copado__Release__c.LastModifiedById</members>
+    <members>copado__Release__c.LastModifiedDate</members>
+    <members>copado__Release__c.Name</members>
+    <members>copado__Release__c.OwnerId</members>
+    <members>copado__Release__c.SystemModstamp</members>
     <members>copado__Release__c.copado__Description__c</members>
     <members>copado__Release__c.copado__Planned_Date__c</members>
     <members>copado__Release__c.copado__Project__c</members>
     <members>copado__Release__c.copado__Status__c</members>
+    <members>copado__Scheduled_Job_Run__c.CreatedById</members>
+    <members>copado__Scheduled_Job_Run__c.CreatedDate</members>
+    <members>copado__Scheduled_Job_Run__c.Id</members>
+    <members>copado__Scheduled_Job_Run__c.IsDeleted</members>
+    <members>copado__Scheduled_Job_Run__c.LastModifiedById</members>
+    <members>copado__Scheduled_Job_Run__c.LastModifiedDate</members>
+    <members>copado__Scheduled_Job_Run__c.Name</members>
+    <members>copado__Scheduled_Job_Run__c.SystemModstamp</members>
     <members>copado__Scheduled_Job_Run__c.copado__Called_URL__c</members>
     <members>copado__Scheduled_Job_Run__c.copado__Message__c</members>
     <members>copado__Scheduled_Job_Run__c.copado__Run_as_User__c</members>
     <members>copado__Scheduled_Job_Run__c.copado__Scheduled_Job__c</members>
     <members>copado__Scheduled_Job_Run__c.copado__Status__c</members>
+    <members>copado__Scheduled_Job__c.CreatedById</members>
+    <members>copado__Scheduled_Job__c.CreatedDate</members>
+    <members>copado__Scheduled_Job__c.Id</members>
+    <members>copado__Scheduled_Job__c.IsDeleted</members>
+    <members>copado__Scheduled_Job__c.LastModifiedById</members>
+    <members>copado__Scheduled_Job__c.LastModifiedDate</members>
+    <members>copado__Scheduled_Job__c.LastReferencedDate</members>
+    <members>copado__Scheduled_Job__c.LastViewedDate</members>
+    <members>copado__Scheduled_Job__c.Name</members>
+    <members>copado__Scheduled_Job__c.OwnerId</members>
+    <members>copado__Scheduled_Job__c.SystemModstamp</members>
     <members>copado__Scheduled_Job__c.copado__Apex_Job_ID__c</members>
     <members>copado__Scheduled_Job__c.copado__Cron_Expression__c</members>
     <members>copado__Scheduled_Job__c.copado__Delete_Runs_after_days__c</members>
@@ -2111,24 +2470,78 @@
     <members>copado__Scheduled_Job__c.copado__Run_as_User__c</members>
     <members>copado__Scheduled_Job__c.copado__Status__c</members>
     <members>copado__Scheduled_Job__c.copado__Webhook_URL__c</members>
+    <members>copado__Selenium_Group_Org_Credential__c.CreatedById</members>
+    <members>copado__Selenium_Group_Org_Credential__c.CreatedDate</members>
+    <members>copado__Selenium_Group_Org_Credential__c.Id</members>
+    <members>copado__Selenium_Group_Org_Credential__c.IsDeleted</members>
+    <members>copado__Selenium_Group_Org_Credential__c.LastModifiedById</members>
+    <members>copado__Selenium_Group_Org_Credential__c.LastModifiedDate</members>
+    <members>copado__Selenium_Group_Org_Credential__c.Name</members>
+    <members>copado__Selenium_Group_Org_Credential__c.SystemModstamp</members>
     <members>copado__Selenium_Group_Org_Credential__c.copado__External_Id__c</members>
     <members>copado__Selenium_Group_Org_Credential__c.copado__Org_Credential__c</members>
     <members>copado__Selenium_Group_Org_Credential__c.copado__Selenium_Test_Group__c</members>
+    <members>copado__Selenium_Group_Test_Suite__c.CreatedById</members>
+    <members>copado__Selenium_Group_Test_Suite__c.CreatedDate</members>
+    <members>copado__Selenium_Group_Test_Suite__c.Id</members>
+    <members>copado__Selenium_Group_Test_Suite__c.IsDeleted</members>
+    <members>copado__Selenium_Group_Test_Suite__c.LastModifiedById</members>
+    <members>copado__Selenium_Group_Test_Suite__c.LastModifiedDate</members>
+    <members>copado__Selenium_Group_Test_Suite__c.Name</members>
+    <members>copado__Selenium_Group_Test_Suite__c.SystemModstamp</members>
     <members>copado__Selenium_Group_Test_Suite__c.copado__External_Id__c</members>
     <members>copado__Selenium_Group_Test_Suite__c.copado__Selenium_Test_Group__c</members>
     <members>copado__Selenium_Group_Test_Suite__c.copado__Selenium_Test_Suite__c</members>
+    <members>copado__Selenium_Group_Variable__c.CreatedById</members>
+    <members>copado__Selenium_Group_Variable__c.CreatedDate</members>
+    <members>copado__Selenium_Group_Variable__c.Id</members>
+    <members>copado__Selenium_Group_Variable__c.IsDeleted</members>
+    <members>copado__Selenium_Group_Variable__c.LastModifiedById</members>
+    <members>copado__Selenium_Group_Variable__c.LastModifiedDate</members>
+    <members>copado__Selenium_Group_Variable__c.Name</members>
+    <members>copado__Selenium_Group_Variable__c.SystemModstamp</members>
     <members>copado__Selenium_Group_Variable__c.copado__Display_Value__c</members>
     <members>copado__Selenium_Group_Variable__c.copado__Hide_Value__c</members>
     <members>copado__Selenium_Group_Variable__c.copado__Selenium_Test_Group__c</members>
     <members>copado__Selenium_Group_Variable__c.copado__Value__c</members>
+    <members>copado__Selenium_Locator_Reference__c.CreatedById</members>
+    <members>copado__Selenium_Locator_Reference__c.CreatedDate</members>
+    <members>copado__Selenium_Locator_Reference__c.Id</members>
+    <members>copado__Selenium_Locator_Reference__c.IsDeleted</members>
+    <members>copado__Selenium_Locator_Reference__c.LastModifiedById</members>
+    <members>copado__Selenium_Locator_Reference__c.LastModifiedDate</members>
+    <members>copado__Selenium_Locator_Reference__c.Name</members>
+    <members>copado__Selenium_Locator_Reference__c.SystemModstamp</members>
     <members>copado__Selenium_Locator_Reference__c.copado__External_ID__c</members>
     <members>copado__Selenium_Locator_Reference__c.copado__Selenium_Locator__c</members>
     <members>copado__Selenium_Locator_Reference__c.copado__Selenium_Test_Case_Version__c</members>
     <members>copado__Selenium_Locator_Reference__c.copado__Selenium_Test_Case__c</members>
+    <members>copado__Selenium_Locator__c.CreatedById</members>
+    <members>copado__Selenium_Locator__c.CreatedDate</members>
+    <members>copado__Selenium_Locator__c.Id</members>
+    <members>copado__Selenium_Locator__c.IsDeleted</members>
+    <members>copado__Selenium_Locator__c.LastModifiedById</members>
+    <members>copado__Selenium_Locator__c.LastModifiedDate</members>
+    <members>copado__Selenium_Locator__c.LastReferencedDate</members>
+    <members>copado__Selenium_Locator__c.LastViewedDate</members>
+    <members>copado__Selenium_Locator__c.Name</members>
+    <members>copado__Selenium_Locator__c.OwnerId</members>
+    <members>copado__Selenium_Locator__c.SystemModstamp</members>
     <members>copado__Selenium_Locator__c.copado__External_ID__c</members>
     <members>copado__Selenium_Locator__c.copado__Locator_ID__c</members>
     <members>copado__Selenium_Locator__c.copado__Locator__c</members>
     <members>copado__Selenium_Locator__c.copado__Page__c</members>
+    <members>copado__Selenium_Settings__c.CreatedById</members>
+    <members>copado__Selenium_Settings__c.CreatedDate</members>
+    <members>copado__Selenium_Settings__c.Id</members>
+    <members>copado__Selenium_Settings__c.IsDeleted</members>
+    <members>copado__Selenium_Settings__c.LastModifiedById</members>
+    <members>copado__Selenium_Settings__c.LastModifiedDate</members>
+    <members>copado__Selenium_Settings__c.LastReferencedDate</members>
+    <members>copado__Selenium_Settings__c.LastViewedDate</members>
+    <members>copado__Selenium_Settings__c.Name</members>
+    <members>copado__Selenium_Settings__c.OwnerId</members>
+    <members>copado__Selenium_Settings__c.SystemModstamp</members>
     <members>copado__Selenium_Settings__c.copado__Default_Org_Credential__c</members>
     <members>copado__Selenium_Settings__c.copado__Desired_Capabilities__c</members>
     <members>copado__Selenium_Settings__c.copado__Device_Screen_Size__c</members>
@@ -2136,13 +2549,43 @@
     <members>copado__Selenium_Settings__c.copado__Selected_Platforms__c</members>
     <members>copado__Selenium_Settings__c.copado__Webdriver_Proxy__c</members>
     <members>copado__Selenium_Settings__c.copado__Webdriver_URL__c</members>
+    <members>copado__Selenium_Test_Case_Per_Suite__c.CreatedById</members>
+    <members>copado__Selenium_Test_Case_Per_Suite__c.CreatedDate</members>
+    <members>copado__Selenium_Test_Case_Per_Suite__c.Id</members>
+    <members>copado__Selenium_Test_Case_Per_Suite__c.IsDeleted</members>
+    <members>copado__Selenium_Test_Case_Per_Suite__c.LastModifiedById</members>
+    <members>copado__Selenium_Test_Case_Per_Suite__c.LastModifiedDate</members>
+    <members>copado__Selenium_Test_Case_Per_Suite__c.Name</members>
+    <members>copado__Selenium_Test_Case_Per_Suite__c.SystemModstamp</members>
     <members>copado__Selenium_Test_Case_Per_Suite__c.copado__Order__c</members>
     <members>copado__Selenium_Test_Case_Per_Suite__c.copado__Selenium_Test_Case__c</members>
     <members>copado__Selenium_Test_Case_Per_Suite__c.copado__Selenium_Test_Suite__c</members>
     <members>copado__Selenium_Test_Case_Per_Suite__c.copado__Test_Dataset_Name__c</members>
+    <members>copado__Selenium_Test_Case__c.CreatedById</members>
+    <members>copado__Selenium_Test_Case__c.CreatedDate</members>
+    <members>copado__Selenium_Test_Case__c.Id</members>
+    <members>copado__Selenium_Test_Case__c.IsDeleted</members>
+    <members>copado__Selenium_Test_Case__c.LastModifiedById</members>
+    <members>copado__Selenium_Test_Case__c.LastModifiedDate</members>
+    <members>copado__Selenium_Test_Case__c.LastReferencedDate</members>
+    <members>copado__Selenium_Test_Case__c.LastViewedDate</members>
+    <members>copado__Selenium_Test_Case__c.Name</members>
+    <members>copado__Selenium_Test_Case__c.OwnerId</members>
+    <members>copado__Selenium_Test_Case__c.SystemModstamp</members>
     <members>copado__Selenium_Test_Case__c.copado__Open_with_Copado_Recorder__c</members>
     <members>copado__Selenium_Test_Case__c.copado__Previous_Version__c</members>
     <members>copado__Selenium_Test_Case__c.copado__Version__c</members>
+    <members>copado__Selenium_Test_Group__c.CreatedById</members>
+    <members>copado__Selenium_Test_Group__c.CreatedDate</members>
+    <members>copado__Selenium_Test_Group__c.Id</members>
+    <members>copado__Selenium_Test_Group__c.IsDeleted</members>
+    <members>copado__Selenium_Test_Group__c.LastModifiedById</members>
+    <members>copado__Selenium_Test_Group__c.LastModifiedDate</members>
+    <members>copado__Selenium_Test_Group__c.LastReferencedDate</members>
+    <members>copado__Selenium_Test_Group__c.LastViewedDate</members>
+    <members>copado__Selenium_Test_Group__c.Name</members>
+    <members>copado__Selenium_Test_Group__c.OwnerId</members>
+    <members>copado__Selenium_Test_Group__c.SystemModstamp</members>
     <members>copado__Selenium_Test_Group__c.copado__Description__c</members>
     <members>copado__Selenium_Test_Group__c.copado__Environment__c</members>
     <members>copado__Selenium_Test_Group__c.copado__External_Id__c</members>
@@ -2152,6 +2595,14 @@
     <members>copado__Selenium_Test_Group__c.copado__Status_Icon__c</members>
     <members>copado__Selenium_Test_Group__c.copado__Status__c</members>
     <members>copado__Selenium_Test_Group__c.copado__Type__c</members>
+    <members>copado__Selenium_Test_Result__c.CreatedById</members>
+    <members>copado__Selenium_Test_Result__c.CreatedDate</members>
+    <members>copado__Selenium_Test_Result__c.Id</members>
+    <members>copado__Selenium_Test_Result__c.IsDeleted</members>
+    <members>copado__Selenium_Test_Result__c.LastModifiedById</members>
+    <members>copado__Selenium_Test_Result__c.LastModifiedDate</members>
+    <members>copado__Selenium_Test_Result__c.Name</members>
+    <members>copado__Selenium_Test_Result__c.SystemModstamp</members>
     <members>copado__Selenium_Test_Result__c.copado__Batch_No__c</members>
     <members>copado__Selenium_Test_Result__c.copado__Elapsed_Time_Seconds__c</members>
     <members>copado__Selenium_Test_Result__c.copado__Message__c</members>
@@ -2160,6 +2611,18 @@
     <members>copado__Selenium_Test_Result__c.copado__Selenium_Test_Run__c</members>
     <members>copado__Selenium_Test_Result__c.copado__Selenium_Test_Suite__c</members>
     <members>copado__Selenium_Test_Result__c.copado__Status__c</members>
+    <members>copado__Selenium_Test_Run__c.CreatedById</members>
+    <members>copado__Selenium_Test_Run__c.CreatedDate</members>
+    <members>copado__Selenium_Test_Run__c.Id</members>
+    <members>copado__Selenium_Test_Run__c.IsDeleted</members>
+    <members>copado__Selenium_Test_Run__c.LastModifiedById</members>
+    <members>copado__Selenium_Test_Run__c.LastModifiedDate</members>
+    <members>copado__Selenium_Test_Run__c.LastReferencedDate</members>
+    <members>copado__Selenium_Test_Run__c.LastViewedDate</members>
+    <members>copado__Selenium_Test_Run__c.Name</members>
+    <members>copado__Selenium_Test_Run__c.OwnerId</members>
+    <members>copado__Selenium_Test_Run__c.RecordTypeId</members>
+    <members>copado__Selenium_Test_Run__c.SystemModstamp</members>
     <members>copado__Selenium_Test_Run__c.copado__Base_URL__c</members>
     <members>copado__Selenium_Test_Run__c.copado__Batch_No__c</members>
     <members>copado__Selenium_Test_Run__c.copado__Environment__c</members>
@@ -2171,6 +2634,17 @@
     <members>copado__Selenium_Test_Run__c.copado__Selenium_Settings__c</members>
     <members>copado__Selenium_Test_Run__c.copado__Selenium_Test_Group__c</members>
     <members>copado__Selenium_Test_Run__c.copado__Selenium_Test_Suite__c</members>
+    <members>copado__Selenium_Test_Suite__c.CreatedById</members>
+    <members>copado__Selenium_Test_Suite__c.CreatedDate</members>
+    <members>copado__Selenium_Test_Suite__c.Id</members>
+    <members>copado__Selenium_Test_Suite__c.IsDeleted</members>
+    <members>copado__Selenium_Test_Suite__c.LastModifiedById</members>
+    <members>copado__Selenium_Test_Suite__c.LastModifiedDate</members>
+    <members>copado__Selenium_Test_Suite__c.LastReferencedDate</members>
+    <members>copado__Selenium_Test_Suite__c.LastViewedDate</members>
+    <members>copado__Selenium_Test_Suite__c.Name</members>
+    <members>copado__Selenium_Test_Suite__c.OwnerId</members>
+    <members>copado__Selenium_Test_Suite__c.SystemModstamp</members>
     <members>copado__Selenium_Test_Suite__c.copado__Apex_code_after_test__c</members>
     <members>copado__Selenium_Test_Suite__c.copado__Apex_code_before_test__c</members>
     <members>copado__Selenium_Test_Suite__c.copado__Test_Script__c</members>
@@ -2182,6 +2656,17 @@
     <members>copado__Settings__c.copado__Enabled_Multi_Licenses__c</members>
     <members>copado__Settings__c.copado__Namespace__c</members>
     <members>copado__Settings__c.copado__Server_URL__c</members>
+    <members>copado__Snapshot_Difference__c.CreatedById</members>
+    <members>copado__Snapshot_Difference__c.CreatedDate</members>
+    <members>copado__Snapshot_Difference__c.Id</members>
+    <members>copado__Snapshot_Difference__c.IsDeleted</members>
+    <members>copado__Snapshot_Difference__c.LastModifiedById</members>
+    <members>copado__Snapshot_Difference__c.LastModifiedDate</members>
+    <members>copado__Snapshot_Difference__c.LastReferencedDate</members>
+    <members>copado__Snapshot_Difference__c.LastViewedDate</members>
+    <members>copado__Snapshot_Difference__c.Name</members>
+    <members>copado__Snapshot_Difference__c.OwnerId</members>
+    <members>copado__Snapshot_Difference__c.SystemModstamp</members>
     <members>copado__Snapshot_Difference__c.copado__Destination_Git_Commit__c</members>
     <members>copado__Snapshot_Difference__c.copado__Destination_Option__c</members>
     <members>copado__Snapshot_Difference__c.copado__Destination_Org_Credential__c</members>
@@ -2190,6 +2675,18 @@
     <members>copado__Snapshot_Difference__c.copado__Source_Git_Commit__c</members>
     <members>copado__Snapshot_Difference__c.copado__Source_Option__c</members>
     <members>copado__Snapshot_Difference__c.copado__Source_Org_Credential__c</members>
+    <members>copado__Sprint__c.CreatedById</members>
+    <members>copado__Sprint__c.CreatedDate</members>
+    <members>copado__Sprint__c.Id</members>
+    <members>copado__Sprint__c.IsDeleted</members>
+    <members>copado__Sprint__c.LastActivityDate</members>
+    <members>copado__Sprint__c.LastModifiedById</members>
+    <members>copado__Sprint__c.LastModifiedDate</members>
+    <members>copado__Sprint__c.LastReferencedDate</members>
+    <members>copado__Sprint__c.LastViewedDate</members>
+    <members>copado__Sprint__c.Name</members>
+    <members>copado__Sprint__c.OwnerId</members>
+    <members>copado__Sprint__c.SystemModstamp</members>
     <members>copado__Sprint__c.copado__Days_in_sprint__c</members>
     <members>copado__Sprint__c.copado__End_Date__c</members>
     <members>copado__Sprint__c.copado__Full_time_resources_in_sprint__c</members>
@@ -2200,15 +2697,52 @@
     <members>copado__Sprint__c.copado__Status__c</members>
     <members>copado__Sprint__c.copado__Story_points__c</members>
     <members>copado__Sprint__c.copado__Working_days_in_sprint__c</members>
+    <members>copado__Static_Code_Analysis_Result__c.CreatedById</members>
+    <members>copado__Static_Code_Analysis_Result__c.CreatedDate</members>
+    <members>copado__Static_Code_Analysis_Result__c.Id</members>
+    <members>copado__Static_Code_Analysis_Result__c.IsDeleted</members>
+    <members>copado__Static_Code_Analysis_Result__c.LastModifiedById</members>
+    <members>copado__Static_Code_Analysis_Result__c.LastModifiedDate</members>
+    <members>copado__Static_Code_Analysis_Result__c.Name</members>
+    <members>copado__Static_Code_Analysis_Result__c.OwnerId</members>
+    <members>copado__Static_Code_Analysis_Result__c.SystemModstamp</members>
     <members>copado__Static_Code_Analysis_Result__c.copado__Details__c</members>
     <members>copado__Static_Code_Analysis_Result__c.copado__Org_Credential__c</members>
     <members>copado__Static_Code_Analysis_Result__c.copado__Rules_Violated__c</members>
     <members>copado__Static_Code_Analysis_Result__c.copado__Score__c</members>
     <members>copado__Static_Code_Analysis_Result__c.copado__User_Story__c</members>
+    <members>copado__Static_Code_Analysis_Rule__c.CreatedById</members>
+    <members>copado__Static_Code_Analysis_Rule__c.CreatedDate</members>
+    <members>copado__Static_Code_Analysis_Rule__c.Id</members>
+    <members>copado__Static_Code_Analysis_Rule__c.IsDeleted</members>
+    <members>copado__Static_Code_Analysis_Rule__c.LastModifiedById</members>
+    <members>copado__Static_Code_Analysis_Rule__c.LastModifiedDate</members>
+    <members>copado__Static_Code_Analysis_Rule__c.Name</members>
+    <members>copado__Static_Code_Analysis_Rule__c.SystemModstamp</members>
     <members>copado__Static_Code_Analysis_Rule__c.copado__Message__c</members>
     <members>copado__Static_Code_Analysis_Rule__c.copado__Priority__c</members>
     <members>copado__Static_Code_Analysis_Rule__c.copado__Rule_Name__c</members>
     <members>copado__Static_Code_Analysis_Rule__c.copado__Static_Code_Analysis_Settings__c</members>
+    <members>copado__Static_Code_Analysis_Settings__c.CreatedById</members>
+    <members>copado__Static_Code_Analysis_Settings__c.CreatedDate</members>
+    <members>copado__Static_Code_Analysis_Settings__c.Id</members>
+    <members>copado__Static_Code_Analysis_Settings__c.IsDeleted</members>
+    <members>copado__Static_Code_Analysis_Settings__c.LastModifiedById</members>
+    <members>copado__Static_Code_Analysis_Settings__c.LastModifiedDate</members>
+    <members>copado__Static_Code_Analysis_Settings__c.LastReferencedDate</members>
+    <members>copado__Static_Code_Analysis_Settings__c.LastViewedDate</members>
+    <members>copado__Static_Code_Analysis_Settings__c.Name</members>
+    <members>copado__Static_Code_Analysis_Settings__c.OwnerId</members>
+    <members>copado__Static_Code_Analysis_Settings__c.SystemModstamp</members>
+    <members>copado__Step__c.CreatedById</members>
+    <members>copado__Step__c.CreatedDate</members>
+    <members>copado__Step__c.Id</members>
+    <members>copado__Step__c.IsDeleted</members>
+    <members>copado__Step__c.LastActivityDate</members>
+    <members>copado__Step__c.LastModifiedById</members>
+    <members>copado__Step__c.LastModifiedDate</members>
+    <members>copado__Step__c.Name</members>
+    <members>copado__Step__c.SystemModstamp</members>
     <members>copado__Step__c.copado__Attachment_Id__c</members>
     <members>copado__Step__c.copado__Branch__c</members>
     <members>copado__Step__c.copado__CheckOnly__c</members>
@@ -2228,6 +2762,14 @@
     <members>copado__Step__c.copado__Type__c</members>
     <members>copado__Step__c.copado__View_Attachment__c</members>
     <members>copado__Step__c.copado__dataJson__c</members>
+    <members>copado__Test_Run_Step__c.CreatedById</members>
+    <members>copado__Test_Run_Step__c.CreatedDate</members>
+    <members>copado__Test_Run_Step__c.Id</members>
+    <members>copado__Test_Run_Step__c.IsDeleted</members>
+    <members>copado__Test_Run_Step__c.LastModifiedById</members>
+    <members>copado__Test_Run_Step__c.LastModifiedDate</members>
+    <members>copado__Test_Run_Step__c.Name</members>
+    <members>copado__Test_Run_Step__c.SystemModstamp</members>
     <members>copado__Test_Run_Step__c.copado__Action_Description__c</members>
     <members>copado__Test_Run_Step__c.copado__Actual_Result__c</members>
     <members>copado__Test_Run_Step__c.copado__Expected_Result__c</members>
@@ -2236,6 +2778,16 @@
     <members>copado__Test_Run_Step__c.copado__Script_Step__c</members>
     <members>copado__Test_Run_Step__c.copado__Status__c</members>
     <members>copado__Test_Run_Step__c.copado__Test_Run__c</members>
+    <members>copado__Test_Run__c.CreatedById</members>
+    <members>copado__Test_Run__c.CreatedDate</members>
+    <members>copado__Test_Run__c.Id</members>
+    <members>copado__Test_Run__c.IsDeleted</members>
+    <members>copado__Test_Run__c.LastModifiedById</members>
+    <members>copado__Test_Run__c.LastModifiedDate</members>
+    <members>copado__Test_Run__c.LastReferencedDate</members>
+    <members>copado__Test_Run__c.LastViewedDate</members>
+    <members>copado__Test_Run__c.Name</members>
+    <members>copado__Test_Run__c.SystemModstamp</members>
     <members>copado__Test_Run__c.copado__Environment__c</members>
     <members>copado__Test_Run__c.copado__Overall_Test_Comments__c</members>
     <members>copado__Test_Run__c.copado__Percent_Passed__c</members>
@@ -2251,6 +2803,14 @@
     <members>copado__Test_Run__c.copado__Total_Steps__c</members>
     <members>copado__Test_Run__c.copado__Type__c</members>
     <members>copado__Test_Run__c.copado__User_Story__c</members>
+    <members>copado__Test_Script_Step__c.CreatedById</members>
+    <members>copado__Test_Script_Step__c.CreatedDate</members>
+    <members>copado__Test_Script_Step__c.Id</members>
+    <members>copado__Test_Script_Step__c.IsDeleted</members>
+    <members>copado__Test_Script_Step__c.LastModifiedById</members>
+    <members>copado__Test_Script_Step__c.LastModifiedDate</members>
+    <members>copado__Test_Script_Step__c.Name</members>
+    <members>copado__Test_Script_Step__c.SystemModstamp</members>
     <members>copado__Test_Script_Step__c.copado__Action_Description__c</members>
     <members>copado__Test_Script_Step__c.copado__Expected_Result__c</members>
     <members>copado__Test_Script_Step__c.copado__Guidance_notes__c</members>
@@ -2258,6 +2818,17 @@
     <members>copado__Test_Script_Step__c.copado__Result__c</members>
     <members>copado__Test_Script_Step__c.copado__Step_Title__c</members>
     <members>copado__Test_Script_Step__c.copado__Test_Script__c</members>
+    <members>copado__Test_Script__c.CreatedById</members>
+    <members>copado__Test_Script__c.CreatedDate</members>
+    <members>copado__Test_Script__c.Id</members>
+    <members>copado__Test_Script__c.IsDeleted</members>
+    <members>copado__Test_Script__c.LastModifiedById</members>
+    <members>copado__Test_Script__c.LastModifiedDate</members>
+    <members>copado__Test_Script__c.LastReferencedDate</members>
+    <members>copado__Test_Script__c.LastViewedDate</members>
+    <members>copado__Test_Script__c.Name</members>
+    <members>copado__Test_Script__c.OwnerId</members>
+    <members>copado__Test_Script__c.SystemModstamp</members>
     <members>copado__Test_Script__c.copado__Expected_Result__c</members>
     <members>copado__Test_Script__c.copado__Introduction__c</members>
     <members>copado__Test_Script__c.copado__Org__c</members>
@@ -2271,6 +2842,15 @@
     <members>copado__Test_Script__c.copado__Test_Description__c</members>
     <members>copado__Test_Script__c.copado__Test_Title__c</members>
     <members>copado__Test_Script__c.copado__User_Story__c</members>
+    <members>copado__User_Persona_Assignment__c.CreatedById</members>
+    <members>copado__User_Persona_Assignment__c.CreatedDate</members>
+    <members>copado__User_Persona_Assignment__c.Id</members>
+    <members>copado__User_Persona_Assignment__c.IsDeleted</members>
+    <members>copado__User_Persona_Assignment__c.LastModifiedById</members>
+    <members>copado__User_Persona_Assignment__c.LastModifiedDate</members>
+    <members>copado__User_Persona_Assignment__c.Name</members>
+    <members>copado__User_Persona_Assignment__c.OwnerId</members>
+    <members>copado__User_Persona_Assignment__c.SystemModstamp</members>
     <members>copado__User_Persona_Assignment__c.copado__Apply_Schedule__c</members>
     <members>copado__User_Persona_Assignment__c.copado__End_Schedule_ID__c</members>
     <members>copado__User_Persona_Assignment__c.copado__End_Time__c</members>
@@ -2282,23 +2862,69 @@
     <members>copado__User_Persona_Assignment__c.copado__Status__c</members>
     <members>copado__User_Persona_Assignment__c.copado__Type__c</members>
     <members>copado__User_Persona_Assignment__c.copado__User__c</members>
+    <members>copado__User_Story_Commit__c.CreatedById</members>
+    <members>copado__User_Story_Commit__c.CreatedDate</members>
+    <members>copado__User_Story_Commit__c.Id</members>
+    <members>copado__User_Story_Commit__c.IsDeleted</members>
+    <members>copado__User_Story_Commit__c.LastModifiedById</members>
+    <members>copado__User_Story_Commit__c.LastModifiedDate</members>
+    <members>copado__User_Story_Commit__c.Name</members>
+    <members>copado__User_Story_Commit__c.SystemModstamp</members>
     <members>copado__User_Story_Commit__c.copado__External_Id__c</members>
     <members>copado__User_Story_Commit__c.copado__Snapshot_Commit__c</members>
     <members>copado__User_Story_Commit__c.copado__User_Story__c</members>
     <members>copado__User_Story_Commit__c.copado__View_in_Git__c</members>
+    <members>copado__User_Story_Metadata__c.CreatedById</members>
+    <members>copado__User_Story_Metadata__c.CreatedDate</members>
+    <members>copado__User_Story_Metadata__c.Id</members>
+    <members>copado__User_Story_Metadata__c.IsDeleted</members>
+    <members>copado__User_Story_Metadata__c.LastModifiedById</members>
+    <members>copado__User_Story_Metadata__c.LastModifiedDate</members>
+    <members>copado__User_Story_Metadata__c.Name</members>
+    <members>copado__User_Story_Metadata__c.SystemModstamp</members>
     <members>copado__User_Story_Metadata__c.copado__Metadata_API_Name__c</members>
     <members>copado__User_Story_Metadata__c.copado__Status_Icon__c</members>
     <members>copado__User_Story_Metadata__c.copado__Status__c</members>
     <members>copado__User_Story_Metadata__c.copado__Unique_ID__c</members>
     <members>copado__User_Story_Metadata__c.copado__User_Story__c</members>
+    <members>copado__User_Story_Selenium_Test__c.CreatedById</members>
+    <members>copado__User_Story_Selenium_Test__c.CreatedDate</members>
+    <members>copado__User_Story_Selenium_Test__c.Id</members>
+    <members>copado__User_Story_Selenium_Test__c.IsDeleted</members>
+    <members>copado__User_Story_Selenium_Test__c.LastModifiedById</members>
+    <members>copado__User_Story_Selenium_Test__c.LastModifiedDate</members>
+    <members>copado__User_Story_Selenium_Test__c.Name</members>
+    <members>copado__User_Story_Selenium_Test__c.SystemModstamp</members>
     <members>copado__User_Story_Selenium_Test__c.copado__External_Id__c</members>
     <members>copado__User_Story_Selenium_Test__c.copado__Selenium_Test_Group__c</members>
     <members>copado__User_Story_Selenium_Test__c.copado__User_Story__c</members>
+    <members>copado__User_Story_Task__c.CreatedById</members>
+    <members>copado__User_Story_Task__c.CreatedDate</members>
+    <members>copado__User_Story_Task__c.Id</members>
+    <members>copado__User_Story_Task__c.IsDeleted</members>
+    <members>copado__User_Story_Task__c.LastActivityDate</members>
+    <members>copado__User_Story_Task__c.LastModifiedById</members>
+    <members>copado__User_Story_Task__c.LastModifiedDate</members>
+    <members>copado__User_Story_Task__c.Name</members>
+    <members>copado__User_Story_Task__c.SystemModstamp</members>
     <members>copado__User_Story_Task__c.copado__Comments__c</members>
     <members>copado__User_Story_Task__c.copado__Hours_Remaining__c</members>
     <members>copado__User_Story_Task__c.copado__Status__c</members>
     <members>copado__User_Story_Task__c.copado__Subject__c</members>
     <members>copado__User_Story_Task__c.copado__User_Story__c</members>
+    <members>copado__User_Story__c.CreatedById</members>
+    <members>copado__User_Story__c.CreatedDate</members>
+    <members>copado__User_Story__c.Id</members>
+    <members>copado__User_Story__c.IsDeleted</members>
+    <members>copado__User_Story__c.LastActivityDate</members>
+    <members>copado__User_Story__c.LastModifiedById</members>
+    <members>copado__User_Story__c.LastModifiedDate</members>
+    <members>copado__User_Story__c.LastReferencedDate</members>
+    <members>copado__User_Story__c.LastViewedDate</members>
+    <members>copado__User_Story__c.Name</members>
+    <members>copado__User_Story__c.OwnerId</members>
+    <members>copado__User_Story__c.RecordTypeId</members>
+    <members>copado__User_Story__c.SystemModstamp</members>
     <members>copado__User_Story__c.copado__Acceptance_Criteria_Status__c</members>
     <members>copado__User_Story__c.copado__Acceptance_Criteria__c</members>
     <members>copado__User_Story__c.copado__Apex_Code_Coverage__c</members>
