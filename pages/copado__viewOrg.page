@@ -35,7 +35,7 @@
                     <apex:commandButton value="{!$Label.copado__add_userpass}" action="{!addUserPass}" rendered="false"/>&nbsp;
                     <apex:commandButton value="{!$Label.copado__run_all_tests}" action="{!runAllTest}" id="btnRunAllTests"/>&nbsp;
                     <apex:commandButton value="Apex Test Results Summary" onclick="window.open('/apex/{!namespace}OrgApexTestResultsSummary?id={!copado__Org__c.Id}');return false;" id="btnApexTestSummary"/>&nbsp;
-                    <apex:commandButton value="Run Static Code Analysis" action="{!orgCodeAnalysis}" id="btnRunCodeAnalysis" rendered="{!scaAccess}"/>&nbsp;
+                    <apex:commandButton value="Run Static Code Analysis" action="{!orgCodeAnalysis}" id="btnRunCodeAnalysis" rendered="{!scaAccess}"/>&nbsp;    
                     <apex:commandButton value="Static Code Analysis Summary" onclick="window.open('/apex/{!namespace}StaticCodeAnalysisSummary?id={!copado__Org__c.Id}&entity=Org');return false;" id="btnStaticCodeAnalysis" rendered="{!scaAccess}"/>
                     </center>
                 </div>
