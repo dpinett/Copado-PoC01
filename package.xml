@@ -565,11 +565,13 @@
     <members>Asset.ParentId</members>
     <members>Asset.Price</members>
     <members>Asset.Product2Id</members>
+    <members>Asset.ProductCode</members>
     <members>Asset.PurchaseDate</members>
     <members>Asset.Quantity</members>
     <members>Asset.RootAssetId</members>
     <members>Asset.SerialNumber</members>
     <members>Asset.Status</members>
+    <members>Asset.StockKeepingUnit</members>
     <members>Asset.SystemModstamp</members>
     <members>Asset.UsageEndDate</members>
     <members>AssetRelationship.AssetId</members>
@@ -600,22 +602,6 @@
     <members>AssetTokenEvent.Name</members>
     <members>AssetTokenEvent.ReplayId</members>
     <members>AssetTokenEvent.UserId</members>
-    <members>AssistantRecommendation.ActionPrepopulationValues</members>
-    <members>AssistantRecommendation.BaseScore</members>
-    <members>AssistantRecommendation.CreatedById</members>
-    <members>AssistantRecommendation.CreatedDate</members>
-    <members>AssistantRecommendation.EndTime</members>
-    <members>AssistantRecommendation.Id</members>
-    <members>AssistantRecommendation.IsDeleted</members>
-    <members>AssistantRecommendation.LastModifiedById</members>
-    <members>AssistantRecommendation.LastModifiedDate</members>
-    <members>AssistantRecommendation.Name</members>
-    <members>AssistantRecommendation.OwnerId</members>
-    <members>AssistantRecommendation.Reason</members>
-    <members>AssistantRecommendation.RecommendationType</members>
-    <members>AssistantRecommendation.RecordId</members>
-    <members>AssistantRecommendation.StartTime</members>
-    <members>AssistantRecommendation.SystemModstamp</members>
     <members>Attachment.Body</members>
     <members>Attachment.BodyLength</members>
     <members>Attachment.ContentType</members>
@@ -881,6 +867,7 @@
     <members>ContentDocument.ParentId</members>
     <members>ContentDocument.PublishStatus</members>
     <members>ContentDocument.SharingOption</members>
+    <members>ContentDocument.SharingPrivacy</members>
     <members>ContentDocument.SystemModstamp</members>
     <members>ContentDocument.Title</members>
     <members>ContentDocumentLink.ContentDocumentId</members>
@@ -925,6 +912,7 @@
     <members>ContentVersion.RatingCount</members>
     <members>ContentVersion.ReasonForChange</members>
     <members>ContentVersion.SharingOption</members>
+    <members>ContentVersion.SharingPrivacy</members>
     <members>ContentVersion.SystemModstamp</members>
     <members>ContentVersion.TagCsv</members>
     <members>ContentVersion.TextPreview</members>
@@ -1124,6 +1112,7 @@
     <members>Event.AccountId</members>
     <members>Event.ActivityDate</members>
     <members>Event.ActivityDateTime</members>
+    <members>Event.ActivityExtensionId</members>
     <members>Event.CreatedById</members>
     <members>Event.CreatedDate</members>
     <members>Event.Description</members>
@@ -1170,6 +1159,7 @@
     <members>FeedComment.InsertedById</members>
     <members>FeedComment.IsDeleted</members>
     <members>FeedComment.IsRichText</members>
+    <members>FeedComment.IsVerified</members>
     <members>FeedComment.LastEditById</members>
     <members>FeedComment.LastEditDate</members>
     <members>FeedComment.ParentId</members>
@@ -1185,6 +1175,7 @@
     <members>FeedItem.HasContent</members>
     <members>FeedItem.HasFeedEntity</members>
     <members>FeedItem.HasLink</members>
+    <members>FeedItem.HasVerifiedComment</members>
     <members>FeedItem.Id</members>
     <members>FeedItem.InsertedById</members>
     <members>FeedItem.IsDeleted</members>
@@ -1294,13 +1285,16 @@
     <members>Macro.CreatedDate</members>
     <members>Macro.Description</members>
     <members>Macro.Id</members>
+    <members>Macro.IsAlohaSupported</members>
     <members>Macro.IsDeleted</members>
+    <members>Macro.IsLightningSupported</members>
     <members>Macro.LastModifiedById</members>
     <members>Macro.LastModifiedDate</members>
     <members>Macro.LastReferencedDate</members>
     <members>Macro.LastViewedDate</members>
     <members>Macro.Name</members>
     <members>Macro.OwnerId</members>
+    <members>Macro.StartingContext</members>
     <members>Macro.SystemModstamp</members>
     <members>Metric.OrigMetricId__c</members>
     <members>Note.Body</members>
@@ -1486,6 +1480,7 @@
     <members>Product2.Name</members>
     <members>Product2.ProductCode</members>
     <members>Product2.QuantityUnitOfMeasure</members>
+    <members>Product2.StockKeepingUnit</members>
     <members>Product2.SystemModstamp</members>
     <members>Solution.CreatedById</members>
     <members>Solution.CreatedDate</members>
@@ -1622,6 +1617,7 @@
     <members>User.Name</members>
     <members>User.OfflinePdaTrialExpirationDate</members>
     <members>User.OfflineTrialExpirationDate</members>
+    <members>User.OutOfOfficeMessage</members>
     <members>User.Phone</members>
     <members>User.ProfileId</members>
     <members>User.ReceivesAdminInfoEmails</members>
@@ -1674,6 +1670,7 @@
     <members>User.UserPreferencesDisableWorkEmail</members>
     <members>User.UserPreferencesEnableAutoSubForFeeds</members>
     <members>User.UserPreferencesEventRemindersCheckboxDefault</members>
+    <members>User.UserPreferencesExcludeMailAppAttachments</members>
     <members>User.UserPreferencesFavoritesShowTopFavorites</members>
     <members>User.UserPreferencesFavoritesWTShown</members>
     <members>User.UserPreferencesGlobalNavBarWTShown</members>
@@ -4421,6 +4418,7 @@
     <members>Quote</members>
     <members>Search</members>
     <members>Security</members>
+    <members>SocialCustomerService</members>
     <name>Settings</name>
   </types>
   <types>
@@ -4556,6 +4554,87 @@
     <name>StaticResource</name>
   </types>
   <types>
+    <members>Account</members>
+    <members>Asset</members>
+    <members>Campaign</members>
+    <members>Case</members>
+    <members>Contact</members>
+    <members>ContentDocument</members>
+    <members>Contract</members>
+    <members>Event</members>
+    <members>Lead</members>
+    <members>Opportunity</members>
+    <members>Order</members>
+    <members>Solution</members>
+    <members>Task</members>
+    <members>copado__Apex_Test_Result__c</members>
+    <members>copado__AuxiliaryObject__c</members>
+    <members>copado__Branch_Management_Permission__c</members>
+    <members>copado__Build_Task__c</members>
+    <members>copado__Continuous_Integration_Permission__c</members>
+    <members>copado__Continuous_Integration__c</members>
+    <members>copado__Copado_Notification__c</members>
+    <members>copado__Deployment_Flow_Step__c</members>
+    <members>copado__Deployment_Flow__c</members>
+    <members>copado__Deployment_History__c</members>
+    <members>copado__Deployment_Job__c</members>
+    <members>copado__Deployment_Task__c</members>
+    <members>copado__Deployment__c</members>
+    <members>copado__Destination_Org__c</members>
+    <members>copado__Environment__c</members>
+    <members>copado__Environmental_Variable__c</members>
+    <members>copado__Epic__c</members>
+    <members>copado__External_CI_Job_Result__c</members>
+    <members>copado__External_CI_Job__c</members>
+    <members>copado__External_CI_Setting__c</members>
+    <members>copado__Git_Backup__c</members>
+    <members>copado__Git_Commit__c</members>
+    <members>copado__Git_Org_Commit__c</members>
+    <members>copado__Git_Repository__c</members>
+    <members>copado__Kanban_Board__c</members>
+    <members>copado__OrgDiff__c</members>
+    <members>copado__Org__c</members>
+    <members>copado__Persona_Permission__c</members>
+    <members>copado__Persona__c</members>
+    <members>copado__Project__c</members>
+    <members>copado__Promoted_User_Story__c</members>
+    <members>copado__Promotion__c</members>
+    <members>copado__Pull_Request_Review__c</members>
+    <members>copado__Pull_Request__c</members>
+    <members>copado__Release__c</members>
+    <members>copado__Scheduled_Job_Run__c</members>
+    <members>copado__Scheduled_Job__c</members>
+    <members>copado__Selenium_Group_Org_Credential__c</members>
+    <members>copado__Selenium_Group_Test_Suite__c</members>
+    <members>copado__Selenium_Group_Variable__c</members>
+    <members>copado__Selenium_Locator_Reference__c</members>
+    <members>copado__Selenium_Locator__c</members>
+    <members>copado__Selenium_Settings__c</members>
+    <members>copado__Selenium_Test_Case_Per_Suite__c</members>
+    <members>copado__Selenium_Test_Case__c</members>
+    <members>copado__Selenium_Test_Group__c</members>
+    <members>copado__Selenium_Test_Result__c</members>
+    <members>copado__Selenium_Test_Run__c</members>
+    <members>copado__Selenium_Test_Suite__c</members>
+    <members>copado__Snapshot_Difference__c</members>
+    <members>copado__Sprint__c</members>
+    <members>copado__Static_Code_Analysis_Result__c</members>
+    <members>copado__Static_Code_Analysis_Rule__c</members>
+    <members>copado__Static_Code_Analysis_Settings__c</members>
+    <members>copado__Step__c</members>
+    <members>copado__Test_Run_Step__c</members>
+    <members>copado__Test_Run__c</members>
+    <members>copado__Test_Script_Step__c</members>
+    <members>copado__Test_Script__c</members>
+    <members>copado__User_Persona_Assignment__c</members>
+    <members>copado__User_Story_Commit__c</members>
+    <members>copado__User_Story_Metadata__c</members>
+    <members>copado__User_Story_Selenium_Test__c</members>
+    <members>copado__User_Story_Task__c</members>
+    <members>copado__User_Story__c</members>
+    <name>TopicsForObjects</name>
+  </types>
+  <types>
     <members>copado__Environmental_Variable__c.copado__Value_is_required</members>
     <members>copado__Git_Org_Commit__c.copado__Commit_Id_Status_Complete</members>
     <members>copado__OrgDiff__c.copado__Should_be_differents</members>
@@ -4612,109 +4691,9 @@
     <name>WebLink</name>
   </types>
   <types>
-    <members>Account</members>
-    <members>Asset</members>
-    <members>AssetRelationship</members>
-    <members>AssistantProgress</members>
-    <members>Campaign</members>
-    <members>CampaignMember</members>
-    <members>Case</members>
-    <members>Contact</members>
-    <members>Contract</members>
-    <members>DandBCompany</members>
-    <members>DuplicateRecordItem</members>
-    <members>DuplicateRecordSet</members>
-    <members>EmailMessage</members>
-    <members>Event</members>
-    <members>ExchangeUserMapping</members>
-    <members>FeedItem</members>
-    <members>Idea</members>
-    <members>Lead</members>
-    <members>Macro</members>
-    <members>MacroAction</members>
-    <members>MacroInstruction</members>
-    <members>Opportunity</members>
-    <members>OpportunityLineItem</members>
-    <members>Order</members>
-    <members>OrderItem</members>
-    <members>Organization</members>
-    <members>Product2</members>
-    <members>Site</members>
-    <members>SocialPersona</members>
-    <members>Solution</members>
-    <members>StreamingChannel</members>
-    <members>Task</members>
-    <members>User</members>
-    <members>UserLicense</members>
-    <members>UserProvisioningRequest</members>
-    <members>copado__Apex_Test_Result__c</members>
-    <members>copado__AuxiliaryObject__c</members>
-    <members>copado__Branch_Management_Permission__c</members>
-    <members>copado__Build_Task__c</members>
-    <members>copado__Change_Management_Settings__c</members>
-    <members>copado__Continuous_Integration_Permission__c</members>
-    <members>copado__Continuous_Integration__c</members>
-    <members>copado__Copado_Notification__c</members>
-    <members>copado__Copado_Setting__mdt</members>
-    <members>copado__Deployment_Flow_Step__c</members>
-    <members>copado__Deployment_Flow__c</members>
-    <members>copado__Deployment_History__c</members>
     <members>copado__Deployment_Job__c</members>
-    <members>copado__Deployment_Task__c</members>
     <members>copado__Deployment__c</members>
-    <members>copado__Destination_Org__c</members>
-    <members>copado__Environment__c</members>
-    <members>copado__Environmental_Variable__c</members>
-    <members>copado__Epic__c</members>
-    <members>copado__External_CI_Job_Result__c</members>
-    <members>copado__External_CI_Job__c</members>
-    <members>copado__External_CI_Setting__c</members>
-    <members>copado__Git_Backup__c</members>
-    <members>copado__Git_Commit__c</members>
-    <members>copado__Git_Org_Commit__c</members>
-    <members>copado__Git_Repository__c</members>
-    <members>copado__Kanban_Board__c</members>
-    <members>copado__OrgDiff__c</members>
-    <members>copado__Org__c</members>
-    <members>copado__Persona_Permission__c</members>
-    <members>copado__Persona__c</members>
-    <members>copado__Personal_Settings__c</members>
-    <members>copado__Project__c</members>
-    <members>copado__Promoted_User_Story__c</members>
-    <members>copado__Promotion__c</members>
-    <members>copado__Pull_Request_Review__c</members>
-    <members>copado__Pull_Request__c</members>
-    <members>copado__Release__c</members>
-    <members>copado__Scheduled_Job_Run__c</members>
-    <members>copado__Scheduled_Job__c</members>
-    <members>copado__Selenium_Group_Org_Credential__c</members>
-    <members>copado__Selenium_Group_Test_Suite__c</members>
-    <members>copado__Selenium_Group_Variable__c</members>
-    <members>copado__Selenium_Locator_Reference__c</members>
-    <members>copado__Selenium_Locator__c</members>
-    <members>copado__Selenium_Settings__c</members>
-    <members>copado__Selenium_Test_Case_Per_Suite__c</members>
-    <members>copado__Selenium_Test_Case__c</members>
-    <members>copado__Selenium_Test_Group__c</members>
-    <members>copado__Selenium_Test_Result__c</members>
-    <members>copado__Selenium_Test_Run__c</members>
-    <members>copado__Selenium_Test_Suite__c</members>
-    <members>copado__Snapshot_Difference__c</members>
-    <members>copado__Sprint__c</members>
-    <members>copado__Static_Code_Analysis_Result__c</members>
-    <members>copado__Static_Code_Analysis_Rule__c</members>
-    <members>copado__Static_Code_Analysis_Settings__c</members>
-    <members>copado__Step__c</members>
-    <members>copado__Test_Run_Step__c</members>
-    <members>copado__Test_Run__c</members>
-    <members>copado__Test_Script_Step__c</members>
-    <members>copado__Test_Script__c</members>
-    <members>copado__User_Persona_Assignment__c</members>
     <members>copado__User_Story_Commit__c</members>
-    <members>copado__User_Story_Metadata__c</members>
-    <members>copado__User_Story_Selenium_Test__c</members>
-    <members>copado__User_Story_Task__c</members>
-    <members>copado__User_Story__c</members>
     <name>Workflow</name>
   </types>
   <types>
@@ -4740,5 +4719,5 @@
     <members>copado__Deployment__c.copado__Deployment_scheduled</members>
     <name>WorkflowTask</name>
   </types>
-  <version>40.0</version>
+  <version>41.0</version>
 </Package>
