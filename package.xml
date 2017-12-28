@@ -4498,6 +4498,7 @@
     <members>OpportunityType</members>
     <members>OrderStatus</members>
     <members>OrderType</members>
+    <members>PartnerRole</members>
     <members>Product2Family</members>
     <members>Salutation</members>
     <members>Salutation</members>
