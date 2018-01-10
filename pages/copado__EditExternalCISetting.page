@@ -1,16 +1,18 @@
 <apex:page showHeader="true" sidebar="true" standardController="copado__External_CI_Setting__c" extensions="copado.EditExternalCISetting" title="{!$Label.site.edit} {!$ObjectType.copado__External_CI_Setting__c.Label}">
-<apex:pageMessages id="theMessages"/>	
-	<html>
+	<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en" style="height: 100%;">
 		<head>
 		<apex:slds />
 		<c:GAnalytics />
 		</head>
-		<body  class="slds-scope">
+		<body class="slds-scope"  style="{!IF($User.UIThemeDisplayed == 'Theme4d','margin: 12px;background-image: url(/_slds/images/themes/oneSalesforce/banner-brand-default.png?cache=210.2),linear-gradient(to top,rgba(32, 92, 159, 0), rgb(32, 92, 159));','')}">
 			<apex:form id="form" rendered="{!AND(showOptions,!showError)}">
 				<!--<apex:sectionHeader title="{!$ObjectType.External_CI_Setting__c.Label} {!$Label.EDIT}" subtitle="{!IF(ISBLANK(externalCISetting.Name),'New '+ $ObjectType.External_CI_Setting__c.Label ,externalCISetting.Name)}" description="{!$Label.EXTERNAL_CI_SETTING_DESC}"/>
 				<apex:pageMessages id="theMessages"/>-->
 
-				<div class="slds-page-header">
+				<div class="slds-page-header" style="{!IF($User.UIThemeDisplayed == 'Theme4d','background: #fdfdfd;margin-bottom: 12px;border-collapse: collapse;border-radius: 4px;','')}">
+	                <apex:outputPanel layout="block" id="pageMessages">
+	                    <apex:pagemessages id="pmessage"/>
+	                </apex:outputPanel>
 					<div class="slds-grid">
 						<div class="slds-col slds-has-flexi-truncate">
 							<div class="slds-media">
@@ -37,24 +39,26 @@
 						<!-- / ACTION BUTTONS -->
 					</div>
 				</div>
-				<fieldset class="slds-box slds-theme--default slds-container--fluid">
-					<legend id="newaccountform" class="slds-text-heading--medium " style="padding-top: 10px;">
-						{!IF(ISBLANK(externalCISetting.Name),'New '+ $ObjectType.External_CI_Job__c.Label ,externalCISetting.Name)}
-					</legend>
-					
-					<form class="slds-form--stacked">
-						<div class="slds-grid">
-							<div class="slds-col" >
-								<c:LightningReadyInputFields SObject="{!externalCISetting}" requiredView="true" Field="Name"></c:LightningReadyInputFields>								
-								<c:LightningReadyInputFields SObject="{!externalCISetting}" requiredView="true" Field="CI_Tool__c"></c:LightningReadyInputFields>
-								<c:LightningReadyInputFields SObject="{!externalCISetting}" requiredView="true" Field="Endpoint__c"></c:LightningReadyInputFields>
-								<c:LightningReadyInputFields SObject="{!externalCISetting}" requiredView="true" Field="Username__c"></c:LightningReadyInputFields>
-								<c:LightningReadyInputFields SObject="{!externalCISetting}" requiredView="false" Field="API_Token__c" inputSecret="true"></c:LightningReadyInputFields>
-								<c:LightningReadyInputFields SObject="{!externalCISetting}" requiredView="true" Field="Password__c" inputSecret="true"></c:LightningReadyInputFields>
+				<div style="padding:12px;background: #fdfdfd;border-collapse: collapse; background: #fdfdfd;border-radius: 4px;">
+					<fieldset class="slds-box slds-theme--default slds-container--fluid">
+						<legend id="newaccountform" class="slds-text-heading--medium " style="padding-top: 10px;">
+							{!IF(ISBLANK(externalCISetting.Name),'New '+ $ObjectType.External_CI_Job__c.Label ,externalCISetting.Name)}
+						</legend>
+						
+						<form class="slds-form--stacked">
+							<div class="slds-grid">
+								<div class="slds-col" >
+									<c:LightningReadyInputFields SObject="{!externalCISetting}" requiredView="true" Field="Name"></c:LightningReadyInputFields>								
+									<c:LightningReadyInputFields SObject="{!externalCISetting}" requiredView="true" Field="CI_Tool__c"></c:LightningReadyInputFields>
+									<c:LightningReadyInputFields SObject="{!externalCISetting}" requiredView="true" Field="Endpoint__c"></c:LightningReadyInputFields>
+									<c:LightningReadyInputFields SObject="{!externalCISetting}" requiredView="true" Field="Username__c"></c:LightningReadyInputFields>
+									<c:LightningReadyInputFields SObject="{!externalCISetting}" requiredView="false" Field="API_Token__c" inputSecret="true"></c:LightningReadyInputFields>
+									<c:LightningReadyInputFields SObject="{!externalCISetting}" requiredView="true" Field="Password__c" inputSecret="true"></c:LightningReadyInputFields>
+								</div>
 							</div>
-						</div>
-					</form>	
-				</fieldset>
+						</form>	
+					</fieldset>
+				</div>
 
 				<!--<apex:pageBlock id="pb_editSetting"  mode="edit">
 					<apex:pageblockButtons >

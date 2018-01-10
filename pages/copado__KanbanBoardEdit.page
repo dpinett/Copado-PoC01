@@ -1,4 +1,4 @@
-<apex:page docType="html-5.0" standardStylesheets="true" showHeader="true" sidebar="true" standardController="copado__Kanban_Board__c" extensions="copado.KanbanBoard" title="{!$ObjectType.copado__Kanban_Board__c.label} {!$Label.copado__edit}">
+<apex:page docType="html-5.0" standardStylesheets="true" showHeader="true" sidebar="true" standardController="copado__Kanban_Board__c" extensions="copado.KanbanBoard" title="{!$ObjectType.copado__Kanban_Board__c.label} {!$Label.copado__edit}" >
     <html>
     <head>
         <apex:stylesheet value="{!URLFOR($Resource.copado__jqw430,'styles/jqx.base.css')}" />
@@ -101,7 +101,7 @@
                     <!-- / ACTION BUTTONS -->
                 </div>
             </div>
-            <div id="content" style="margin-left: 20px;">
+            <div id="content" style="margin: 0 20px 20px 20px;">
                 <div class="slds-section slds-is-open">
                     <h3 class="slds-section__title slds-theme_shade">
                         <span class="slds-truncate slds-p-horizontal_small" title="Section Title">{!$Label.KANBAN_BOARD_INFORMATION}</span>

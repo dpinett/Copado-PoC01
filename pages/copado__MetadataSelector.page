@@ -1,4 +1,4 @@
-<apex:page id="thePage" standardController="copado__User_Story__c" extensions="copado.MetadataselectorExtension,copado.Settings,copado.JsRemotingController" showHeader="false" sidebar="false" standardStyleSheets="true">
+<apex:page id="thePage" standardController="copado__User_Story__c" extensions="copado.MetadataselectorExtension,copado.Settings,copado.JsRemotingController" showHeader="false" sidebar="false" standardStyleSheets="true" lightningStylesheets="true">
     <c:GAnalytics />
     <head>
         <style type="text/css">
@@ -15,6 +15,7 @@
             }
         </style>
         <c:WizardUtils />
+        <apex:stylesheet value="{!URLFOR($Resource.copado__CopadoLightningCSS)}" />
     	<apex:includeScript value="{!URLFOR($Resource.JsRemoting) }"/>
         <apex:includeScript value="{!URLFOR($Resource.statusManager) }" />
         <apex:includeScript value="{!URLFOR($Resource.utilsV2) }"/>
@@ -27,7 +28,7 @@
             var $copado = jQuery.noConflict();
             var Copado_Licenses = {!CurrentUserLicenses}; 
         </script>
-        <script id="connectionJS" src="/soap/ajax/32.0/connection.js"></script>
+        <script id="connectionJS" src="../../soap/ajax/32.0/connection.js" type="text/javascript"></script>
         <apex:includeScript value="{!URLFOR($Resource.copado__Statics, 'js/json2.js')}"/>
         <apex:includeScript value="{!URLFOR($Resource.copado__Statics, 'js/jquery.cometd.js')}"/>
         <apex:includeScript value="{!URLFOR($Resource.copadoStreamingService) }" />
@@ -39,7 +40,6 @@
                 metadata_url : '{!JSENCODE(metadata_url)}'
             };
         </script>
-        
     </head>
     <c:ScreenLocker msg="{!$Label.copado__loading}" />
     <apex:sectionHeader rendered="{!mode=='ApexTests'}" id="sectionHeaderApex" title="{!$Label.copado__copado_change_management}" subtitle="Apex Test Class selector" />
@@ -55,14 +55,14 @@
         <apex:pageMessage title="{!$Label.copado__error}" summary="__MSG__" severity="error" strength="3" id="js-msg-ERROR" />
     </div>
 
-    <apex:form id="theForm" rendered="{!hasOrg}">
+    <apex:form id="theForm" rendered="{!hasOrg}" styleClass="copado-lightning-container">
         <apex:actionFunction name="showMessage" action="{!showMessage}" rerender="msg">
             <apex:param name="errorLevel" assignTo="{!errorLevel}" value="" />
             <apex:param name="messageName" assignTo="{!messageName}" value="" />
         </apex:actionFunction> 
             
         <apex:pageBlock id="pb" rendered="{!AND(showOptions,!showError)}" >
-            <apex:pageBlockButtons id="pbb_Save">
+            <apex:pageBlockButtons id="pbb_Save" location="top">
                 <apex:commandButton id="btnSave" value="{!$Label.site.save}"  onclick="return copadoApp.save();" rerender="pb" />&nbsp;
                 <apex:commandButton id="btnClose" value="Close" onclick="top.window.close();" />
                 &nbsp;

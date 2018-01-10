@@ -11,6 +11,10 @@
         <name>copado__Apex_code_before_test__c</name>
     </fields>
     <fields>
+        <label><!-- Notes --></label>
+        <name>copado__Notes__c</name>
+    </fields>
+    <fields>
         <help><!-- This lookup relates to the Copado Change Management test scripts that are related to User Stories. --></help>
         <label><!-- Test Script --></label>
         <name>copado__Test_Script__c</name>

@@ -1,4 +1,4 @@
-<apex:page id="thePage" standardController="copado__Environment__c" tabStyle="copado__Environment__c">
+<apex:page id="thePage" standardController="copado__Environment__c" tabStyle="copado__Environment__c" lightningStylesheets="true">
     
     <c:GAnalytics />
     <apex:sectionHeader title="Copado Selenium Testing" subtitle="{!$Label.copado__new_environment}"/>

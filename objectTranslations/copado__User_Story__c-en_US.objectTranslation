@@ -9,12 +9,24 @@
         <name>Commit_Files_Information</name>
     </fieldSets>
     <fieldSets>
+        <label><!-- Copado Header Fields --></label>
+        <name>Copado_Header_Fields</name>
+    </fieldSets>
+    <fieldSets>
         <label><!-- Promotion Related List --></label>
         <name>PromotionRelatedList</name>
     </fieldSets>
     <fieldSets>
         <label><!-- SprintWall_MassUpdate --></label>
         <name>SprintWall_MassUpdate</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Work Manager Columns --></label>
+        <name>Work_Manager_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Work Manager Relations --></label>
+        <name>Work_Manager_Relations</name>
     </fieldSets>
     <fields>
         <label><!-- Acceptance Criteria Status --></label>
@@ -41,6 +53,14 @@
         <name>copado__Apex_Code_Coverage__c</name>
     </fields>
     <fields>
+        <label><!-- Backburner Rank --></label>
+        <name>copado__Backburner_Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Backlog Rank --></label>
+        <name>copado__Backlog_Rank__c</name>
+    </fields>
+    <fields>
         <label><!-- Business Analyst --></label>
         <name>copado__Business_Analyst__c</name>
         <relationshipLabel><!-- User Stories --></relationshipLabel>
@@ -60,6 +80,34 @@
     <fields>
         <label><!-- Compliance Criteria --></label>
         <name>copado__Compliance_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Status --></label>
+        <name>copado__Compliance_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed - Findings detected</masterLabel>
+            <translation><!-- Completed - Findings detected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed - No Findings</masterLabel>
+            <translation><!-- Completed - No Findings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed - Resolved</masterLabel>
+            <translation><!-- Completed - Resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Error</masterLabel>
+            <translation><!-- Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Investigation</masterLabel>
+            <translation><!-- Under Investigation --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Compliance --></label>
@@ -100,6 +148,28 @@
     <fields>
         <label><!-- Has Apex Code --></label>
         <name>copado__Has_Apex_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Compliance Scan Date --></label>
+        <name>copado__Last_Compliance_Scan_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Validation Deployment Status --></label>
+        <name>copado__Last_Validation_Deployment_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Validation Deployment --></label>
+        <name>copado__Last_Validation_Deployment__c</name>
+        <relationshipLabel><!-- User Stories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Validation Promotion --></label>
+        <name>copado__Last_Validation_Promotion__c</name>
+        <relationshipLabel><!-- User Stories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Latest Commit Date --></label>
+        <name>copado__Latest_Commit_Date__c</name>
     </fields>
     <fields>
         <label><!-- Legal --></label>
@@ -556,6 +626,11 @@
         <name>copado__Story_Points_SFDC__c</name>
     </fields>
     <fields>
+        <label><!-- Team --></label>
+        <name>copado__Team__c</name>
+        <relationshipLabel><!-- User Stories --></relationshipLabel>
+    </fields>
+    <fields>
         <label><!-- Technical Specifications --></label>
         <name>copado__Technical_Specifications__c</name>
     </fields>
@@ -652,6 +727,10 @@
     <webLinks>
         <label><!-- Mass_Add_User_Stories_Sprint --></label>
         <name>copado__Mass_Add_User_Stories_Sprint</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Run_Compliance_Scan --></label>
+        <name>copado__Run_Compliance_Scan</name>
     </webLinks>
     <webLinks>
         <label><!-- Run_Static_Code_Analysis --></label>

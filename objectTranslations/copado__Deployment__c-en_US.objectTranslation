@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldSets>
+        <label><!-- Copado Header Fields --></label>
+        <name>Copado_Header_Fields</name>
+    </fieldSets>
+    <fieldSets>
         <label><!-- CustomFields --></label>
         <name>CustomFields</name>
     </fieldSets>
@@ -12,6 +16,10 @@
     <fields>
         <label><!-- % Completed --></label>
         <name>copado__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Status --></label>
+        <name>copado__Compliance_Status__c</name>
     </fields>
     <fields>
         <label><!-- # Completed --></label>
@@ -46,6 +54,10 @@
         <label><!-- Source Org --></label>
         <name>copado__From_Org__c</name>
         <relationshipLabel><!-- Deployments (From Org) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Compliance Scan Date --></label>
+        <name>copado__Last_Compliance_Scan_Date__c</name>
     </fields>
     <fields>
         <label><!-- Promotion --></label>

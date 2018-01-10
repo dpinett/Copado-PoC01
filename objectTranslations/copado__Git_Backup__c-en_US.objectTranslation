@@ -5,6 +5,10 @@
         <name>Commit_Files_Information</name>
     </fieldSets>
     <fieldSets>
+        <label><!-- Copado Header Fields --></label>
+        <name>Copado_Header_Fields</name>
+    </fieldSets>
+    <fieldSets>
         <label><!-- CustomFields --></label>
         <name>CustomFields</name>
     </fieldSets>
@@ -12,6 +16,10 @@
         <help><!-- the branch in the selected git repository. Usually &quot;master&quot;. --></help>
         <label><!-- Branch --></label>
         <name>copado__Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Status --></label>
+        <name>copado__Compliance_Status__c</name>
     </fields>
     <fields>
         <label><!-- Frequency --></label>
@@ -57,6 +65,10 @@
     <fields>
         <label><!-- Last Snapshot --></label>
         <name>copado__Last_Backup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Compliance Scan Date --></label>
+        <name>copado__Last_Compliance_Scan_Date__c</name>
     </fields>
     <fields>
         <help><!-- Empty means all types. Select one or more types to limit the backup only to selected items. --></help>

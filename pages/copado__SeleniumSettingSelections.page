@@ -1,4 +1,4 @@
-<apex:page id="thePage" standardController="copado__Selenium_Settings__c" extensions="copado.Settings">
+<apex:page id="thePage" standardController="copado__Selenium_Settings__c" extensions="copado.Settings" lightningStylesheets="true">
     <c:GAnalytics />
     <c:WizardUtils />
     <head>

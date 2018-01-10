@@ -1,5 +1,5 @@
-<apex:page applyHtmlTag="true" showHeader="true" sidebar="true" standardStylesheets="true" standardController="copado__External_CI_Setting__c" extensions="copado.EditExternalCISetting" title="{!$Label.copado__view} {!$ObjectType.copado__External_CI_Setting__c.Label}">
-    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+<apex:page applyHtmlTag="true" showHeader="true" sidebar="true" standardStylesheets="true" standardController="copado__External_CI_Setting__c" extensions="copado.EditExternalCISetting" title="{!$Label.copado__view} {!$ObjectType.copado__External_CI_Setting__c.Label}" lightningStylesheets="true">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en" style="height: 100%;">
         <head>
             <c:GAnalytics />
             <apex:slds />
@@ -71,10 +71,10 @@
             </script>
             
         </head>
-        <body class="slds-scope">
+        <body class="slds-scope" style="{!IF($User.UIThemeDisplayed == 'Theme4d','margin: 12px;background-image: url(/_slds/images/themes/oneSalesforce/banner-brand-default.png?cache=210.2),linear-gradient(to top,rgba(32, 92, 159, 0), rgb(32, 92, 159));','')}">
             <apex:form id="form">
                 
-            <div class="slds-page-header">
+            <div class="slds-page-header" style="{!IF($User.UIThemeDisplayed == 'Theme4d','background: #fdfdfd;margin-bottom: 12px;border-collapse: collapse;border-radius: 4px;','')}">
                 <apex:outputPanel layout="block" id="pageMessages">
                     <apex:pagemessages id="pmessage"/>
                 </apex:outputPanel>
@@ -123,72 +123,73 @@
                     </li>
                 </ul>
             </div>
-
             </apex:form>
-            <div class="slds-tabs_default" style="padding: 24px;">
-                <ul class="slds-tabs_default__nav" role="tablist">
-                    <li class="slds-tabs_default__item " title="{!$Label.RELATED_LIST}" role="presentation">
-                        <a class="slds-tabs_default__link slds-text-heading--small" href="javascript:void(0);" role="tab" tabindex="=1" aria-selected="false" aria-controls="related" id="relatedList">{!$Label.RELATED_LIST}</a>
-                    </li>
-                    <li class="slds-tabs_default__item slds-is-active" title="{!$Label.DETAIL}" role="presentation">
-                        <a class="slds-tabs_default__link slds-text-heading--small" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="Information" id="detailInfo">{!$Label.DETAIL}</a>
-                    </li>
-                    
-                </ul>
-                <div id="Information" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="detailInfo">
-                    
-                        <form class="slds-form--stacked">
-                            <div class="slds-grid">
-                                <div class="slds-col" >
-                                    <c:LightningReadyOutputFields SObject="{!externalCISetting}" Field="Name"></c:LightningReadyOutputFields>
-                                    <c:LightningReadyOutputFields SObject="{!externalCISetting}" Field="CI_Tool__c"></c:LightningReadyOutputFields>
-                                    <c:LightningReadyOutputFields SObject="{!externalCISetting}" Field="Endpoint__c"></c:LightningReadyOutputFields>
-                                    <c:LightningReadyOutputFields SObject="{!externalCISetting}" Field="Username__c"></c:LightningReadyOutputFields>
-                                </div>
-                            </div>
-                        </form>         
-                   
-                </div>
-                <div id="related" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="relatedList">
-                    
-                        <form class="slds-form--stacked">
-                            <div class="slds-grid">
-                                <div class="slds-col" >
-                                    <!--<c:LightningReadyRelatedList sObjectAPI="External_CI_Job__c" sObjectList="{!jobs}" title="{!$ObjectType.copado__External_CI_Job__c.Label}" viewFieldName="Name" parentId="{!externalCISetting.Id}" fieldSetName="relatedListFields" iterationSize="5" iconPath="/assets/icons/standard-sprite/svg/symbols.svg#process"/>-->
-                                    <c:LightningReadyRelatedList sObjectAPI="External_CI_Job__c" parentsObjectAPI="External_CI_Setting__c" title="{!$ObjectType.copado__External_CI_Job__c.Label}" parentId="{!externalCISetting.Id}" relationName="External_CI_Jobs__r" viewFieldName="Name" fieldSetName="relatedListFields" iconPath="/assets/icons/standard-sprite/svg/symbols.svg#process"/>
 
-                                    <apex:relatedList list="External_CI_Jobs__r" rendered="{!$User.UIThemeDisplayed == 'Theme3'}"/>
+            <div style="background: #fdfdfd;border-collapse: collapse; background: #fdfdfd;border-radius: 4px;">
+                <div class="slds-tabs_default" style="padding: 24px;">
+                    <ul class="slds-tabs_default__nav" role="tablist">
+                        <li class="slds-tabs_default__item " title="{!$Label.RELATED_LIST}" role="presentation">
+                            <a class="slds-tabs_default__link slds-text-heading--small" href="javascript:void(0);" role="tab" tabindex="=1" aria-selected="false" aria-controls="related" id="relatedList">{!$Label.RELATED_LIST}</a>
+                        </li>
+                        <li class="slds-tabs_default__item slds-is-active" title="{!$Label.DETAIL}" role="presentation">
+                            <a class="slds-tabs_default__link slds-text-heading--small" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="Information" id="detailInfo">{!$Label.DETAIL}</a>
+                        </li>
+                        
+                    </ul>
+                    <div id="Information" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="detailInfo">
+                        
+                            <form class="slds-form--stacked">
+                                <div class="slds-grid">
+                                    <div class="slds-col" >
+                                        <c:LightningReadyOutputFields SObject="{!externalCISetting}" Field="Name"></c:LightningReadyOutputFields>
+                                        <c:LightningReadyOutputFields SObject="{!externalCISetting}" Field="CI_Tool__c"></c:LightningReadyOutputFields>
+                                        <c:LightningReadyOutputFields SObject="{!externalCISetting}" Field="Endpoint__c"></c:LightningReadyOutputFields>
+                                        <c:LightningReadyOutputFields SObject="{!externalCISetting}" Field="Username__c"></c:LightningReadyOutputFields>
+                                    </div>
                                 </div>
-                            </div>
-                        </form>         
-                    
-                </div>
-                <script type="text/javascript">
-                    j$('.slds-tabs_default__item').on('click', function(){
-                        j$(this).addClass('slds-is-active');
-                        j$(this).find('a').attr('aria-selected', true);
-                        var j$contentToShow = j$('#'+j$(this).find('a').attr('aria-controls'));
-                        j$contentToShow.removeClass('slds-hide');
-                        j$contentToShow.addClass('slds-show');
+                            </form>         
+                       
+                    </div>
+                    <div id="related" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="relatedList">
+                        
+                            <form class="slds-form--stacked">
+                                <div class="slds-grid">
+                                    <div class="slds-col" >
+                                        <!--<c:LightningReadyRelatedList sObjectAPI="External_CI_Job__c" parentsObjectAPI="External_CI_Setting__c" title="{!$ObjectType.External_CI_Job__c.Label}" parentId="{!externalCISetting.Id}" relationName="External_CI_Jobs__r" viewFieldName="Name" fieldSetName="relatedListFields" iconPath="/assets/icons/standard-sprite/svg/symbols.svg#process"/>-->
 
-                        j$(this).siblings().removeClass('slds-is-active');
-                        j$(this).siblings().find('a').attr('aria-selected', false);
-                        j$contentToShow.siblings('.slds-tabs_default__content').removeClass('slds-show');
-                        j$contentToShow.siblings('.slds-tabs_default__content').addClass('slds-hide');
-                    });                    
-                </script>
+                                        <apex:relatedList list="External_CI_Jobs__r"/>
+                                    </div>
+                                </div>
+                            </form>         
+                        
+                    </div>
+                    <script type="text/javascript">
+                        j$('.slds-tabs_default__item').on('click', function(){
+                            j$(this).addClass('slds-is-active');
+                            j$(this).find('a').attr('aria-selected', true);
+                            var j$contentToShow = j$('#'+j$(this).find('a').attr('aria-controls'));
+                            j$contentToShow.removeClass('slds-hide');
+                            j$contentToShow.addClass('slds-show');
+
+                            j$(this).siblings().removeClass('slds-is-active');
+                            j$(this).siblings().find('a').attr('aria-selected', false);
+                            j$contentToShow.siblings('.slds-tabs_default__content').removeClass('slds-show');
+                            j$contentToShow.siblings('.slds-tabs_default__content').addClass('slds-hide');
+                        });                    
+                    </script>
+                </div>
+                <apex:actionStatus id="status" styleClass="overlay" style="align:center;" >
+                    <apex:facet name="start" >
+                        <div id="overlay" style="height: 100%;">
+                          <div role="status" class="slds-spinner slds-spinner_medium">
+                            <span class="slds-assistive-text">Loading</span>
+                            <div class="slds-spinner__dot-a"></div>
+                            <div class="slds-spinner__dot-b"></div>
+                          </div>
+                        </div>                      
+                    </apex:facet>
+                </apex:actionStatus>
             </div>
-            <apex:actionStatus id="status" styleClass="overlay" style="align:center;" >
-                <apex:facet name="start" >
-                    <div id="overlay" style="height: 100%;">
-                      <div role="status" class="slds-spinner slds-spinner_medium">
-                        <span class="slds-assistive-text">Loading</span>
-                        <div class="slds-spinner__dot-a"></div>
-                        <div class="slds-spinner__dot-b"></div>
-                      </div>
-                    </div>                      
-                </apex:facet>
-            </apex:actionStatus>
         </body>
     </html>
     <!--<apex:form id="form">
