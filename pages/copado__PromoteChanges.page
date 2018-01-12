@@ -156,13 +156,13 @@
                 }
                 function closeUSDep(){
                   j$('[id$=dependencyUSComponent]').hide();
-                }                    
-                
+                }
+
                 document.onreadystatechange = function(){
                     if(document.readyState === 'complete'){
                         createPullRequestLinks();
                     }
-                }
+                }               
                 j$(document).ready(function(){
                     j$('#toggleBtn').click(function(){  
                         j$('#backdrop').addClass('slds-backdrop--open');
@@ -356,15 +356,27 @@
                                         <ul class="slds-tabs--path__nav" role="tablist">
                                             <li class="slds-tabs--path__item {!IF(promotion.Status__c == 'Completed','slds-is-complete slds-is-won','slds-is-current')}" role="presentation">
                                                 <a class="slds-tabs--path__link" id="tabs-path-93" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                                    <span class="slds-path__stage">
+                                                      <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                                                        <use xlink:href="{!IF(promotion.Status__c == 'Completed', URLFOR($Resource.SLDS,'/assets/icons/utility-sprite/svg/symbols.svg#check'),'')}" />
+                                                      </svg>
+                                                      <span class="slds-assistive-text">{!IF(promotion.Status__c == 'Completed','Stage Complete','Current Stage:')}</span>
+                                                    </span>
                                                     <span class="slds-tabs--path__title" style="{!IF(Promotion__c.Back_Promotion__c,'transform: rotate(180deg);','')}">
-                                                        {!Promotion__c.Source_Environment__r.Name}
+                                                        &nbsp;{!Promotion__c.Source_Environment__r.Name}
                                                     </span>
                                                 </a>
                                             </li>
                                             <li class="slds-tabs--path__item {!IF(promotion.Status__c == 'Completed','slds-is-complete slds-is-won','slds-is-incomplete')}" role="presentation">
                                                 <a class="slds-tabs--path__link" id="tabs-path-93" aria-controls="content-path-1" aria-selected="false" tabindex="-1" role="tab" href="javascript:void(0);" aria-live="assertive">
+                                                    <span class="slds-path__stage">
+                                                      <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                                                        <use xlink:href="{!IF(promotion.Status__c == 'Completed', URLFOR($Resource.SLDS,'/assets/icons/utility-sprite/svg/symbols.svg#check'),'')}" />
+                                                      </svg>
+                                                      <span class="slds-assistive-text">{!IF(promotion.Status__c == 'Completed','Stage Complete','')}</span>
+                                                    </span>
                                                     <span class="slds-tabs--path__title" style="{!IF(Promotion__c.Back_Promotion__c,'transform: rotate(180deg);','')}">
-                                                        {!Promotion__c.Destination_Environment__r.Name}
+                                                        &nbsp;{!Promotion__c.Destination_Environment__r.Name}
                                                     </span>
                                                 </a>
                                             </li>
@@ -774,19 +786,17 @@
                     </apex:outputPanel>
                     
                     <apex:outputPanel id="usMetadataPanel" layout="block" styleClass="copado-lightning-container">
-                        <apex:form id="userStoryMetadataForm">    
-                                <apex:pageBlock id="userStoryMetadata" title="{!$Label.copado__promotion_user_story_metadata}">
-                                    <apex:pageBlockTable value="{!userStoryMetadatas}" var="metadata" styleClass="slds-table slds-table_bordered" html-cid="userStoryMetadatasTable" rendered="{!userStoryMetadatas.size>0}">
-                                        <apex:column id="col1" width="60" headerValue="Metadata" style="border-bottom: 1px solid #dddbda !important;">
-                                            <apex:outputLink value="/{!metadata.Id}">{!metadata.copado__Metadata_API_Name__c}</apex:outputLink>
-                                        </apex:column>  
-                                        <apex:column id="col2" value="{!metadata.copado__User_Story__c}" width="30"/>  
-                                        <apex:column id="col3" value="{!metadata.copado__Status__c}" width="30"/>  
-                                        <apex:column id="col4" value="{!metadata.copado__Status_Icon__c}" width="10"/> 
-                                        <apex:column id="col5" value="{!metadata.LastModifiedDate}" width="30"/>  
-                                    </apex:pageBlockTable>
-                                </apex:pageBlock> 
-                        </apex:form>
+                        <apex:pageBlock id="userStoryMetadata" title="{!$Label.copado__promotion_user_story_metadata}">
+                            <apex:pageBlockTable value="{!userStoryMetadatas}" var="metadata" styleClass="slds-table slds-table_bordered" html-cid="userStoryMetadatasTable" rendered="{!userStoryMetadatas.size>0}">
+                                <apex:column id="col1" width="60" headerValue="Metadata" style="border-bottom: 1px solid #dddbda !important;">
+                                    <apex:outputLink value="/{!metadata.Id}">{!metadata.copado__Metadata_API_Name__c}</apex:outputLink>
+                                </apex:column>  
+                                <apex:column id="col2" value="{!metadata.copado__User_Story__c}" width="30"/>  
+                                <apex:column id="col3" value="{!metadata.copado__Status__c}" width="30"/>  
+                                <apex:column id="col4" value="{!metadata.copado__Status_Icon__c}" width="10"/> 
+                                <apex:column id="col5" value="{!metadata.LastModifiedDate}" width="30"/>  
+                            </apex:pageBlockTable>
+                        </apex:pageBlock> 
                     </apex:outputPanel>
 
                 </apex:outputPanel>
