@@ -4879,6 +4879,7 @@
     <name>SharingRules</name>
   </types>
   <types>
+    <members>AccountContactRole</members>
     <members>AccountOwnership</members>
     <members>AccountRating</members>
     <members>AccountRating</members>
@@ -4892,6 +4893,8 @@
     <members>CaseReason</members>
     <members>CaseStatus</members>
     <members>CaseType</members>
+    <members>ContactRole</members>
+    <members>ContractContactRole</members>
     <members>ContractStatus</members>
     <members>EventSubject</members>
     <members>IdeaMultiCategory</members>
