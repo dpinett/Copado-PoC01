@@ -1161,7 +1161,6 @@
     <members>Event.AccountId</members>
     <members>Event.ActivityDate</members>
     <members>Event.ActivityDateTime</members>
-    <members>Event.ActivityExtensionId</members>
     <members>Event.CreatedById</members>
     <members>Event.CreatedDate</members>
     <members>Event.Description</members>
@@ -1531,6 +1530,20 @@
     <members>Product2.QuantityUnitOfMeasure</members>
     <members>Product2.StockKeepingUnit</members>
     <members>Product2.SystemModstamp</members>
+    <members>QuickText.Category</members>
+    <members>QuickText.Channel</members>
+    <members>QuickText.CreatedById</members>
+    <members>QuickText.CreatedDate</members>
+    <members>QuickText.Id</members>
+    <members>QuickText.IsDeleted</members>
+    <members>QuickText.LastModifiedById</members>
+    <members>QuickText.LastModifiedDate</members>
+    <members>QuickText.LastReferencedDate</members>
+    <members>QuickText.LastViewedDate</members>
+    <members>QuickText.Message</members>
+    <members>QuickText.Name</members>
+    <members>QuickText.OwnerId</members>
+    <members>QuickText.SystemModstamp</members>
     <members>Solution.CreatedById</members>
     <members>Solution.CreatedDate</members>
     <members>Solution.Id</members>
@@ -3944,6 +3957,8 @@
     <members>CampaignMember</members>
     <members>Case</members>
     <members>CaseContactRole</members>
+    <members>CollaborationGroup</members>
+    <members>CollaborationGroupMember</members>
     <members>Contact</members>
     <members>ContactCleanInfo</members>
     <members>ContentVersion</members>
@@ -3969,17 +3984,22 @@
     <members>OpportunityLineItem</members>
     <members>Order</members>
     <members>OrderItem</members>
+    <members>OrgDeleteRequest</members>
     <members>PartnerRole</members>
     <members>Pricebook2</members>
     <members>PricebookEntry</members>
     <members>Product2</members>
+    <members>QuickText</members>
     <members>Scorecard</members>
+    <members>ScorecardAssociation</members>
     <members>ScorecardMetric</members>
     <members>Site</members>
     <members>SocialPersona</members>
     <members>Solution</members>
     <members>StreamingChannel</members>
     <members>Task</members>
+    <members>Topic</members>
+    <members>TopicAssignment</members>
     <members>User</members>
     <members>UserProvisioningRequest</members>
     <members>copado__Apex_Test_Result__c</members>
@@ -4216,6 +4236,7 @@
     <members>standard-Idea</members>
     <members>standard-JigsawSearch</members>
     <members>standard-Lead</members>
+    <members>standard-ListEmail</members>
     <members>standard-Macro</members>
     <members>standard-Opportunity</members>
     <members>standard-Order</members>
@@ -4372,7 +4393,9 @@
     <members>Pricebook2-Price Book Layout</members>
     <members>PricebookEntry-Price Book Entry Layout</members>
     <members>Product2-Product Layout</members>
+    <members>QuickText-Formato de Texto rápido</members>
     <members>Scorecard-Scorecard Layout</members>
+    <members>ScorecardAssociation-Scorecard Association Layout</members>
     <members>ScorecardMetric-Scorecard Metric Layout</members>
     <members>SocialPersona-Social Persona Layout</members>
     <members>SocialPost-Social Post Layout</members>
@@ -4486,6 +4509,7 @@
     <members>Case.AllOpenCases</members>
     <members>Case.MyCases</members>
     <members>Case.MyOpenCases</members>
+    <members>CollaborationGroup.All_ChatterGroups</members>
     <members>Contact.AllContacts</members>
     <members>Contact.BirthdaysThisMonth</members>
     <members>Contact.MyContacts</members>
@@ -4517,6 +4541,8 @@
     <members>Order.AllDraftOrders</members>
     <members>Order.AllOrders</members>
     <members>Product2.AllProducts</members>
+    <members>Scorecard.AllScorecards</members>
+    <members>Scorecard.MyScorecards</members>
     <members>Solution.AllReviewedSolutions</members>
     <members>Solution.AllUnreviewedSolutions</members>
     <members>User.ActiveUsers</members>
@@ -4910,6 +4936,8 @@
     <members>OrderType</members>
     <members>PartnerRole</members>
     <members>Product2Family</members>
+    <members>QuickTextCategory</members>
+    <members>QuickTextChannel</members>
     <members>Salutation</members>
     <members>Salutation</members>
     <members>SolutionStatus</members>
