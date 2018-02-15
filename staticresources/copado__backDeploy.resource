@@ -1220,6 +1220,10 @@ backDeploy.calculateFileDifferences = function(jsonObject,conf){
                 console.log('backDeploy.calculateFileDifference:::backDeploy.uiData.type',backDeploy.uiData.type);
 
                 if( backDeploy.uiData.type === "pull"){
+                    var commitsBehindNumber = item["commitsBehind"];
+                    var commitsBehindLabel = $copado('#commBehind');
+                    backDeploy.assignCBMTabLabels(commitsBehindLabel,commitsBehindNumber);
+                    $copado('[Id$=commitBehindNum]').val(commitsBehindNumber);
                     backDeploy.data.gridItems = item["filesMergedBehind"];
                     fileDiffSize = backDeploy.data.gridItem.length;
                     var fileDiffLabel = $copado('#filediff');
@@ -1246,6 +1250,10 @@ backDeploy.calculateFileDifferences = function(jsonObject,conf){
                         backDeploy.assignCBMTabLabels(autoResolvedLabel,autoResolveSize);
                     }
                 } else {
+                    var commitsAheadNumber = item["commitsAhead"];
+                    var commitsAheadLabel = $copado('#commAhead');
+                    backDeploy.assignCBMTabLabels(commitsAheadLabel,commitsAheadNumber);
+                    $copado('[Id$=commitAheadNum]').val(commitsAheadNumber);
                     backDeploy.data.gridItems = item["filesMergedAhead"];
                     var elem = item["filesMergedConflictAhead"];
                     if(backDeploy.data.gridItems){
@@ -1287,7 +1295,8 @@ backDeploy.filterGridMetadata = function (jsonArray, jsonField, filter) {
 };
 
 
-backDeploy.initFileDifferences = function(conf) {
+backDeploy.initFileDifferences = function(conf, initF) {
+    if(initF) initF();
     var jsonObject = JSON.parse(backDeploy.uiData.flowResult)
     backDeploy.calculateFileDifferences(jsonObject,conf);
     var datalocal;

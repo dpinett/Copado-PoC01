@@ -2,6 +2,7 @@
     <apex:slds />
     <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <head>
+            <title>Promotion {!copado__Promotion__c.Name} | Copado</title>
             <c:GAnalytics />
             <c:WizardUtils />
 
@@ -270,7 +271,21 @@
 
             <script type="text/javascript">
                 j$(document).ready(function(){
-                  
+                 j$('#pbTableUserStories').dataTable(
+                     {
+                         "paging": false,
+                         "scrollY":        400,
+                         "scrollCollapse": true
+                     }
+                 );
+                 j$('#pbTablePromotedStories').dataTable(
+                     {
+                         "paging": false,
+                         "scrollY":        400,
+                         "scrollCollapse": true
+                     }
+                 );
+                 levelPageBlockHeight();
                  var accountsTable = j$('[cid$="userStoryMetadatasTable"]').parent('table').eq(0).DataTable({
                    //sets record lengths to show in picklist
                    aLengthMenu: [
@@ -656,51 +671,58 @@
                             <apex:form id="USform">
                                 <div id="wrapper" class="slds-scope" >
                                     <div id="left" style="width:50%; margin-left:0px; float:left;">
+                                        <apex:actionFunction action="{!addStoriesToPromotion}" name="addStories" reRender="dummy" />
                                         <apex:pageBlock id="pbLeft" title="{!$Label.copado__user_stories_not_included_in_promotion}" >
                                             <apex:pageBlockButtons id="pbButtons2" location="top">
-                                                <apex:commandButton status="tblStatus" reRender="USform" id="btnGetUserStories" value="{!$Label.copado__add_selected_user_stories}" action="{!addStoriesToPromotion}" onclick="disableAddSelectedButton();" oncomplete="reRenderSeleniumTestGroups(); enableAddSelectedButton();" styleClass="slds-button slds-button--neutral"/>
+                                                <apex:commandButton status="tblStatus" reRender="USform" id="btnGetUserStories"
+                                                                    value="{!$Label.copado__add_selected_user_stories}"
+                                                                    rerender="pbRight,pbLeft"
+                                                                    onclick="setLockScreenMessage('Selecting...');lockScreen();clearSearch();disableAddSelectedButton();addStories();"
+                                                                    oncomplete="reRenderSeleniumTestGroups(); enableAddSelectedButton();"
+                                                                    styleClass="slds-button slds-button--neutral"/>
                                             </apex:pageBlockButtons>
 
-                                            <apex:actionStatus id="tblStatus" onstop="levelPageBlockHeight()" onstart="levelPageBlockHeight()">
-                                                <apex:facet name="start">
-                                                    <table class="list" border="0" cellspacing="0" cellpadding="0">
-                                                        <tbody>
-                                                            <tr class="headerRow">
-                                                                <th class="noRowsHeader" scope="col"><img src="/img/loading.gif" /></th>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </apex:facet>
-
-                                                <apex:facet name="stop">
-                                                    <apex:pageBlockTable id="pbTableUserStories" value="{!userStories}" var="u" styleClass="slds-table slds-table_bordered">
-                                                        <apex:column id="col1" width="22">
-                                                            <apex:facet name="header">
-                                                                <input type="checkbox" id="chkAll" onclick="checkAll(this,'{!$Component.pbTableUserStories}','chkUserStory')" />
-                                                            </apex:facet>
+                                            <table id="pbTableUserStories">
+                                                <thead>
+                                                <tr>
+                                                    <th style="width:20px;"><input type="checkbox" id="chkAll" onclick="checkAll(this,'pbTableUserStories','chkUserStory')" /></th>
+                                                    <th style="width25px;">View</th>
+                                                    <apex:repeat value="{!promotionRelatedList}" var="prl">
+                                                        <th>
+                                                            <span style="cursor:pointer;">{!prl.label}</span> <!--onClick="sortGiven(this,'L');"-->
+                                                        </th>
+                                                    </apex:repeat>
+                                                </tr>
+                                                </thead>
+                                                <tbody style="overflow:scroll">
+                                                <apex:repeat value="{!userStories}" var="u">
+                                                    <tr>
+                                                        <td>
                                                             <apex:inputCheckbox id="chkUserStory" value="{!u.selected}" />
-                                                        </apex:column>
-                                                        <apex:column width="30">
-                                                            <apex:facet name="header">View</apex:facet>
-                                                            <center><a href="/{!u.userStory.Id}"><img src="/img/icon/custom51_100/books24.png"/></a></center>
-                                                        </apex:column>
+                                                        </td>
+                                                        <td><center><a href="/{!u.userStory.Id}"><img src="/img/icon/custom51_100/books24.png"/></a></center></td>
                                                         <apex:repeat value="{!promotionRelatedList}" var="prl">
-                                                            <apex:column >
-                                                                <apex:facet name="header">{!prl.label}</apex:facet>
-                                                                <apex:outputField value="{!u.userStory[prl]}" />
-                                                            </apex:column>
+                                                            <td>
+                                                                <apex:outputField value="{!u.userStory[prl]}"/>
+                                                            </td>
                                                         </apex:repeat>
-                                                    </apex:pageBlockTable>
-                                                </apex:facet>
-                                            </apex:actionStatus>
+                                                    </tr>
+                                                </apex:repeat>
+                                                </tbody>
+                                            </table>
                                         </apex:pageBlock>
                                     </div>
                                     <div id="right" style="width:50%; float:right; position:relative;">
                                         <apex:pageBlock id="pbRight" title="{!$Label.copado__user_stories_to_be_promoted}" >
                                             <apex:pageBlockButtons id="pbButtons1" location="top">
-                                                <button id="btnRemoveSelected" class="slds-button slds-button--neutral" value="{!$Label.REMOVE_SELECTED_USER_STORIES}" onclick="deleteSelections(); return false;">{!$Label.REMOVE_SELECTED_USER_STORIES}</button>
-
-                                                <apex:commandButton reRender="USform" id="btnCreateDeployment" value="{!$Label.copado__create_deployment}" onclick="openModal(); return false;" styleClass="slds-button slds-button--brand" disabled="{!!enableCreateDeploymentButton}"/>
+                                                <button id="btnRemoveSelected" class="slds-button slds-button--neutral"
+                                                        value="{!$Label.REMOVE_SELECTED_USER_STORIES}"
+                                                        onclick="setLockScreenMessage('Removing Selections...');lockScreen();clearSearch();deleteSelections(); return false;">{!$Label.REMOVE_SELECTED_USER_STORIES}</button>
+                                                <apex:commandButton reRender="USform" id="btnCreateDeployment"
+                                                                    value="{!$Label.copado__create_deployment}"
+                                                                    onclick="openModal();clearSearch(); return false;"
+                                                                    styleClass="slds-button slds-button--brand"
+                                                                    disabled="{!!enableCreateDeploymentButton}"/>
 
 
                                                 <apex:commandlink id="warningLink" style="float: right;padding-top: 4px;" rendered="{!AND(dependenciesList != null,dependenciesList.size>0)}" title="{!$Label.copado__usdependency_icontitle}" onclick="openUSDep(); return false;" styleClass="icon-blinker">
@@ -709,45 +731,52 @@
                                                   </svg>
                                                 </apex:commandlink> 
 
-                                                <span class="slds-icon_container slds-icon-utility-announcement" title="Description of icon when needed">
+                                                <span class="slds-icon_container slds-icon-utility-announcement" title="">
 
-                                                  <span class="slds-assistive-text">Description of icon</span>
+                                                  <span class="slds-assistive-text"></span>
                                                 </span>
 
 
                                             </apex:pageBlockButtons>
-                                            <apex:actionFunction name="doRemove" reRender="USform" action="{!removeSelectedUserStories}" status="tblStatus1" oncomplete="reRenderSeleniumTestGroups();"/>
-                                            <apex:actionStatus id="tblStatus1" onstop="levelPageBlockHeight()" onstart="levelPageBlockHeight()">
-                                                <apex:facet name="start">
-                                                    <table class="list" border="0" cellspacing="0" cellpadding="0">
-                                                        <tbody>
-                                                            <tr class="headerRow">
-                                                                <th class="noRowsHeader" scope="col"><img src="/img/loading.gif" /></th>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </apex:facet>
-                                                <apex:facet name="stop">
-                                                    <apex:pageBlockTable id="pbTablePromotedStories" value="{!promotedWrappedStories}" var="u" styleClass="slds-table slds-table_bordered">
-                                                        <apex:column id="col1" width="22">
-                                                            <apex:facet name="header">
-                                                                <input type="checkbox" id="chkAll" onclick="checkAll(this,'{!$Component.pbTablePromotedStories}','chkUserStory')" />
-                                                            </apex:facet>
-                                                            <apex:inputCheckbox id="chkUserStory" value="{!u.selected}" />
-                                                        </apex:column>
-                                                        <apex:column width="30">
-                                                            <apex:facet name="header">View</apex:facet>
-                                                            <center><a href="/{!u.promotedUS.User_Story__r}"><img src="/img/icon/custom51_100/books24.png"/></a></center>
-                                                        </apex:column>
+                                            <apex:actionFunction name="doRemove" reRender="USform"
+                                                                 action="{!removeSelectedUserStories}" status="tblStatus1"
+                                                                 oncomplete="reRenderSeleniumTestGroups();" rerender="pbRight,pbLeft"/>
+                                            <table id="pbTablePromotedStories" style="overflow:scroll">
+                                                <thead>
+                                                <tr>
+                                                    <th><input type="checkbox" id="chkAll" onclick="checkAll(this,'pbTablePromotedStories','chkUserStory')" /></th>
+                                                    <th>View</th>
+                                                    <apex:repeat value="{!promotionRelatedList}" var="prl">
+                                                        <th>
+                                                            <span style="cursor:pointer;">{!prl.label}</span> <!--onClick="sortGiven(this,'L');"-->
+                                                        </th>
+                                                    </apex:repeat>
+                                                </tr>
+                                                </thead>
+                                                <tbody style="overflow:scroll">
+                                                <apex:repeat value="{!promotedWrappedStories}" var="u">
+                                                    <tr>
+
+
+
+
+
+                                                        <td><apex:inputCheckbox id="chkUserStory" value="{!u.selected}" /></td>
+
+
+
+                                                        <td><center><a href="/{!u.promotedUS.User_Story__r}"><img src="/img/icon/custom51_100/books24.png"/></a></center></td>
+
                                                         <apex:repeat value="{!promotionRelatedList}" var="prl">
-                                                            <apex:column >
-                                                                <apex:facet name="header">{!prl.label}</apex:facet>
-                                                                <apex:outputField value="{!u.promotedUS.User_Story__r[prl]}" />
-                                                            </apex:column>
-                                                        </apex:repeat>                                        
-                                                    </apex:pageBlockTable>
-                                                </apex:facet>
-                                            </apex:actionStatus>
+                                                            <td>
+
+                                                                <apex:outputField value="{!u.promotedUS.User_Story__r[prl]}"/>
+                                                            </td>
+                                                        </apex:repeat>
+                                                    </tr>
+                                                </apex:repeat>
+                                                </tbody>
+                                            </table>
                                         </apex:pageBlock>
                                     </div>
                                 </div>
@@ -806,8 +835,14 @@
                     function levelPageBlockHeight(){
                         var $l = $copado('div[id$="pbLeft"]');
                         var $r = $copado('div[id$="pbRight"]');
-                        if($l.height() > $r.height())$r.height($l.height());
+                        if($l.height() > 550 || $r.height() > 550){
+                            $l.height(550);
+                            $r.height(550);
+                        }
+                        else if($l.height() > $r.height())$r.height($l.height());
                         else $l.height($r.height());
+
+                        j$('.pbTitle').parent().closest('tr').css('height','56px');
                     }
                     $copado( document ).ready(function() {
                         levelPageBlockHeight();
@@ -823,6 +858,10 @@
                         else{
                             return false;
                         }
+                    }
+
+                    function clearSearch() {
+                        $copado('.dataTables_filter').find('input[type="search"]').val('').keyup();
                     }
 
                     function disableAddSelectedButton(){
