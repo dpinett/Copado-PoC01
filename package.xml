@@ -3,6 +3,12 @@
   <types>
     <members>AccountOperations</members>
     <members>AccountOperationsTest</members>
+    <members>ChangeManagementIntegrationTriggerTest</members>
+    <members>JiraIssueFetcher_Batch</members>
+    <members>JiraIssueFetcher_Batch_Test</members>
+    <members>JiraIssueFetcher_Batch_Test_HttpMoc</members>
+    <members>JiraIssueFetcher_Schedule</members>
+    <members>JiraIssueFetcher_Schedule_Test</members>
     <members>copado__AddCCHRuleCriteriaExt</members>
     <members>copado__AddCCHRuleCriteriaExtTest</members>
     <members>copado__ApexTestResultTriggerHandler</members>
@@ -343,6 +349,9 @@
     <name>ApexComponent</name>
   </types>
   <types>
+    <members>CopadoSyncUserStories</members>
+    <members>EditChangeManagementIntegration</members>
+    <members>ViewChangeManagementIntegration</members>
     <members>copado__AddCCHRuleCriteria</members>
     <members>copado__BranchManagement</members>
     <members>copado__BranchManagementDialog</members>
@@ -441,6 +450,7 @@
   </types>
   <types>
     <members>AccountDefaultDescription</members>
+    <members>ChangeManagementIntegrationCredentialTrigger</members>
     <members>copado__ApexTestResultTrigger</members>
     <members>copado__ApexTestTrigger</members>
     <members>copado__AttachmentTrigger</members>
@@ -518,6 +528,7 @@
     <name>Community</name>
   </types>
   <types>
+    <members>Copado_Integrations</members>
     <members>copado__Copado</members>
     <members>copado__Copado_Branch_Management</members>
     <members>copado__Copado_Change_Management</members>
@@ -775,6 +786,22 @@
     <members>CaseComment.LastModifiedDate</members>
     <members>CaseComment.ParentId</members>
     <members>CaseComment.SystemModstamp</members>
+    <members>Change_Management_Integration_Credential__c.Authentication_Method__c</members>
+    <members>Change_Management_Integration_Credential__c.CreatedById</members>
+    <members>Change_Management_Integration_Credential__c.CreatedDate</members>
+    <members>Change_Management_Integration_Credential__c.Endpoint__c</members>
+    <members>Change_Management_Integration_Credential__c.External_System__c</members>
+    <members>Change_Management_Integration_Credential__c.Id</members>
+    <members>Change_Management_Integration_Credential__c.IsDeleted</members>
+    <members>Change_Management_Integration_Credential__c.LastModifiedById</members>
+    <members>Change_Management_Integration_Credential__c.LastModifiedDate</members>
+    <members>Change_Management_Integration_Credential__c.LastReferencedDate</members>
+    <members>Change_Management_Integration_Credential__c.LastViewedDate</members>
+    <members>Change_Management_Integration_Credential__c.Name</members>
+    <members>Change_Management_Integration_Credential__c.OwnerId</members>
+    <members>Change_Management_Integration_Credential__c.Password__c</members>
+    <members>Change_Management_Integration_Credential__c.SystemModstamp</members>
+    <members>Change_Management_Integration_Credential__c.Username__c</members>
     <members>CollaborationGroup.AnnouncementId</members>
     <members>CollaborationGroup.BannerPhotoUrl</members>
     <members>CollaborationGroup.CanHaveGuests</members>
@@ -2278,8 +2305,10 @@
     <members>copado__Environmental_Variable__c.copado__Value__c</members>
     <members>copado__Epic__c.CreatedById</members>
     <members>copado__Epic__c.CreatedDate</members>
+    <members>copado__Epic__c.External_ID__c</members>
     <members>copado__Epic__c.Id</members>
     <members>copado__Epic__c.IsDeleted</members>
+    <members>copado__Epic__c.JIRA_Key__c</members>
     <members>copado__Epic__c.LastActivityDate</members>
     <members>copado__Epic__c.LastModifiedById</members>
     <members>copado__Epic__c.LastModifiedDate</members>
@@ -2514,8 +2543,10 @@
     <members>copado__Personal_Settings__c.copado__Build_Task_Rows__c</members>
     <members>copado__Personal_Settings__c.copado__DeployConnectionBox_height__c</members>
     <members>copado__Personal_Settings__c.copado__DeployConnectionBox_width__c</members>
+    <members>copado__Project__c.Change_Management_Integration__c</members>
     <members>copado__Project__c.CreatedById</members>
     <members>copado__Project__c.CreatedDate</members>
+    <members>copado__Project__c.External_Id__c</members>
     <members>copado__Project__c.Id</members>
     <members>copado__Project__c.IsDeleted</members>
     <members>copado__Project__c.LastActivityDate</members>
@@ -2526,6 +2557,7 @@
     <members>copado__Project__c.Name</members>
     <members>copado__Project__c.OwnerId</members>
     <members>copado__Project__c.SystemModstamp</members>
+    <members>copado__Project__c.Workspace_Id__c</members>
     <members>copado__Project__c.copado__Deployment_Flow__c</members>
     <members>copado__Project__c.copado__Description__c</members>
     <members>copado__Project__c.copado__End_Date__c</members>
@@ -3149,8 +3181,10 @@
     <members>copado__User_Story_Task__c.copado__User_Story__c</members>
     <members>copado__User_Story__c.CreatedById</members>
     <members>copado__User_Story__c.CreatedDate</members>
+    <members>copado__User_Story__c.External_Id__c</members>
     <members>copado__User_Story__c.Id</members>
     <members>copado__User_Story__c.IsDeleted</members>
+    <members>copado__User_Story__c.JIRA_Key__c</members>
     <members>copado__User_Story__c.LastActivityDate</members>
     <members>copado__User_Story__c.LastModifiedById</members>
     <members>copado__User_Story__c.LastModifiedDate</members>
@@ -3957,6 +3991,7 @@
     <members>CampaignMember</members>
     <members>Case</members>
     <members>CaseContactRole</members>
+    <members>Change_Management_Integration_Credential__c</members>
     <members>CollaborationGroup</members>
     <members>CollaborationGroupMember</members>
     <members>Contact</members>
@@ -4082,6 +4117,7 @@
     <name>CustomObject</name>
   </types>
   <types>
+    <members>Change_Management_Integration_Credential__c-en_US</members>
     <members>copado__Apex_Test_Result__c-en_US</members>
     <members>copado__AuxiliaryObject__c-en_US</members>
     <members>copado__Branch_Management_Permission__c-en_US</members>
@@ -4171,6 +4207,7 @@
     <name>CustomPermission</name>
   </types>
   <types>
+    <members>Change_Management_Integration_Credential__c</members>
     <members>copado__Account_Summary</members>
     <members>copado__Compliance_Finding__c</members>
     <members>copado__Compliance_Getting_Started</members>
@@ -4264,6 +4301,8 @@
     <name>Dashboard</name>
   </types>
   <types>
+    <members>Copado_Integrations</members>
+    <members>Copado_Integrations/Copado_Logo.png</members>
     <members>copado__Copado</members>
     <members>copado__Copado/copado__Copado_Logo.png</members>
     <name>Document</name>
@@ -4365,6 +4404,7 @@
     <members>Case-Case %28Support%29 Layout</members>
     <members>Case-Case Layout</members>
     <members>CaseClose-Close Case Layout</members>
+    <members>Change_Management_Integration_Credential__c-Change Management Integration Layout</members>
     <members>Contact-Contact %28Marketing%29 Layout</members>
     <members>Contact-Contact %28Sales%29 Layout</members>
     <members>Contact-Contact %28Support%29 Layout</members>
@@ -4509,6 +4549,7 @@
     <members>Case.AllOpenCases</members>
     <members>Case.MyCases</members>
     <members>Case.MyOpenCases</members>
+    <members>Change_Management_Integration_Credential__c.All</members>
     <members>CollaborationGroup.All_ChatterGroups</members>
     <members>Contact.AllContacts</members>
     <members>Contact.BirthdaysThisMonth</members>
@@ -4755,6 +4796,10 @@
   </types>
   <types>
     <members>ApexDevNet</members>
+    <members>JIRA</members>
+    <members>Rally</members>
+    <members>ScrumDo</members>
+    <members>VersionOne</members>
     <members>copado__Copado</members>
     <name>RemoteSiteSetting</name>
   </types>
@@ -4858,6 +4903,7 @@
     <members>Asset</members>
     <members>Campaign</members>
     <members>Case</members>
+    <members>Change_Management_Integration_Credential__c</members>
     <members>Contact</members>
     <members>Lead</members>
     <members>Opportunity</members>
@@ -5001,6 +5047,7 @@
     <members>Asset</members>
     <members>Campaign</members>
     <members>Case</members>
+    <members>Change_Management_Integration_Credential__c</members>
     <members>Contact</members>
     <members>ContentDocument</members>
     <members>Contract</members>
@@ -5114,6 +5161,7 @@
     <members>copado__Environment__c.copado__Find_Replace_Rule_Editor</members>
     <members>copado__Org__c.copado__Add_to_Deployment</members>
     <members>copado__Org__c.copado__Validate_Org</members>
+    <members>copado__Project__c.Sync_External_User_Stories</members>
     <members>copado__Release__c.copado__Mass_add_to_Release</members>
     <members>copado__Selenium_Test_Case__c.copado__New_Version</members>
     <members>copado__Selenium_Test_Case__c.copado__Promote_Version</members>

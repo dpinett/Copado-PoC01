@@ -557,6 +557,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Change_Management_Integration_Credential__c.Authentication_Method__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Change_Management_Integration_Credential__c.External_System__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Contact.AccountId</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2157,6 +2167,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>copado__Epic__c.External_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__Epic__c.JIRA_Key__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>copado__Epic__c.copado__Epic_Details__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -2603,6 +2623,21 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>copado__Persona__c.copado__Description__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__Project__c.Change_Management_Integration__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__Project__c.External_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__Project__c.Workspace_Id__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3728,6 +3763,16 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>copado__User_Story_Task__c.copado__Subject__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__User_Story__c.External_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__User_Story__c.JIRA_Key__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

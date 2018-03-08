@@ -80,4 +80,8 @@
         <name>copado__Copado_Compliance_Hub</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>Copado_Integrations</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>

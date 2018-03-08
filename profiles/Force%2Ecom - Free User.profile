@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <applicationVisibilities>
+        <application>Copado_Integrations</application>
+        <default>false</default>
+        <visible>false</visible>
+    </applicationVisibilities>
+    <applicationVisibilities>
         <application>copado__Copado</application>
         <default>false</default>
         <visible>false</visible>
@@ -106,6 +111,30 @@
     </classAccesses>
     <classAccesses>
         <apexClass>AccountOperationsTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ChangeManagementIntegrationTriggerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>JiraIssueFetcher_Batch</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>JiraIssueFetcher_Batch_Test</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>JiraIssueFetcher_Batch_Test_HttpMoc</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>JiraIssueFetcher_Schedule</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>JiraIssueFetcher_Schedule_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1852,6 +1881,16 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Change_Management_Integration_Credential__c.Authentication_Method__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Change_Management_Integration_Credential__c.External_System__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Contact.AccountId</field>
         <readable>true</readable>
@@ -3468,6 +3507,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>copado__Epic__c.External_ID__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__Epic__c.JIRA_Key__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>copado__Epic__c.copado__Epic_Details__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3914,6 +3963,21 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>copado__Persona__c.copado__Description__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__Project__c.Change_Management_Integration__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__Project__c.External_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__Project__c.Workspace_Id__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -5043,6 +5107,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>copado__User_Story__c.External_Id__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>copado__User_Story__c.JIRA_Key__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>copado__User_Story__c.copado__Acceptance_Criteria_Status__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -5336,6 +5410,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>CaseClose-Close Case Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Change_Management_Integration_Credential__c-Change Management Integration Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Contact-Contact Layout</layout>
@@ -5699,6 +5776,18 @@
         <layout>copado__User_Story__c-copado__User Story Layout</layout>
         <recordType>copado__User_Story__c.copado__User_Story</recordType>
     </layoutAssignments>
+    <pageAccesses>
+        <apexPage>CopadoSyncUserStories</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>EditChangeManagementIntegration</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>ViewChangeManagementIntegration</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <pageAccesses>
         <apexPage>copado__AddCCHRuleCriteria</apexPage>
         <enabled>false</enabled>
@@ -6145,6 +6234,10 @@
         <recordType>copado__User_Story__c.copado__User_Story</recordType>
         <visible>false</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Change_Management_Integration_Credential__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>copado__Account_Summary</tab>
         <visibility>Hidden</visibility>
