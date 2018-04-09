@@ -1503,6 +1503,16 @@
     <members>OrderItem.SystemModstamp</members>
     <members>OrderItem.TotalPrice</members>
     <members>OrderItem.UnitPrice</members>
+    <members>OrgDeleteRequest.CreatedById</members>
+    <members>OrgDeleteRequest.CreatedDate</members>
+    <members>OrgDeleteRequest.Id</members>
+    <members>OrgDeleteRequest.IsDeleted</members>
+    <members>OrgDeleteRequest.LastModifiedById</members>
+    <members>OrgDeleteRequest.LastModifiedDate</members>
+    <members>OrgDeleteRequest.Name</members>
+    <members>OrgDeleteRequest.OwnerId</members>
+    <members>OrgDeleteRequest.RequestType</members>
+    <members>OrgDeleteRequest.SystemModstamp</members>
     <members>OrgLifecycleNotification.CreatedById</members>
     <members>OrgLifecycleNotification.CreatedDate</members>
     <members>OrgLifecycleNotification.LifecycleRequestId</members>
@@ -1764,6 +1774,7 @@
     <members>User.UserPreferencesFavoritesWTShown</members>
     <members>User.UserPreferencesGlobalNavBarWTShown</members>
     <members>User.UserPreferencesGlobalNavGridMenuWTShown</members>
+    <members>User.UserPreferencesHasCelebrationBadge</members>
     <members>User.UserPreferencesHideBiggerPhotoCallout</members>
     <members>User.UserPreferencesHideCSNDesktopTask</members>
     <members>User.UserPreferencesHideCSNGetChatterMobileTask</members>
@@ -1776,6 +1787,7 @@
     <members>User.UserPreferencesJigsawListUser</members>
     <members>User.UserPreferencesLightningExperiencePreferred</members>
     <members>User.UserPreferencesPathAssistantCollapsed</members>
+    <members>User.UserPreferencesPreviewCustomTheme</members>
     <members>User.UserPreferencesPreviewLightning</members>
     <members>User.UserPreferencesRecordHomeReservedWTShown</members>
     <members>User.UserPreferencesRecordHomeSectionCollapseWTShown</members>
@@ -1804,6 +1816,8 @@
     <members>User.UserPreferencesShowWorkPhoneToExternalUsers</members>
     <members>User.UserPreferencesShowWorkPhoneToGuestUsers</members>
     <members>User.UserPreferencesSortFeedByComment</members>
+    <members>User.UserPreferencesSuppressEventSFXReminders</members>
+    <members>User.UserPreferencesSuppressTaskSFXReminders</members>
     <members>User.UserPreferencesTaskRemindersCheckboxDefault</members>
     <members>User.UserRoleId</members>
     <members>User.UserType</members>
@@ -4882,6 +4896,7 @@
     <members>Macro</members>
     <members>Mobile</members>
     <members>Name</members>
+    <members>OmniChannel</members>
     <members>Opportunity</members>
     <members>Order</members>
     <members>OrgPreference</members>
@@ -5223,5 +5238,5 @@
     <members>copado__Deployment__c.copado__Deployment_scheduled</members>
     <name>WorkflowTask</name>
   </types>
-  <version>41.0</version>
+  <version>42.0</version>
 </Package>
