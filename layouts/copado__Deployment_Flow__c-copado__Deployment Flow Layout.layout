@@ -3,6 +3,7 @@
     <customButtons>copado__Manage_Branches</customButtons>
     <customButtons>copado__Manage_Environment_Variables</customButtons>
     <customButtons>copado__Manage_Regression_Tests</customButtons>
+    <customButtons>copado__Find_Replace_Rule_Editor</customButtons>
     <excludeButtons>Submit</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
