@@ -565,6 +565,7 @@
     <members>Account.DandbCompanyId</members>
     <members>Account.Description</members>
     <members>Account.DunsNumber</members>
+    <members>Account.External_Id__c</members>
     <members>Account.Fax</members>
     <members>Account.Id</members>
     <members>Account.Industry</members>
@@ -1613,6 +1614,7 @@
     <members>StreamingChannel.Name</members>
     <members>StreamingChannel.OwnerId</members>
     <members>StreamingChannel.SystemModstamp</members>
+    <members>TCS_CS__c.Student__c</members>
     <members>Task.AccountId</members>
     <members>Task.ActivityDate</members>
     <members>Task.CallDisposition</members>
@@ -4046,6 +4048,7 @@
     <members>SocialPersona</members>
     <members>Solution</members>
     <members>StreamingChannel</members>
+    <members>TCS_CS__c</members>
     <members>Task</members>
     <members>Topic</members>
     <members>TopicAssignment</members>
@@ -4132,6 +4135,7 @@
   </types>
   <types>
     <members>Change_Management_Integration_Credential__c-en_US</members>
+    <members>TCS_CS__c-es</members>
     <members>copado__Apex_Test_Result__c-en_US</members>
     <members>copado__AuxiliaryObject__c-en_US</members>
     <members>copado__Branch_Management_Permission__c-en_US</members>
@@ -4923,6 +4927,7 @@
     <members>Lead</members>
     <members>Opportunity</members>
     <members>Order</members>
+    <members>TCS_CS__c</members>
     <members>User</members>
     <members>copado__AuxiliaryObject__c</members>
     <members>copado__Change_Management_Settings__c</members>
