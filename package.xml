@@ -4662,6 +4662,7 @@
     <name>MatchingRules</name>
   </types>
   <types>
+    <members>TCS_Permission</members>
     <members>copado__Branch_Management_Permissions_Manage</members>
     <members>copado__Branch_Management_Permissions_View</members>
     <members>copado__Commit_Changes</members>
