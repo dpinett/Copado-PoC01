@@ -26,6 +26,19 @@
         <relationshipLabel><!-- Snapshot Commits --></relationshipLabel>
     </fields>
     <fields>
+        <help><!-- The Git operation executed by the Copado. --></help>
+        <label><!-- Git Operation --></label>
+        <name>copado__Git_Operation__c</name>
+        <picklistValues>
+            <masterLabel>Commit Files</masterLabel>
+            <translation><!-- Commit Files --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Destructive Changes</masterLabel>
+            <translation><!-- Destructive Changes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Org --></label>
         <name>copado__Org__c</name>
         <relationshipLabel><!-- Snapshot Commits --></relationshipLabel>
@@ -51,7 +64,7 @@
         <name>copado__View_in_Git__c</name>
     </fields>
     <validationRules>
-        <errorMessage><!-- The commit status must be &apos;Complete&apos; whenever there is a commit Id. --></errorMessage>
+        <errorMessage><!-- The commit status cannot be &apos;Pending&apos; or &apos;No changes&apos; whenever there is a commit Id. --></errorMessage>
         <name>copado__Commit_Id_Status_Complete</name>
     </validationRules>
 </CustomObjectTranslation>

@@ -51,6 +51,14 @@
                 <behavior>Readonly</behavior>
                 <field>copado__View_in_Git__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>copado__Base_Branch__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>copado__Git_Merge_Status__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -251,6 +259,12 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>copado__Apex_Code_Coverage__c</field>
+            </layoutItems>
+            <layoutItems>
+                <page>copado__AddTestClasses</page>
+                <showLabel>false</showLabel>
+                <showScrollbars>false</showScrollbars>
+                <width>0</width>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

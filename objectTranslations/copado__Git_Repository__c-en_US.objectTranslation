@@ -52,6 +52,11 @@
         <name>copado__Pull_Request_Base_URL__c</name>
     </fields>
     <fields>
+        <help><!-- Base URL of your Repository, e.g.: https://github.com/[COMPANY]/[REPOSITORY]/releases/tag/ --></help>
+        <label><!-- Tag Base URL --></label>
+        <name>copado__Tag_Base_URL__c</name>
+    </fields>
+    <fields>
         <label><!-- URI --></label>
         <name>copado__URI__c</name>
     </fields>

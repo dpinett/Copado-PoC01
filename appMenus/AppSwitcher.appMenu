@@ -84,4 +84,8 @@
         <name>Copado_Integrations</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>copado__Copado_DX</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>

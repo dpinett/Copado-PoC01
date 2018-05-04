@@ -25,15 +25,15 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>copado__Exclude_From_Auto_Resolve__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>copado__Main_Branch__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>copado__Disable_Validations__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>copado__Equal_Branch_Environment_Name__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -48,6 +48,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>copado__Static_Code_Analysis_Settings__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>copado__Equal_Branch_Environment_Name__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>copado__Block_Commits__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
