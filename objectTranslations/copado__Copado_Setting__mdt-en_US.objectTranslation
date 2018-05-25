@@ -8,5 +8,13 @@
         <plural>true</plural>
         <value><!-- Copado Settings --></value>
     </caseValues>
+    <fields>
+        <label><!-- Enabled --></label>
+        <name>copado__Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Field --></label>
+        <name>copado__Text_Field__c</name>
+    </fields>
     <startsWith><!-- Consonant --></startsWith>
 </CustomObjectTranslation>

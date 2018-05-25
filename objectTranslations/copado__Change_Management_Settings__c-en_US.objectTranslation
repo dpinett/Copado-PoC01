@@ -8,5 +8,9 @@
         <plural>true</plural>
         <value><!-- Change Management Settings --></value>
     </caseValues>
+    <fields>
+        <label><!-- Minimum Apex Test Coverage --></label>
+        <name>copado__Minimum_Apex_Test_Coverage__c</name>
+    </fields>
     <startsWith><!-- Consonant --></startsWith>
 </CustomObjectTranslation>
