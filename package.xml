@@ -187,6 +187,7 @@
     <members>PricebookEntry</members>
     <members>Product2</members>
     <members>QuickText</members>
+    <members>RecordAction</members>
     <members>Scorecard</members>
     <members>ScorecardAssociation</members>
     <members>ScorecardMetric</members>
@@ -1273,6 +1274,7 @@
     <members>standard__Chatter</members>
     <members>standard__Community</members>
     <members>standard__Content</members>
+    <members>standard__LightningInstrumentation</members>
     <members>standard__LightningSales</members>
     <members>standard__LightningSalesConsole</members>
     <members>standard__LightningService</members>
@@ -1581,7 +1583,9 @@
     <members>Case</members>
     <members>Change_Management_Integration_Credential__c</members>
     <members>Contact</members>
+    <members>FlowInterview</members>
     <members>Lead</members>
+    <members>ListEmail</members>
     <members>Opportunity</members>
     <members>Order</members>
     <members>TCS_CS__c</members>
@@ -1705,7 +1709,6 @@
     <members>Order</members>
     <members>OrgPreference</members>
     <members>PathAssistant</members>
-    <members>PersonalJourney</members>
     <members>Product</members>
     <members>Quote</members>
     <members>Search</members>
